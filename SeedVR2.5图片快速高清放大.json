@@ -1,5 +1,5 @@
 {
-	"last_link_id": 121,
+	"last_link_id": 123,
 	"nodes": [
 		{
 			"mode": 0,
@@ -1268,103 +1268,133 @@
 		{
 			"outputs": [
 				{
+					"name": "DIT",
+					"links": [
+						122
+					],
+					"type": "SEEDVR2_DIT"
+				}
+			],
+			"widgets_values": [
+				"seedvr2_ema_3b_fp8_e4m3fn.safetensors",
+				"cuda:0",
+				32,
+				false,
+				"cpu",
+				false,
+				"sdpa"
+			],
+			"inputs": [
+				{
+					"name": "torch_compile_args",
+					"type": "TORCH_COMPILE_ARGS"
+				}
+			],
+			"id": 85,
+			"type": "SeedVR2LoadDiTModel",
+			"pos": [
+				413.696044921875,
+				2713.92919921875
+			],
+			"size": [
+				280,
+				200
+			],
+			"order": 21
+		},
+		{
+			"outputs": [
+				{
+					"name": "VAE",
+					"links": [
+						123
+					],
+					"type": "SEEDVR2_VAE"
+				}
+			],
+			"widgets_values": [
+				"ema_vae_fp16.safetensors",
+				"cuda:0",
+				true,
+				1024,
+				128,
+				true,
+				1024,
+				128,
+				"false",
+				"cpu",
+				false
+			],
+			"inputs": [
+				{
+					"name": "torch_compile_args",
+					"type": "TORCH_COMPILE_ARGS"
+				}
+			],
+			"id": 86,
+			"type": "SeedVR2LoadVAEModel",
+			"pos": [
+				413.696044921875,
+				2953.92919921875
+			],
+			"size": [
+				280,
+				240
+			],
+			"order": 22
+		},
+		{
+			"outputs": [
+				{
 					"name": "image",
 					"links": [
 						102
 					],
-					"label": "image",
-					"type": "IMAGE",
-					"localized_name": "image"
+					"type": "IMAGE"
 				}
 			],
-			"color": "#223",
 			"widgets_values": [
-				"seedvr2_ema_3b_fp8_e4m3fn.safetensors",
 				100,
-				"fixed",
-				2048,
-				1
+				1080,
+				0,
+				1,
+				false,
+				0,
+				0,
+				"lab",
+				0.0,
+				0.0,
+				"cpu",
+				false
 			],
 			"inputs": [
 				{
-					"name": "images",
+					"name": "image",
 					"link": 100,
-					"label": "images",
-					"type": "IMAGE",
-					"localized_name": "images"
+					"type": "IMAGE"
 				},
 				{
-					"shape": 7,
-					"name": "block_swap_config",
-					"label": "block_swap_config",
-					"type": "block_swap_config",
-					"localized_name": "block_swap_config"
+					"name": "dit",
+					"link": 122,
+					"type": "SEEDVR2_DIT"
 				},
 				{
-					"shape": 7,
-					"name": "extra_args",
-					"label": "extra_args",
-					"type": "extra_args",
-					"localized_name": "extra_args"
-				},
-				{
-					"widget": {
-						"name": "model"
-					},
-					"name": "model",
-					"label": "model",
-					"type": "COMBO",
-					"localized_name": "model"
-				},
-				{
-					"widget": {
-						"name": "seed"
-					},
-					"name": "seed",
-					"label": "seed",
-					"type": "INT",
-					"localized_name": "seed"
-				},
-				{
-					"widget": {
-						"name": "new_resolution"
-					},
-					"name": "new_resolution",
-					"link": 101,
-					"label": "new_resolution",
-					"type": "INT",
-					"localized_name": "new_resolution"
-				},
-				{
-					"widget": {
-						"name": "batch_size"
-					},
-					"name": "batch_size",
-					"label": "batch_size",
-					"type": "INT",
-					"localized_name": "batch_size"
+					"name": "vae",
+					"link": 123,
+					"type": "SEEDVR2_VAE"
 				}
 			],
-			"flags": {},
-			"type": "SeedVR2",
-			"mode": 0,
-			"bgcolor": "#335",
-			"size": [
-				389.2120056152344,
-				245.21315002441406
-			],
+			"id": 87,
+			"type": "SeedVR2VideoUpscaler",
 			"pos": [
 				713.696044921875,
 				2713.92919921875
 			],
-			"id": 75,
-			"properties": {
-				"ver": "5ee7d749f7d0682142bfd9d83df43236f5fa0ab5",
-				"widget_ue_connectable": {},
-				"aux_id": "numz/ComfyUI-SeedVR2_VideoUpscaler",
-				"Node name for S&R": "SeedVR2"
-			},
-			"order": 21
+			"size": [
+				389.2120056152344,
+				245.21315002441406
+			],
+			"order": 23
 		},
 		{
 			"outputs": [
@@ -2173,7 +2203,7 @@
 			100,
 			74,
 			0,
-			75,
+			87,
 			0,
 			"IMAGE"
 		],
@@ -2181,13 +2211,13 @@
 			101,
 			73,
 			0,
-			75,
-			5,
+			87,
+			4,
 			"INT"
 		],
 		[
 			102,
-			75,
+			87,
 			0,
 			76,
 			0,
@@ -2328,11 +2358,27 @@
 			83,
 			1,
 			"IMAGE"
+		],
+		[
+			122,
+			85,
+			0,
+			87,
+			1,
+			"SEEDVR2_DIT"
+		],
+		[
+			123,
+			86,
+			0,
+			87,
+			2,
+			"SEEDVR2_VAE"
 		]
 	],
 	"id": "07cca4f8-9756-4a6e-9cbc-f7ed66816731",
 	"config": {},
 	"version": 0.4,
-	"last_node_id": 84,
+	"last_node_id": 87,
 	"revision": 0
 }
