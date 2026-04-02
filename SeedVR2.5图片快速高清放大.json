@@ -220,15 +220,15 @@
 			"id": 65,
 			"type": "SimpleMath+",
 			"pos": [
-				-326.93118215948664,
+				-326.93113583967227,
 				2576.1993968815364
 			],
 			"size": [
 				270,
-				155.578125
+				155.5625
 			],
 			"flags": {},
-			"order": 15,
+			"order": 26,
 			"mode": 0,
 			"inputs": [
 				{
@@ -404,12 +404,12 @@
 			],
 			"size": [
 				271.5625,
-				487.59375
+				511.140625
 			],
 			"flags": {
 				"collapsed": false
 			},
-			"order": 11,
+			"order": 22,
 			"mode": 0,
 			"inputs": [
 				{
@@ -506,6 +506,11 @@
 					"name": "value16",
 					"type": "*",
 					"link": 137
+				},
+				{
+					"name": "value17",
+					"type": "*",
+					"link": null
 				}
 			],
 			"outputs": [
@@ -535,10 +540,10 @@
 			],
 			"size": [
 				300,
-				103.59375
+				103.578125
 			],
 			"flags": {},
-			"order": 13,
+			"order": 24,
 			"mode": 0,
 			"inputs": [
 				{
@@ -579,11 +584,11 @@
 			"type": "DF_Integer",
 			"pos": [
 				-345.5696733205099,
-				2772.4795178045624
+				2772.479610444191
 			],
 			"size": [
 				300,
-				103.59375
+				103.578125
 			],
 			"flags": {},
 			"order": 6,
@@ -627,15 +632,15 @@
 			"id": 68,
 			"type": "TTP_Image_Tile_Batch",
 			"pos": [
-				-34.69817609157667,
-				2853.1518667340806
+				-34.69808345194781,
+				2853.151681454823
 			],
 			"size": [
 				270,
-				207.59375
+				207.578125
 			],
 			"flags": {},
-			"order": 18,
+			"order": 28,
 			"mode": 0,
 			"inputs": [
 				{
@@ -721,16 +726,16 @@
 			"type": "Get Image Size",
 			"pos": [
 				287.4436267805419,
-				2830.5818886853745
+				2830.5817034061165
 			],
 			"size": [
 				225,
-				95.59375
+				95.578125
 			],
 			"flags": {
 				"collapsed": false
 			},
-			"order": 20,
+			"order": 30,
 			"mode": 0,
 			"inputs": [
 				{
@@ -775,15 +780,15 @@
 			"id": 67,
 			"type": "ImageResize+",
 			"pos": [
-				-11.153629147682523,
-				2483.3800008616786
+				-11.153536508053662,
+				2483.380047181493
 			],
 			"size": [
 				270,
-				319.578125
+				319.5625
 			],
 			"flags": {},
-			"order": 17,
+			"order": 27,
 			"mode": 0,
 			"inputs": [
 				{
@@ -883,17 +888,17 @@
 			"id": 73,
 			"type": "ImpactMinMax",
 			"pos": [
-				470.0405966079478,
-				2813.427715977122
+				470.04068924757655,
+				2813.4278086167506
 			],
 			"size": [
 				225,
-				131.59375
+				131.578125
 			],
 			"flags": {
 				"collapsed": false
 			},
-			"order": 22,
+			"order": 32,
 			"mode": 0,
 			"inputs": [
 				{
@@ -953,10 +958,10 @@
 			],
 			"size": [
 				245.734375,
-				71.59375
+				71.578125
 			],
 			"flags": {},
-			"order": 14,
+			"order": 23,
 			"mode": 0,
 			"inputs": [
 				{
@@ -986,15 +991,15 @@
 			"id": 49,
 			"type": "AutoImageResize",
 			"pos": [
-				294.05300109871416,
+				294.0530937383429,
 				2458.454150732262
 			],
 			"size": [
 				281.25,
-				191.59375
+				191.578125
 			],
 			"flags": {},
-			"order": 12,
+			"order": 21,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1060,15 +1065,15 @@
 			"id": 43,
 			"type": "MaskToImage",
 			"pos": [
-				304.1279312914188,
+				304.12802393104755,
 				2629.319979082917
 			],
 			"size": [
 				296,
-				47.59375
+				47.578125
 			],
 			"flags": {},
-			"order": 16,
+			"order": 25,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1099,14 +1104,14 @@
 			"type": "ImageResize+",
 			"pos": [
 				631.0392854533417,
-				2446.9084274725947
+				2446.90838115278
 			],
 			"size": [
 				270,
-				319.578125
+				319.5625
 			],
 			"flags": {},
-			"order": 19,
+			"order": 29,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1204,7 +1209,7 @@
 			"id": 85,
 			"type": "SeedVR2LoadDiTModel",
 			"pos": [
-				195.13184960680417,
+				195.1319422464329,
 				2683.573080746624
 			],
 			"size": [
@@ -1234,7 +1239,7 @@
 				"Node name for S&R": "SeedVR2LoadDiTModel"
 			},
 			"widgets_values": [
-				"seedvr2_ema_3b_fp8_e4m3fn.safetensors",
+				"seedvr2_ema_7b-Q4_K_M.gguf",
 				"cuda:0",
 				32,
 				false,
@@ -1247,8 +1252,8 @@
 			"id": 86,
 			"type": "SeedVR2LoadVAEModel",
 			"pos": [
-				413.6961553236264,
-				2953.9286826308867
+				413.69624796325536,
+				2953.928589991258
 			],
 			"size": [
 				280,
@@ -1294,15 +1299,15 @@
 			"id": 74,
 			"type": "ImageCASharpening+",
 			"pos": [
-				926.4261150448043,
-				2442.475806512809
+				926.426300324062,
+				2442.4756675533654
 			],
 			"size": [
 				306.328125,
-				103.59375
+				103.578125
 			],
 			"flags": {},
-			"order": 21,
+			"order": 31,
 			"mode": 4,
 			"inputs": [
 				{
@@ -1351,14 +1356,14 @@
 			"type": "TTP_Image_Assy",
 			"pos": [
 				954.1759452993596,
-				2550.419502014027
+				2550.4193630545833
 			],
 			"size": [
 				325.6875,
-				175.59375
+				175.578125
 			],
 			"flags": {},
-			"order": 24,
+			"order": 34,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1426,17 +1431,17 @@
 			"id": 77,
 			"type": "Get Image Size",
 			"pos": [
-				1131.7101594117453,
+				1131.7103446910032,
 				2731.9068806872397
 			],
 			"size": [
 				225,
-				95.59375
+				95.578125
 			],
 			"flags": {
 				"collapsed": false
 			},
-			"order": 25,
+			"order": 35,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1481,15 +1486,15 @@
 			"id": 59,
 			"type": "ImageScale",
 			"pos": [
-				1144.2678316568295,
-				2821.2838344199554
+				1144.2680169360874,
+				2821.283927059584
 			],
 			"size": [
 				270,
-				180.921875
+				180.90625
 			],
 			"flags": {},
-			"order": 26,
+			"order": 36,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1554,15 +1559,15 @@
 			"id": 70,
 			"type": "Cut By Mask",
 			"pos": [
-				1173.1736191998025,
+				1173.17380447906,
 				2418.126128554839
 			],
 			"size": [
 				270,
-				183.59375
+				183.578125
 			],
 			"flags": {},
-			"order": 27,
+			"order": 37,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1622,14 +1627,14 @@
 			"type": "ImageCASharpening+",
 			"pos": [
 				-12.072058427805246,
-				2770.436999268336
+				2770.436906628707
 			],
 			"size": [
 				306.328125,
-				103.59375
+				103.578125
 			],
 			"flags": {},
-			"order": 28,
+			"order": 38,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1678,8 +1683,8 @@
 			"id": 36,
 			"type": "LoadImage",
 			"pos": [
-				-546.6445435123794,
-				1483.85114100116
+				-546.644497192565,
+				1483.8511178412527
 			],
 			"size": [
 				434.5625,
@@ -1739,7 +1744,7 @@
 				}
 			},
 			"widgets_values": [
-				"汉宫秋月.png",
+				"アズールレーン7周年!_122683963_RIKO.jpg",
 				"image"
 			],
 			"color": "#232",
@@ -1749,15 +1754,15 @@
 			"id": 72,
 			"type": "SaveImage",
 			"pos": [
-				588.5945867168217,
-				1489.6776641359877
+				588.5947719960794,
+				1489.6775714963587
 			],
 			"size": [
-				395.265625,
+				395.25,
 				677.4375
 			],
 			"flags": {},
-			"order": 29,
+			"order": 39,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1793,14 +1798,14 @@
 			"type": "Image Comparer (rgthree)",
 			"pos": [
 				-115.83891098440984,
-				1456.2863352452655
+				1456.2862194457296
 			],
 			"size": [
 				599.375,
-				711.140625
+				711.125
 			],
 			"flags": {},
-			"order": 30,
+			"order": 40,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1838,7 +1843,7 @@
 			"id": 84,
 			"type": "Note",
 			"pos": [
-				-916.2137138769231,
+				-916.2137601967374,
 				2529.5795690335362
 			],
 			"size": [
@@ -1862,15 +1867,15 @@
 			"id": 88,
 			"type": "SeedVR2VideoUpscaler",
 			"pos": [
-				886.1754932772604,
+				886.1756785565179,
 				3095.877514043482
 			],
 			"size": [
 				277,
-				500.921875
+				500.90625
 			],
 			"flags": {},
-			"order": 23,
+			"order": 33,
 			"mode": 0,
 			"inputs": [
 				{
@@ -1927,132 +1932,532 @@
 		{
 			"id": 89,
 			"type": "CR Value",
-			"pos": [-510, 2680],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 31,
+			"pos": [
+				-510,
+				2680
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 11,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [128]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [10]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						128
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				10
+			]
 		},
 		{
 			"id": 90,
 			"type": "CR Value",
-			"pos": [-510, 2740],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 32,
+			"pos": [
+				-510,
+				2740
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 12,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [129]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [12]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						129
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				12
+			]
 		},
 		{
 			"id": 91,
 			"type": "CR Value",
-			"pos": [-510, 2800],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 33,
+			"pos": [
+				-510,
+				2800
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 13,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [130]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [14]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						130
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				14
+			]
 		},
 		{
 			"id": 92,
 			"type": "CR Value",
-			"pos": [-510, 2860],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 34,
+			"pos": [
+				-510,
+				2860
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 14,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [131]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [16]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						131
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				16
+			]
 		},
 		{
 			"id": 93,
 			"type": "CR Value",
-			"pos": [-510, 2920],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 35,
+			"pos": [
+				-510,
+				2920
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 15,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [132]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [18]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						132
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				18
+			]
 		},
 		{
 			"id": 94,
 			"type": "CR Value",
-			"pos": [-510, 2980],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 36,
+			"pos": [
+				-510,
+				2980
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 16,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [133]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [20]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						133
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				20
+			]
 		},
 		{
 			"id": 95,
 			"type": "CR Value",
-			"pos": [-510, 3040],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 37,
+			"pos": [
+				-510,
+				3040
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 17,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [134]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [24]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						134
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				24
+			]
 		},
 		{
 			"id": 96,
 			"type": "CR Value",
-			"pos": [-510, 3100],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 38,
+			"pos": [
+				-510,
+				3100
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 18,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [135]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [28]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						135
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				28
+			]
 		},
 		{
 			"id": 97,
 			"type": "CR Value",
-			"pos": [-510, 3160],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 39,
+			"pos": [
+				-510,
+				3160
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 19,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [136]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [32]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						136
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				32
+			]
 		},
 		{
 			"id": 98,
 			"type": "CR Value",
-			"pos": [-510, 3220],
-			"size": [270, 98],
-			"flags": {"collapsed": true},
-			"order": 40,
+			"pos": [
+				-510,
+				3220
+			],
+			"size": [
+				270,
+				98
+			],
+			"flags": {
+				"collapsed": true
+			},
+			"order": 20,
 			"mode": 0,
-			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
-			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [137]}, {"name": "show_help", "type": "STRING"}],
-			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
-			"widgets_values": [40]
+			"inputs": [
+				{
+					"name": "value",
+					"type": "FLOAT",
+					"widget": {
+						"name": "value"
+					}
+				}
+			],
+			"outputs": [
+				{
+					"label": "浮点",
+					"name": "FLOAT",
+					"type": "FLOAT",
+					"links": []
+				},
+				{
+					"label": "整数",
+					"name": "INT",
+					"type": "INT",
+					"links": [
+						137
+					]
+				},
+				{
+					"name": "show_help",
+					"type": "STRING"
+				}
+			],
+			"properties": {
+				"Node name for S&R": "CR Value",
+				"widget_ue_connectable": {}
+			},
+			"widgets_values": [
+				40
+			]
 		}
 	],
 	"links": [
@@ -2384,16 +2789,86 @@
 			0,
 			"IMAGE"
 		],
-		[128, 89, 1, 82, 8, "*"],
-		[129, 90, 1, 82, 9, "*"],
-		[130, 91, 1, 82, 10, "*"],
-		[131, 92, 1, 82, 11, "*"],
-		[132, 93, 1, 82, 12, "*"],
-		[133, 94, 1, 82, 13, "*"],
-		[134, 95, 1, 82, 14, "*"],
-		[135, 96, 1, 82, 15, "*"],
-		[136, 97, 1, 82, 16, "*"],
-		[137, 98, 1, 82, 17, "*"]
+		[
+			128,
+			89,
+			1,
+			82,
+			8,
+			"*"
+		],
+		[
+			129,
+			90,
+			1,
+			82,
+			9,
+			"*"
+		],
+		[
+			130,
+			91,
+			1,
+			82,
+			10,
+			"*"
+		],
+		[
+			131,
+			92,
+			1,
+			82,
+			11,
+			"*"
+		],
+		[
+			132,
+			93,
+			1,
+			82,
+			12,
+			"*"
+		],
+		[
+			133,
+			94,
+			1,
+			82,
+			13,
+			"*"
+		],
+		[
+			134,
+			95,
+			1,
+			82,
+			14,
+			"*"
+		],
+		[
+			135,
+			96,
+			1,
+			82,
+			15,
+			"*"
+		],
+		[
+			136,
+			97,
+			1,
+			82,
+			16,
+			"*"
+		],
+		[
+			137,
+			98,
+			1,
+			82,
+			17,
+			"*"
+		]
 	],
 	"groups": [
 		{
@@ -2438,8 +2913,8 @@
 		"ds": {
 			"scale": 0.6588450000000011,
 			"offset": [
-				1020.769392872931,
-				-1779.1269656761706
+				413.64636775712796,
+				-2226.663442548546
 			]
 		},
 		"frontendVersion": "1.41.21"
