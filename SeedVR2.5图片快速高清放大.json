@@ -1,8 +1,8 @@
 {
 	"id": "07cca4f8-9756-4a6e-9cbc-f7ed66816731",
 	"revision": 0,
-	"last_node_id": 88,
-	"last_link_id": 127,
+	"last_node_id": 98,
+	"last_link_id": 137,
 	"nodes": [
 		{
 			"id": 61,
@@ -459,44 +459,53 @@
 				},
 				{
 					"name": "value7",
-					"type": "*"
+					"type": "*",
+					"link": 128
 				},
 				{
 					"name": "value8",
-					"type": "*"
+					"type": "*",
+					"link": 129
 				},
 				{
 					"name": "value9",
-					"type": "*"
+					"type": "*",
+					"link": 130
 				},
 				{
 					"name": "value10",
-					"type": "*"
+					"type": "*",
+					"link": 131
 				},
 				{
 					"name": "value11",
-					"type": "*"
+					"type": "*",
+					"link": 132
 				},
 				{
 					"name": "value12",
-					"type": "*"
+					"type": "*",
+					"link": 133
 				},
 				{
 					"name": "value13",
-					"type": "*"
+					"type": "*",
+					"link": 134
 				},
 				{
 					"name": "value14",
-					"type": "*"
+					"type": "*",
+					"link": 135
 				},
 				{
 					"name": "value15",
-					"type": "*"
+					"type": "*",
+					"link": 136
 				},
 				{
 					"name": "value16",
 					"type": "*",
-					"link": null
+					"link": 137
 				}
 			],
 			"outputs": [
@@ -1843,7 +1852,7 @@
 			"outputs": [],
 			"properties": {},
 			"widgets_values": [
-				"编号切换\n\n1 1k像素 \n\n2 2k像素\n\n3 3k像素\n\n4 4k像素\n\n5 6k像素\n\n6 8k像素\n\n\n\n\n\n-----------------------------------→"
+				"编号切换\n\n1  1k像素\n\n2  2k像素\n\n3  3k像素\n\n4  4k像素\n\n5  6k像素\n\n6  8k像素\n\n7  10k像素\n\n8  13k像素\n\n9  15k像素\n\n10  17k像素\n\n11  19k像素\n\n12  21k像素\n\n13  26k像素\n\n14  30k像素\n\n15  34k像素\n\n16  43k像素\n\n-----------------------------------→"
 			],
 			"color": "#432",
 			"bgcolor": "#653",
@@ -1914,6 +1923,136 @@
 				"cpu",
 				false
 			]
+		},
+		{
+			"id": 89,
+			"type": "CR Value",
+			"pos": [-510, 2680],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 31,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [128]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [10]
+		},
+		{
+			"id": 90,
+			"type": "CR Value",
+			"pos": [-510, 2740],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 32,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [129]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [12]
+		},
+		{
+			"id": 91,
+			"type": "CR Value",
+			"pos": [-510, 2800],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 33,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [130]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [14]
+		},
+		{
+			"id": 92,
+			"type": "CR Value",
+			"pos": [-510, 2860],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 34,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [131]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [16]
+		},
+		{
+			"id": 93,
+			"type": "CR Value",
+			"pos": [-510, 2920],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 35,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [132]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [18]
+		},
+		{
+			"id": 94,
+			"type": "CR Value",
+			"pos": [-510, 2980],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 36,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [133]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [20]
+		},
+		{
+			"id": 95,
+			"type": "CR Value",
+			"pos": [-510, 3040],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 37,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [134]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [24]
+		},
+		{
+			"id": 96,
+			"type": "CR Value",
+			"pos": [-510, 3100],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 38,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [135]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [28]
+		},
+		{
+			"id": 97,
+			"type": "CR Value",
+			"pos": [-510, 3160],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 39,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [136]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [32]
+		},
+		{
+			"id": 98,
+			"type": "CR Value",
+			"pos": [-510, 3220],
+			"size": [270, 98],
+			"flags": {"collapsed": true},
+			"order": 40,
+			"mode": 0,
+			"inputs": [{"name": "value", "type": "FLOAT", "widget": {"name": "value"}}],
+			"outputs": [{"label": "浮点", "name": "FLOAT", "type": "FLOAT", "links": []}, {"label": "整数", "name": "INT", "type": "INT", "links": [137]}, {"name": "show_help", "type": "STRING"}],
+			"properties": {"Node name for S&R": "CR Value", "widget_ue_connectable": {}},
+			"widgets_values": [40]
 		}
 	],
 	"links": [
@@ -2244,7 +2383,17 @@
 			76,
 			0,
 			"IMAGE"
-		]
+		],
+		[128, 89, 1, 82, 8, "*"],
+		[129, 90, 1, 82, 9, "*"],
+		[130, 91, 1, 82, 10, "*"],
+		[131, 92, 1, 82, 11, "*"],
+		[132, 93, 1, 82, 12, "*"],
+		[133, 94, 1, 82, 13, "*"],
+		[134, 95, 1, 82, 14, "*"],
+		[135, 96, 1, 82, 15, "*"],
+		[136, 97, 1, 82, 16, "*"],
+		[137, 98, 1, 82, 17, "*"]
 	],
 	"groups": [
 		{
