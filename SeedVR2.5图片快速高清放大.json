@@ -797,7 +797,7 @@
 					"widget": {
 						"name": "height"
 					},
-					"link": null
+					"link": 88
 				},
 				{
 					"name": "interpolation",
@@ -861,11 +861,11 @@
 			},
 			"widgets_values": [
 				4032,
-				2048,
+				4032,
 				"lanczos",
 				"keep proportion",
 				"always",
-				16
+				8
 			],
 			"color": "#2a363b",
 			"bgcolor": "#3f5159"
@@ -1979,6 +1979,14 @@
 			0,
 			67,
 			1,
+			"INT"
+		],
+		[
+			88,
+			65,
+			0,
+			67,
+			2,
 			"INT"
 		],
 		[
