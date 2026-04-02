@@ -1042,8 +1042,8 @@
 				"widget_ue_connectable": {}
 			},
 			"widgets_values": [
-				1152,
-				1152,
+				1088,
+				1088,
 				0
 			]
 		},
@@ -1181,8 +1181,8 @@
 				}
 			},
 			"widgets_values": [
-				1280,
-				1280,
+				1088,
+				1088,
 				"nearest-exact",
 				"keep proportion",
 				"always",
@@ -1902,8 +1902,8 @@
 			"widgets_values": [
 				4031311339,
 				"randomize",
-				1080,
-				4500,
+				1088,
+				0,
 				1,
 				false,
 				"lab",
