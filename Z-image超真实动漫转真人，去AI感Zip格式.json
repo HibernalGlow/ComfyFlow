@@ -3795,12 +3795,12 @@
 				
 			},
 			"id":377,
-			"type":"llama_cpp_instruct_adv",
+			"type":"llama_cpp_unified_inference",
 			"properties":{
 				"widget_ue_connectable":{
 					
 				},
-				"Node name for S&R":"llama_cpp_instruct_adv"
+				"Node name for S&R":"llama_cpp_unified_inference"
 			},
 			"order":29
 		},
@@ -4509,12 +4509,12 @@
 						},
 						"index":6,
 						"id":-1,
-						"type":"llama_cpp_instruct_adv",
+						"type":"llama_cpp_unified_inference",
 						"properties":{
 							"widget_ue_connectable":{
 								
 							},
-							"Node name for S&R":"llama_cpp_instruct_adv"
+							"Node name for S&R":"llama_cpp_unified_inference"
 						},
 						"order":34
 					},
