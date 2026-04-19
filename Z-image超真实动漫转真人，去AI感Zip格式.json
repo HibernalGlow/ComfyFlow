@@ -3121,7 +3121,7 @@
 				-361.3680114746094
 			],
 			"widgets_values":[
-				"Huihui-Qwen3-VL-4B-Instruct-abliterated.Q8_0.gguf",
+				"Huihui-Qwen3-VL-4B-Instruct-abliterated.Q4_K_M.gguf",
 				true,
 				"Huihui-Qwen3-VL-4B-Instruct-abliterated.mmproj-Q8_0.gguf",
 				false,
