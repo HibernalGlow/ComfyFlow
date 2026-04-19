@@ -238,7 +238,7 @@
 				
 			},
 			"id":38,
-			"type":"CLIPLoaderGGUF",
+			"type":"CLIPLoader",
 			"properties":{
 				"cnr_id":"comfy-core",
 				"hasSecondTab":false,
@@ -261,7 +261,7 @@
 					"version":"7.1"
 				},
 				"secondTabOffset":80,
-				"Node name for S&R":"CLIPLoaderGGUF",
+				"Node name for S&R":"CLIPLoader",
 				"tabWidth":65,
 				"secondTabWidth":65,
 				"widget_ue_connectable":{
