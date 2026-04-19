@@ -3122,12 +3122,18 @@
 			],
 			"widgets_values":[
 				"Huihui-Qwen3-VL-4B-Instruct-abliterated.Q8_0.gguf",
+				true,
 				"Huihui-Qwen3-VL-4B-Instruct-abliterated.mmproj-Q8_0.gguf",
-				"Qwen3-VL",
+				false,
+				false,
+				"GPU",
 				4096,
 				-1,
+				6,
 				0,
-				0
+				0,
+				"Flash",
+				false
 			],
 			"inputs":[
 				{
@@ -3429,17 +3435,15 @@
 				655.170654296875
 			],
 			"widgets_values":[
-				"ComfyUI",
-				"JPG",
-				""
+				"ComfyUI"
 			],
 			"inputs":[
 				{
-					"name":"images or video_path",
+					"name":"images",
 					"link":652,
-					"label":"images or video_path",
-					"type":"*",
-					"localized_name":"images or video_path"
+					"label":"images",
+					"type":"IMAGE",
+					"localized_name":"images"
 				},
 				{
 					"widget":{
@@ -3449,25 +3453,6 @@
 					"label":"filename_prefix",
 					"type":"STRING",
 					"localized_name":"filename_prefix"
-				},
-				{
-					"widget":{
-						"name":"image_format"
-					},
-					"name":"image_format",
-					"label":"image_format",
-					"type":"COMBO",
-					"localized_name":"image_format"
-				},
-				{
-					"widget":{
-						"name":"password"
-					},
-					"shape":7,
-					"name":"password",
-					"label":"password",
-					"type":"STRING",
-					"localized_name":"password"
 				}
 			],
 			"flags":{
@@ -3666,16 +3651,23 @@
 				-358.61846923828125
 			],
 			"widgets_values":[
-				"Normal - Describe",
-				"",
+				"[基础] 图像理解 (Image Understanding)",
+				"[Normal] Describe",
 				"只输出结果",
-				"one by one",
-				2,
+				"",
+				"中文",
+				"自动检测",
+				"文本格式",
+				16,
+				"自动均匀采样",
+				"",
 				1024,
+				"逐个输出",
+				"TTS音色美化输出",
+				"Chelsie - 女声",
+				1.0,
 				687950791190982,
-				"randomize",
-				true,
-				false
+				true
 			],
 			"inputs":[
 				{
@@ -4137,12 +4129,18 @@
 						],
 						"widgets_values":[
 							"Huihui-Qwen3-VL-8B-Instruct-abliterated.Q8_0.gguf",
+							true,
 							"Huihui-Qwen3-VL-8B-Instruct-abliterated.mmproj-Q8_0.gguf",
-							"Qwen3-VL",
+							false,
+							false,
+							"GPU",
 							8192,
 							-1,
+							6,
 							0,
-							0
+							0,
+							"Flash",
+							false
 						],
 						"inputs":[
 							{
@@ -4393,14 +4391,22 @@
 							-470.39031982421875
 						],
 						"widgets_values":[
-							"Normal - Describe",
+							"[基础] 图像理解 (Image Understanding)",
+							"[Normal] Describe",
 							"",
 							"",
-							"one by one",
-							24,
+							"中文",
+							"自动检测",
+							"文本格式",
+							16,
+							"自动均匀采样",
+							"",
 							256,
+							"逐个输出",
+							"TTS音色美化输出",
+							"Chelsie - 女声",
+							1.0,
 							0,
-							"randomize",
 							false
 						],
 						"inputs":[
