@@ -3652,7 +3652,7 @@
 			],
 			"widgets_values":[
 				"[基础] 图像理解 (Image Understanding)",
-				"[Normal] Describe",
+				"[Reverse] Describe",
 				"只输出结果",
 				"",
 				"中文",
@@ -4392,7 +4392,7 @@
 						],
 						"widgets_values":[
 							"[基础] 图像理解 (Image Understanding)",
-							"[Normal] Describe",
+							"[Reverse] Describe",
 							"",
 							"",
 							"中文",
