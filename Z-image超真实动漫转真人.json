@@ -1432,8 +1432,7 @@
 				748.85498046875
 			],
 			"widgets_values":[
-				"qwen-image-edit-2511-Q4_K_M.gguf",
-				"default"
+				"qwen-image-edit-2511-Q4_K_M.gguf"
 			],
 			"inputs":[
 				{
@@ -1444,27 +1443,18 @@
 					"label":"unet_name",
 					"type":"COMBO",
 					"localized_name":"unet_name"
-				},
-				{
-					"widget":{
-						"name":"weight_dtype"
-					},
-					"name":"weight_dtype",
-					"label":"weight_dtype",
-					"type":"COMBO",
-					"localized_name":"weight_dtype"
 				}
 			],
 			"flags":{
 				
 			},
 			"id":475,
-			"type":"UNETLoader",
+			"type":"UnetLoaderGGUF",
 			"properties":{
 				"widget_ue_connectable":{
 					
 				},
-				"Node name for S&R":"UNETLoader"
+				"Node name for S&R":"UnetLoaderGGUF"
 			},
 			"order":10
 		},
