@@ -238,7 +238,7 @@
 				
 			},
 			"id":38,
-			"type":"CLIPLoader",
+			"type":"CLIPLoaderGGUF",
 			"properties":{
 				"cnr_id":"comfy-core",
 				"hasSecondTab":false,
@@ -261,13 +261,12 @@
 					"version":"7.1"
 				},
 				"secondTabOffset":80,
-				"Node name for S&R":"CLIPLoader",
+				"Node name for S&R":"CLIPLoaderGGUF",
 				"tabWidth":65,
 				"secondTabWidth":65,
 				"widget_ue_connectable":{
 					"clip_name":true,
-					"type":true,
-					"device":true
+					"type":true
 				},
 				"secondTabText":"Send Back",
 				"enableTabs":false,
@@ -826,12 +825,12 @@
 				
 			},
 			"id":249,
-			"type":"CLIPLoader",
+			"type":"CLIPLoaderGGUF",
 			"properties":{
 				"widget_ue_connectable":{
 					
 				},
-				"Node name for S&R":"CLIPLoader"
+				"Node name for S&R":"CLIPLoaderGGUF"
 			},
 			"order":4
 		},
@@ -1420,8 +1419,7 @@
 				748.85498046875
 			],
 			"widgets_values":[
-				"ComfyUI_00002_.safetensors",
-				"default"
+				"qwen-image-edit-2511-Q4_K_M.gguf"
 			],
 			"inputs":[
 				{
@@ -1445,12 +1443,12 @@
 				
 			},
 			"id":475,
-			"type":"UNETLoader",
+			"type":"UnetLoaderGGUF",
 			"properties":{
 				"widget_ue_connectable":{
 					
 				},
-				"Node name for S&R":"UNETLoader"
+				"Node name for S&R":"UnetLoaderGGUF"
 			},
 			"order":10
 		},
