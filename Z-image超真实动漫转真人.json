@@ -1432,7 +1432,7 @@
 				748.85498046875
 			],
 			"widgets_values":[
-				"ComfyUI_00002_.safetensors",
+				"qwen-image-edit-2511-Q4_K_M.gguf",
 				"default"
 			],
 			"inputs":[
