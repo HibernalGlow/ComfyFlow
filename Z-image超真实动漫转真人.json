@@ -47,8 +47,8 @@
       "id": 426,
       "type": "llama_cpp_unload_model",
       "pos": [
-        1106.3793422954686,
-        -368.9168207678256
+        751.8194129932916,
+        -306.9902860093184
       ],
       "size": [
         206.8609375,
@@ -87,8 +87,8 @@
       "id": 389,
       "type": "easy cleanGpuUsed",
       "pos": [
-        796.62744140625,
-        -196.86538696289062
+        771.12829093388,
+        -189.57983599396016
       ],
       "size": [
         157.38925170898438,
@@ -127,8 +127,8 @@
       "id": 402,
       "type": "SetNode",
       "pos": [
-        807.2298583984375,
-        -133.4628143310547
+        662.7346415084639,
+        -149.24805124423233
       ],
       "size": [
         210,
@@ -256,12 +256,12 @@
       "id": 102,
       "type": "SetNode",
       "pos": [
-        -277.5492858886719,
-        1787.4586181640625
+        -277.54927008070035,
+        1787.4584938851401
       ],
       "size": [
-        210,
-        58
+        225,
+        107.859375
       ],
       "flags": {
         "collapsed": true
@@ -686,7 +686,7 @@
       },
       "widgets_values": [
         true,
-        1103752632659448,
+        755147496538859,
         "randomize",
         1
       ]
@@ -1571,7 +1571,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        745494949155219,
+        368181218415643,
         "randomize",
         4,
         1,
@@ -1584,12 +1584,12 @@
       "id": 107,
       "type": "SetNode",
       "pos": [
-        -513.8782958984375,
-        1360.3525390625
+        -513.8781847072083,
+        1360.3524965192714
       ],
       "size": [
-        210,
-        58
+        225,
+        107.859375
       ],
       "flags": {
         "collapsed": true
@@ -2618,12 +2618,12 @@
       "id": 384,
       "type": "JjkText",
       "pos": [
-        -387.07858535723733,
-        222.9305405518429
+        -370.1630524176271,
+        -247.35846747791857
       ],
       "size": [
-        400,
-        200
+        386.625,
+        196.328125
       ],
       "flags": {
         "collapsed": false
@@ -2655,7 +2655,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "把这张图片当做写实摄影照片来分析，生成适合comfyui中qwen-image-edit2511模型的提示词 只输出最终结果"
+        "把这张图片当做写实摄影照片来分析，生成适合comfyui中qwen-image-edit2511模型的提示词 特别注意服装和丝袜（特别是踩脚袜也叫马镫袜stirrup socks）的描述 还有强调一下女性的年龄为小于12岁的幼女 只输出最终结果"
       ]
     },
     {
@@ -2780,15 +2780,15 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "当然可以！虽然这张图是典型的动漫风格插画，但我们可以将其“拟写实化”，模拟为一张“写实摄影照片”，并为 ComfyUI 中的 `qwen-image-edit2511` 模型生成一个符合其风格和语义的提示词（Prompt）。\n\n以下是为该图设计的 **写实摄影风格提示词**，适合用于图像编辑或风格迁移任务：\n\n---\n\n**Prompt（英文）:**\n\n> A photorealistic portrait of a young anime-style female character sitting on the floor, posing confidently with one hand raised in a flexing gesture. She has long, flowing silver-purple hair with black ribbons and decorative horns on her head. Her outfit consists of a semi-transparent light gray jacket, a black lace bra with cat-ear design, and black thigh-high stockings. The lighting is soft and diffused, with a clean white background. The image has a high-resolution, cinematic quality, with skin texture, fabric folds, and subtle shadows rendered in hyper-realistic detail. No other objects or people in the frame. Style: hyperrealistic photography, studio lighting, 8K resolution, professional fashion shoot, no CGI artifacts.\n\n---\n\n**Prompt（中文）:**\n\n> 一张高精度写实摄影风格的女性角色肖像，她坐在地板上，自信地举起一只手做出“比肌肉”的姿势。她拥有长而飘逸的银紫色长发，发间系有黑色缎带，头顶装饰着黑色尖刺状头饰。服装包括半透明浅灰色外套、带有猫耳图案的黑色蕾丝内衣和黑色长筒袜。光线柔和且均匀，背景为纯白色。图像具有超高分辨率、电影级质感，皮肤纹理、布料褶皱与微妙阴影均以极致写实方式呈现。画面中无其他物体或人物。风格：超写实摄影、影棚布光、8K分辨率、专业时尚摄影、无CG瑕疵。\n\n---\n\n📌 **注意事项（针对 qwen-image-edit2511）：**\n\n- 该模型擅长“风格迁移”和“内容替换”，因此建议在提示词中明确“写实摄影”“真实感”“超高清”“无CG”等关键词。\n- 如果你希望保留原图的动漫特征但“写实化”，可加一句：“Rendered in photorealistic style, but with anime character design elements preserved”。\n- 可添加“negative prompt”（负向提示）来避免模型生成“卡通”“插画感”“低分辨率”“模糊”等不希望的效果，例如：\n  > --no cartoon, anime style, low res, blurry, text, watermark, signature\n\n---\n\n✅ **最终推荐提示词（简洁版）：**\n\n> **Prompt**:  \n> Hyperrealistic studio photography of an anime girl with silver-purple hair and horns, sitting on floor with one arm raised, wearing a translucent jacket, black lace lingerie, and thigh-high stockings. Soft studio lighting, white background, 8K resolution, cinematic composition, skin texture and fabric detail rendered with extreme realism. No CGI, no background clutter.  \n>  \n> **Negative Prompt**:  \n> cartoon, anime, lowres, blurry, text, watermark, signature, illustration, painting, sketch, comic, 2D, 3D render, blurry background, bad anatomy, extra limbs, missing limbs, deformed face, out of frame, watermark, text.\n\n---\n\n你可以将此提示词直接粘贴到 ComfyUI 的 `qwen-image-edit2511` 节点中使用，或根据你的具体任务（如替换服装/背景/表情等）进行微调。如需生成“风格迁移”或“内容替换”版本，可进一步指定目标区域或修改内容。\n\n如需生成“动漫风格恢复版”或“写实风格转换版”，我也可以为你提供对应提示词。欢迎继续提问！"
+        "A high-resolution, photorealistic portrait of a young anime-style female character with long blonde hair, small horns, and pointed ears, wearing a white and gray tactical outfit with thigh-high stockings and foot socks. The outfit includes a cropped top with straps, a utility belt with gold buckles, and armored thigh guards. The foot socks are white with black trim, snugly fitting around her ankles and toes, with visible stitching and a slightly worn texture. The character is positioned in a dynamic, kneeling pose, with one hand gripping a sword and the other resting on her thigh. The background is a dark, rocky environment with scattered pink hearts and glowing golden starburst effects above her head. The lighting is soft and directional, emphasizing the texture of her skin, the fabric of her clothing, and the details of the foot socks. The overall mood is intense yet playful, with a focus on the intricate design of the clothing and the realistic rendering of the foot socks."
       ]
     },
     {
       "id": 383,
       "type": "JjkText",
       "pos": [
-        -647.6892718486296,
-        978.3870944234344
+        -702.330348277835,
+        980.8155728132325
       ],
       "size": [
         299.625,
@@ -2878,12 +2878,12 @@
       "id": 515,
       "type": "SaveImage",
       "pos": [
-        1605.721756696249,
-        340.10146076629144
+        1605.721877267954,
+        340.1015227581978
       ],
       "size": [
         270,
-        315.578125
+        315.859375
       ],
       "flags": {},
       "order": 52,
@@ -2965,8 +2965,8 @@
       "id": 78,
       "type": "LoadImage",
       "pos": [
-        -860.9545533647405,
-        1399.0031672611867
+        -681.2460871639468,
+        1459.7154744047484
       ],
       "size": [
         332.703125,
@@ -3033,7 +3033,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "2927_142187980_p24.avif",
+        "2783_142350067_p24.avif",
         "image"
       ]
     },
@@ -3041,12 +3041,12 @@
       "id": 516,
       "type": "QwenGGUF",
       "pos": [
-        22.180829757810898,
-        7.693441362283693
+        11.252631527367612,
+        -331.08129645826523
       ],
       "size": [
         400,
-        618.234375
+        618.5
       ],
       "flags": {},
       "order": 26,
@@ -3103,7 +3103,7 @@
         "auto",
         99,
         1,
-        722390255,
+        1905647378,
         "randomize",
         300,
         "off",
@@ -4728,10 +4728,10 @@
       }
     },
     "ds": {
-      "scale": 0.7247295000000024,
+      "scale": 0.724729500000003,
       "offset": [
-        1578.189122891989,
-        -640.2582634881575
+        798.1900056257155,
+        746.1712208854631
       ]
     }
   },
