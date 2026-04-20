@@ -145,43 +145,109 @@
         },
         {
           "name": "MASK",
+          "links": [],
           "label": "MASK",
           "type": "MASK",
           "localized_name": "MASK"
+        },
+        {
+          "name": "count",
+          "links": [],
+          "label": "count",
+          "type": "INT",
+          "localized_name": "count"
+        },
+        {
+          "name": "image_path",
+          "links": [],
+          "label": "image_path",
+          "type": "STRING",
+          "localized_name": "image_path"
         }
       ],
       "color": "#2a363b",
       "widgets_values": [
-        "",
-        "image"
+        "D:/input/your_folder",
+        -1,
+        -1,
+        "stretch",
+        0,
+        0,
+        false
       ],
       "inputs": [
         {
           "widget": {
-            "name": "image"
+            "name": "folder"
           },
-          "name": "image",
-          "label": "image",
-          "type": "COMBO",
-          "localized_name": "image"
+          "name": "folder",
+          "label": "folder",
+          "type": "STRING",
+          "localized_name": "folder"
         },
         {
           "widget": {
-            "name": "upload"
+            "name": "width"
           },
-          "name": "upload",
-          "label": "upload",
-          "type": "IMAGEUPLOAD",
-          "localized_name": "choose file to upload"
+          "name": "width",
+          "label": "width",
+          "type": "INT",
+          "localized_name": "width"
+        },
+        {
+          "widget": {
+            "name": "height"
+          },
+          "name": "height",
+          "label": "height",
+          "type": "INT",
+          "localized_name": "height"
+        },
+        {
+          "widget": {
+            "name": "keep_aspect_ratio"
+          },
+          "name": "keep_aspect_ratio",
+          "label": "keep_aspect_ratio",
+          "type": "COMBO",
+          "localized_name": "keep_aspect_ratio"
+        },
+        {
+          "widget": {
+            "name": "image_load_cap"
+          },
+          "name": "image_load_cap",
+          "label": "image_load_cap",
+          "type": "INT",
+          "localized_name": "image_load_cap"
+        },
+        {
+          "widget": {
+            "name": "start_index"
+          },
+          "name": "start_index",
+          "label": "start_index",
+          "type": "INT",
+          "localized_name": "start_index"
+        },
+        {
+          "widget": {
+            "name": "include_subfolders"
+          },
+          "shape": 7,
+          "name": "include_subfolders",
+          "label": "include_subfolders",
+          "type": "BOOLEAN",
+          "localized_name": "include_subfolders"
         }
       ],
       "flags": {},
-      "type": "LoadImage",
+      "type": "LoadImagesFromFolderKJ",
       "mode": 0,
       "bgcolor": "#3f5159",
       "size": [
-        420,
-        520
+        360,
+        270
       ],
       "pos": [
         120.0,
@@ -189,18 +255,23 @@
       ],
       "id": 254,
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.11.1",
+        "cnr_id": "comfyui-workflow-encrypt",
+        "ver": "unknown",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.5.2"
         },
         "widget_ue_connectable": {
-          "image": true,
-          "upload": true
+          "folder": true,
+          "width": true,
+          "height": true,
+          "keep_aspect_ratio": true,
+          "image_load_cap": true,
+          "start_index": true,
+          "include_subfolders": true
         },
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "LoadImagesFromFolderKJ"
       },
       "order": 37
     },
@@ -1063,7 +1134,7 @@
         635.164
       ],
       "widgets_values": [
-        "flux_klein_Anything2RealCharacters"
+        "#comfy/your_folder_name/flux_klein_Anything2RealCharacters"
       ],
       "inputs": [
         {
@@ -1130,7 +1201,7 @@
       "font_size": 24,
       "flags": {},
       "id": 1,
-      "title": "flux klein+Anything to Real Characters",
+      "title": "flux klein+Anything to Real Characters_文件夹批处理",
       "bounding": [
         40.0,
         40.0,
