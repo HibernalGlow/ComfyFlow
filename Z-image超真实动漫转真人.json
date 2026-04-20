@@ -168,8 +168,8 @@
       "id": 38,
       "type": "CLIPLoader",
       "pos": [
-        -446.4215443211965,
-        1067.802475471652
+        -116.34153332194336,
+        760.1149127741393
       ],
       "size": [
         330,
@@ -256,8 +256,8 @@
       "id": 102,
       "type": "SetNode",
       "pos": [
-        -459.68621826171875,
-        1225.5936279296875
+        -129.6063043770095,
+        917.9060993389071
       ],
       "size": [
         210,
@@ -305,8 +305,8 @@
       "id": 104,
       "type": "SetNode",
       "pos": [
-        -210.4180450439453,
-        1229.883056640625
+        119.66186884076399,
+        922.1955280498446
       ],
       "size": [
         210,
@@ -354,8 +354,8 @@
       "id": 39,
       "type": "VAELoader",
       "pos": [
-        -443.4842613350854,
-        818.6126154456106
+        -113.40426756343453,
+        510.92509113206484
       ],
       "size": [
         330,
@@ -421,8 +421,8 @@
       "id": 294,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -348.94846760678683,
-        485.84433202547183
+        -18.868473977043024,
+        178.15672276475507
       ],
       "size": [
         317.5,
@@ -505,8 +505,8 @@
       "id": 106,
       "type": "GetNode",
       "pos": [
-        -514.8551635742188,
-        535.1583862304688
+        -184.7752496895095,
+        227.47085763968823
       ],
       "size": [
         210,
@@ -549,8 +549,8 @@
       "id": 306,
       "type": "Fast Bypasser (rgthree)",
       "pos": [
-        -333.1708118993216,
-        357.05899945168716
+        -3.0907661391531036,
+        49.37146887865035
       ],
       "size": [
         250.8125,
@@ -591,8 +591,8 @@
       "id": 325,
       "type": "SamplerCustom",
       "pos": [
-        951.331887210921,
-        164.3366280324164
+        951.3320098590511,
+        164.33665096053517
       ],
       "size": [
         225,
@@ -686,7 +686,7 @@
       },
       "widgets_values": [
         true,
-        1117832897821602,
+        496592737335820,
         "randomize",
         1
       ]
@@ -695,8 +695,8 @@
       "id": 249,
       "type": "CLIPLoader",
       "pos": [
-        459.59835313974054,
-        312.01234146557607
+        459.59850198214735,
+        312.0123042128864
       ],
       "size": [
         270,
@@ -892,8 +892,8 @@
       "id": 250,
       "type": "VAELoader",
       "pos": [
-        464.9412350841849,
-        474.57764908276346
+        464.9412820297375,
+        474.57767235196434
       ],
       "size": [
         270,
@@ -971,8 +971,8 @@
       "id": 101,
       "type": "SetNode",
       "pos": [
-        -332.30780029296875,
-        1228.416259765625
+        -2.2278864082594936,
+        920.7287311748446
       ],
       "size": [
         210,
@@ -1020,8 +1020,8 @@
       "id": 308,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        12.136466203976852,
-        367.530665575819
+        342.21637598896115,
+        59.84303143125604
       ],
       "size": [
         270,
@@ -1078,8 +1078,8 @@
       "id": 476,
       "type": "CFGNorm",
       "pos": [
-        57.082332611083984,
-        697.8529052734375
+        387.1622464957932,
+        390.1653766826571
       ],
       "size": [
         270,
@@ -1128,8 +1128,8 @@
       "id": 466,
       "type": "GetNode",
       "pos": [
-        -507.3720397949219,
-        485.3357238769531
+        -177.29212591021263,
+        177.64819528617264
       ],
       "size": [
         210,
@@ -1259,8 +1259,8 @@
       "id": 471,
       "type": "UNETLoader",
       "pos": [
-        453.4785614730738,
-        180.63864354890944
+        453.47855966660063,
+        180.63861487970257
       ],
       "size": [
         270,
@@ -1448,8 +1448,8 @@
       "id": 3,
       "type": "KSampler",
       "pos": [
-        61.65686550953228,
-        756.3361397511662
+        163.86551248726397,
+        178.6713530184988
       ],
       "size": [
         264.875,
@@ -1571,7 +1571,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        869356538730899,
+        405031207450335,
         "randomize",
         4,
         1,
@@ -1584,8 +1584,8 @@
       "id": 107,
       "type": "SetNode",
       "pos": [
-        -696.0151977539062,
-        798.4874877929688
+        -365.935283869197,
+        490.79995920218835
       ],
       "size": [
         210,
@@ -1633,8 +1633,8 @@
       "id": 312,
       "type": "FlowMatchEulerDiscreteScheduler (Custom)",
       "pos": [
-        1180.9390920720318,
-        163.91663834057607
+        1180.938993018371,
+        163.9166565706024
       ],
       "size": [
         344.625,
@@ -1830,8 +1830,8 @@
       "id": 105,
       "type": "GetNode",
       "pos": [
-        -515.6334838867188,
-        647.560791015625
+        -185.5535700020095,
+        339.8732624248445
       ],
       "size": [
         210,
@@ -1874,8 +1874,8 @@
       "id": 425,
       "type": "GetNode",
       "pos": [
-        -508.9532165527344,
-        597.134765625
+        -178.87330266802513,
+        289.4472370342195
       ],
       "size": [
         210,
@@ -1911,8 +1911,8 @@
       "id": 103,
       "type": "GetNode",
       "pos": [
-        -508.5808410644531,
-        713.148681640625
+        -178.50092717974388,
+        405.4611530498446
       ],
       "size": [
         210,
@@ -1955,8 +1955,8 @@
       "id": 424,
       "type": "ImpactExecutionOrderController",
       "pos": [
-        -758.7682495117188,
-        680.4691772460938
+        -428.6883356270095,
+        372.78164865531323
       ],
       "size": [
         215.460546875,
@@ -2007,8 +2007,8 @@
       "id": 108,
       "type": "GetNode",
       "pos": [
-        -514.1661987304688,
-        768.4697875976562
+        -184.0862848457595,
+        460.78225900687585
       ],
       "size": [
         210,
@@ -2051,8 +2051,8 @@
       "id": 467,
       "type": "JoinStrings",
       "pos": [
-        -492.31939697265625,
-        432.6513366699219
+        -162.239483087947,
+        124.96380807914139
       ],
       "size": [
         270,
@@ -2109,8 +2109,8 @@
       "id": 311,
       "type": "ConditioningZeroOut",
       "pos": [
-        -164.5207977294922,
-        759.2791137695312
+        165.5591161552171,
+        451.59158517875085
       ],
       "size": [
         204.134765625,
@@ -2149,8 +2149,8 @@
       "id": 512,
       "type": "QwenEditOutputExtractor_EditUtils",
       "pos": [
-        -347.49169921875,
-        645.0250244140625
+        -17.411785334040744,
+        337.337495823282
       ],
       "size": [
         337.8921875,
@@ -2239,8 +2239,8 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": [
-        -88.78545379638672,
-        862.0269775390625
+        241.29446008832255,
+        554.3394489482821
       ],
       "size": [
         210,
@@ -2355,8 +2355,8 @@
       "id": 511,
       "type": "QwenEditTextEncode_EditUtils",
       "pos": [
-        -337.8407897949219,
-        605.3334350585938
+        -7.760875910212619,
+        297.64590646781323
       ],
       "size": [
         310.84921875,
@@ -2474,8 +2474,8 @@
       "id": 513,
       "type": "CropWithPadInfo_EditUtils",
       "pos": [
-        -337.5079040527344,
-        691.8939819335938
+        -7.427990168025119,
+        384.20645334281335
       ],
       "size": [
         282.2955078125,
@@ -2525,8 +2525,8 @@
       "id": 417,
       "type": "SetNode",
       "pos": [
-        -93.35734558105469,
-        818.0366821289062
+        236.72256830365458,
+        510.34915353812585
       ],
       "size": [
         210,
@@ -2568,8 +2568,8 @@
       "id": 473,
       "type": "ModelSamplingAuraFlow",
       "pos": [
-        15.516139030456543,
-        636.578125
+        345.5960529151658,
+        328.8905964092195
       ],
       "size": [
         270,
@@ -2662,8 +2662,8 @@
       "id": 298,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        0.055709910574023525,
-        511.9127185272079
+        330.13566308374976,
+        204.2251774433629
       ],
       "size": [
         280.6875,
@@ -2746,8 +2746,8 @@
       "id": 392,
       "type": "easy showAnything",
       "pos": [
-        433.18789849564337,
-        -351.73959979147656
+        433.1879544196604,
+        -351.73960374574614
       ],
       "size": [
         312.1875,
@@ -2780,15 +2780,15 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "A high-resolution, photorealistic illustration of a young anime-style elf girl with long, flowing lavender hair and pointed ears, kneeling on a white background. She wears a light gray, semi-transparent button-up shirt with the top half open, revealing a black lace bralette with pink cat ear details and matching black thigh-high stockings. Her head is adorned with a black crown-like accessory with pink flowers, and she has a playful, confident expression with a slight blush and a single tear of joy. Her right arm is raised in a flexing pose, showcasing her toned bicep, while her left hand rests on her hip. The image is rendered with soft, natural lighting and subtle shadows, emphasizing the textures of her clothing and skin, and the overall composition is centered and detailed, capturing a moment of playful confidence and charm. The style is highly detailed and realistic, with a focus on the character's expressive face and dynamic pose, creating a visually striking and emotionally engaging scene."
+        ""
       ]
     },
     {
       "id": 383,
       "type": "JjkText",
       "pos": [
-        -829.8257801610401,
-        416.52216134404824
+        -499.7457964060488,
+        108.83465695433907
       ],
       "size": [
         299.625,
@@ -2832,8 +2832,8 @@
       "id": 277,
       "type": "VAEDecode",
       "pos": [
-        1175.4885169852262,
-        684.1810562008191
+        1175.4884141299722,
+        684.1810646779975
       ],
       "size": [
         225,
@@ -2878,8 +2878,8 @@
       "id": 515,
       "type": "SaveImage",
       "pos": [
-        1605.723163252587,
-        340.10153417390933
+        1605.7233570681647,
+        340.1015660674386
       ],
       "size": [
         270,
@@ -2923,8 +2923,8 @@
       "id": 475,
       "type": "UnetLoaderGGUF",
       "pos": [
-        -509.7653892647729,
-        941.6438925723467
+        -179.68539544890763,
+        633.9562450186181
       ],
       "size": [
         270,
@@ -2965,8 +2965,8 @@
       "id": 78,
       "type": "LoadImage",
       "pos": [
-        -1043.0906903557493,
-        837.1380034287603
+        -713.010770061198,
+        529.450321925071
       ],
       "size": [
         332.6875,
@@ -3041,11 +3041,11 @@
       "id": 516,
       "type": "llama_cpp_parameters",
       "pos": [
-        -660.7215844960226,
-        -66.56530788292366
+        -660.7215002781777,
+        -66.56534999184578
       ],
       "size": [
-        271.390625,
+        271.375,
         519.59375
       ],
       "flags": {},
@@ -3085,7 +3085,7 @@
       "id": 517,
       "type": "llama_cpp_instruct_adv",
       "pos": [
-        17.04846787782799,
+        17.048552095672903,
         -323.488727847825
       ],
       "size": [
@@ -3140,7 +3140,7 @@
         "one by one",
         24,
         256,
-        1107647079626854,
+        379585515849133,
         "randomize"
       ]
     },
@@ -3149,7 +3149,7 @@
       "type": "llama_cpp_model_loader",
       "pos": [
         -983.048877170392,
-        -416.2131219283275
+        -416.21316403724967
       ],
       "size": [
         277,
@@ -3671,8 +3671,8 @@
       "id": 12,
       "title": "转真人",
       "bounding": [
-        -879.4700317382812,
-        268.569580078125,
+        -549.3901178535721,
+        -39.117948512655445,
         1232.101318359375,
         996.6995239257812
       ],
@@ -3695,1130 +3695,11 @@
     "VHS_latentpreviewrate": 0,
     "frontendVersion": "1.42.11",
     "VHS_latentpreview": false,
-    "groupNodes": {
-      "反推": {
-        "external": [
-          [
-            9,
-            0,
-            "STRING"
-          ]
-        ],
-        "nodes": [
-          {
-            "outputs": [
-              {
-                "name": "IMAGE",
-                "links": [],
-                "type": "IMAGE"
-              }
-            ],
-            "color": "#2a363b",
-            "widgets_values": [
-              "ref_img1"
-            ],
-            "inputs": [],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 0,
-            "type": "GetNode",
-            "title": "Get_ref_img1",
-            "mode": 0,
-            "bgcolor": "#3f5159",
-            "size": [
-              210,
-              34
-            ],
-            "pos": [
-              205.5504608154297,
-              -372.25213623046875
-            ],
-            "id": -1,
-            "properties": {},
-            "order": 16
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "parameters",
-                "links": [],
-                "label": "parameters",
-                "type": "LLAMACPPARAMS",
-                "localized_name": "parameters"
-              }
-            ],
-            "size": [
-              270,
-              322
-            ],
-            "pos": [
-              175.33009338378906,
-              -416.5700378417969
-            ],
-            "widgets_values": [
-              2048,
-              30,
-              0.9,
-              0.05,
-              1,
-              0.4000000000000001,
-              1,
-              0,
-              1,
-              0,
-              0.1,
-              5
-            ],
-            "inputs": [
-              {
-                "widget": {
-                  "name": "max_tokens"
-                },
-                "name": "max_tokens",
-                "label": "max_tokens",
-                "type": "INT",
-                "localized_name": "max_tokens"
-              },
-              {
-                "widget": {
-                  "name": "top_k"
-                },
-                "name": "top_k",
-                "label": "top_k",
-                "type": "INT",
-                "localized_name": "top_k"
-              },
-              {
-                "widget": {
-                  "name": "top_p"
-                },
-                "name": "top_p",
-                "label": "top_p",
-                "type": "FLOAT",
-                "localized_name": "top_p"
-              },
-              {
-                "widget": {
-                  "name": "min_p"
-                },
-                "name": "min_p",
-                "label": "min_p",
-                "type": "FLOAT",
-                "localized_name": "min_p"
-              },
-              {
-                "widget": {
-                  "name": "typical_p"
-                },
-                "name": "typical_p",
-                "label": "typical_p",
-                "type": "FLOAT",
-                "localized_name": "typical_p"
-              },
-              {
-                "widget": {
-                  "name": "temperature"
-                },
-                "name": "temperature",
-                "label": "temperature",
-                "type": "FLOAT",
-                "localized_name": "temperature"
-              },
-              {
-                "widget": {
-                  "name": "repeat_penalty"
-                },
-                "name": "repeat_penalty",
-                "label": "repeat_penalty",
-                "type": "FLOAT",
-                "localized_name": "repeat_penalty"
-              },
-              {
-                "widget": {
-                  "name": "frequency_penalty"
-                },
-                "name": "frequency_penalty",
-                "label": "frequency_penalty",
-                "type": "FLOAT",
-                "localized_name": "frequency_penalty"
-              },
-              {
-                "widget": {
-                  "name": "presence_penalty"
-                },
-                "name": "presence_penalty",
-                "label": "presence_penalty",
-                "type": "FLOAT",
-                "localized_name": "presence_penalty"
-              },
-              {
-                "widget": {
-                  "name": "mirostat_mode"
-                },
-                "name": "mirostat_mode",
-                "label": "mirostat_mode",
-                "type": "INT",
-                "localized_name": "mirostat_mode"
-              },
-              {
-                "widget": {
-                  "name": "mirostat_eta"
-                },
-                "name": "mirostat_eta",
-                "label": "mirostat_eta",
-                "type": "FLOAT",
-                "localized_name": "mirostat_eta"
-              },
-              {
-                "widget": {
-                  "name": "mirostat_tau"
-                },
-                "name": "mirostat_tau",
-                "label": "mirostat_tau",
-                "type": "FLOAT",
-                "localized_name": "mirostat_tau"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 1,
-            "id": -1,
-            "type": "llama_cpp_parameters",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "llama_cpp_parameters"
-            },
-            "order": 17
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "llama_model",
-                "links": [],
-                "label": "llama_model",
-                "type": "LLAMACPPMODEL",
-                "localized_name": "llama_model"
-              }
-            ],
-            "size": [
-              270,
-              202
-            ],
-            "pos": [
-              179.403564453125,
-              -461.3009338378906
-            ],
-            "widgets_values": [
-              "Huihui-Qwen3-VL-8B-Instruct-abliterated.Q8_0.gguf",
-              "Huihui-Qwen3-VL-8B-Instruct-abliterated.mmproj-Q8_0.gguf",
-              "Qwen3-VL",
-              8192,
-              -1,
-              0,
-              0
-            ],
-            "inputs": [
-              {
-                "widget": {
-                  "name": "model"
-                },
-                "name": "model",
-                "label": "model",
-                "type": "COMBO",
-                "localized_name": "model"
-              },
-              {
-                "widget": {
-                  "name": "mmproj_model"
-                },
-                "name": "mmproj_model",
-                "label": "mmproj_model",
-                "type": "COMBO",
-                "localized_name": "mmproj_model"
-              },
-              {
-                "widget": {
-                  "name": "chat_handler"
-                },
-                "name": "chat_handler",
-                "label": "chat_handler",
-                "type": "COMBO",
-                "localized_name": "chat_handler"
-              },
-              {
-                "widget": {
-                  "name": "n_ctx"
-                },
-                "name": "n_ctx",
-                "label": "n_ctx",
-                "type": "INT",
-                "localized_name": "n_ctx"
-              },
-              {
-                "widget": {
-                  "name": "n_gpu_layers"
-                },
-                "name": "n_gpu_layers",
-                "label": "n_gpu_layers",
-                "type": "INT",
-                "localized_name": "n_gpu_layers"
-              },
-              {
-                "widget": {
-                  "name": "image_min_tokens"
-                },
-                "name": "image_min_tokens",
-                "label": "image_min_tokens",
-                "type": "INT",
-                "localized_name": "image_min_tokens"
-              },
-              {
-                "widget": {
-                  "name": "image_max_tokens"
-                },
-                "name": "image_max_tokens",
-                "label": "image_max_tokens",
-                "type": "INT",
-                "localized_name": "image_max_tokens"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 2,
-            "id": -1,
-            "type": "llama_cpp_model_loader",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "llama_cpp_model_loader"
-            },
-            "order": 18
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "text",
-                "links": [],
-                "label": "text",
-                "type": "STRING",
-                "localized_name": "text"
-              }
-            ],
-            "size": [
-              400,
-              200
-            ],
-            "pos": [
-              258.12384033203125,
-              -331.6781311035156
-            ],
-            "widgets_values": [
-              "你是一个高精度的视觉分析专家。请将此动漫图像视为现实瞬间进行客观描述，以摄影师视角捕捉物理细节。\n\n⚠️ 强制防复读准则（最高优先级）：\n\n禁止负向描述： 严禁描述图像中“不存在”或“缺失”的特征（禁止使用“无xx”、“没有xx”、“未见xx”等句式进行废话排比）。\n\n逻辑断路： 严禁对同一物理属性进行重复描述；严禁使用“相得益彰”、“相互呼应”、“呈现出”等万能填充词。\n\n确定性原则： 所有描述必须是已观测到的物理事实。一旦完成该部位特征描述，必须立即切换到下一项，严禁回溯。\n\n核心描述准则：\n\n瞳色与神态： 必须识别并描述瞳孔的精确颜色（如：琥珀色、湛蓝色）及其虹膜纹理、瞳孔缩放及眼部高亮。\n\n即时行为： 描述动作的“瞬间感”、身体重心、以及肢体与环境的物理接触（如：按压、支撑的力感）。\n\n发型细节： 描述发型种类、长度分布，以及发质的物理表现（如：发丝细密、缎面光泽、发梢凌乱感、受力产生的飘动方向）。\n\n身体与生理细节（逻辑触发）： 必须写出人物年龄的详细区间！仅当画面确实包含人体裸露或成人内容时，必须对每一个可见的身体部位进行地毯式描写。详述皮肤质感（毛孔、细微汗珠、褶皱、毛发）、体液湿润度。以医学严谨度描述乳房、乳头和阴部外形及受压/拉伸感。若无此类内容，则重点转向皮肤质感、肌肉线条与骨骼轮廓。\n\n服装材质： 描述款式、面料的真实触感（如：粗糙呢绒、顺滑丝绸）、光泽度及受力产生的物理褶皱。\n\n场景、物件与光影： 必须地毯式扫描背景中的具体物件。识别物件的材质（如：拉丝金属、风化木材、通透玻璃）、几何形状、磨损程度及其在空间中的绝对位置。\n\n执行： 严禁列举“不存在”的属性。\n\n请结合用户提供的TAG（如果有），按以下格式输出（中文自然语言）：\n\n【人物神态与瞳色】： (描述微表情、神态、以及精确的瞳孔颜色与虹膜细节) 【即时行为】： (描述具体的动作状态、肢体受力与动态感) 【发型细节】： (描述发型的结构、发丝的质感、光泽度以及空间流动感) 【身体特征】： (必须描述精确的年龄与体型！若有人体裸露或成人内容，在此详细描述可见部位的物理特征；若无，则描述皮肤与体态细节) 【服装材质】： (描述款式、面料的真实触感、光泽度及物理褶皱) 【场景物件与光影】： (详述背景中的具体物品、材质属性、空间位置、光源方向及阴影对物体轮廓的勾勒)\n\ntag:"
-            ],
-            "inputs": [
-              {
-                "widget": {
-                  "name": "text"
-                },
-                "name": "text",
-                "label": "text",
-                "type": "STRING",
-                "localized_name": "text"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 3,
-            "id": -1,
-            "type": "JjkText",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "JjkText"
-            },
-            "order": 19
-          },
-          {
-            "outputs": [
-              {
-                "name": "STRING",
-                "links": [],
-                "type": "STRING"
-              }
-            ],
-            "widgets_values": [
-              "WD14"
-            ],
-            "inputs": [],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 4,
-            "type": "GetNode",
-            "title": "Get_WD14",
-            "mode": 0,
-            "size": [
-              210,
-              34
-            ],
-            "pos": [
-              241.9190216064453,
-              -241.78030395507812
-            ],
-            "id": -1,
-            "properties": {},
-            "order": 20
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "STRING",
-                "links": [],
-                "label": "字符串",
-                "type": "STRING",
-                "localized_name": "字符串"
-              }
-            ],
-            "size": [
-              270,
-              78
-            ],
-            "pos": [
-              246.23512268066406,
-              -280.90911865234375
-            ],
-            "widgets_values": [
-              " "
-            ],
-            "inputs": [
-              {
-                "shape": 7,
-                "name": "string1",
-                "label": "字符串1",
-                "type": "STRING",
-                "localized_name": "string1"
-              },
-              {
-                "shape": 7,
-                "name": "string2",
-                "label": "字符串2",
-                "type": "STRING",
-                "localized_name": "string2"
-              },
-              {
-                "widget": {
-                  "name": "delimiter"
-                },
-                "name": "delimiter",
-                "type": "STRING",
-                "localized_name": "分隔符"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 5,
-            "id": -1,
-            "type": "JoinStrings",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "JoinStrings"
-            },
-            "order": 29
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "output",
-                "links": [],
-                "label": "output",
-                "type": "STRING",
-                "localized_name": "output"
-              }
-            ],
-            "size": [
-              400,
-              370
-            ],
-            "pos": [
-              396.06329345703125,
-              -470.39031982421875
-            ],
-            "widgets_values": [
-              "Normal - Describe",
-              "",
-              "",
-              "one by one",
-              24,
-              256,
-              0,
-              "randomize",
-              false
-            ],
-            "inputs": [
-              {
-                "name": "llama_model",
-                "label": "llama_model",
-                "type": "LLAMACPPMODEL",
-                "localized_name": "llama_model"
-              },
-              {
-                "shape": 7,
-                "name": "parameters",
-                "label": "parameters",
-                "type": "LLAMACPPARAMS",
-                "localized_name": "parameters"
-              },
-              {
-                "shape": 7,
-                "name": "images",
-                "label": "images",
-                "type": "IMAGE",
-                "localized_name": "images"
-              },
-              {
-                "shape": 7,
-                "name": "queue_handler",
-                "label": "queue_handler",
-                "type": "*",
-                "localized_name": "queue_handler"
-              },
-              {
-                "widget": {
-                  "name": "preset_prompt"
-                },
-                "name": "preset_prompt",
-                "label": "preset_prompt",
-                "type": "COMBO",
-                "localized_name": "preset_prompt"
-              },
-              {
-                "widget": {
-                  "name": "custom_prompt"
-                },
-                "name": "custom_prompt",
-                "label": "custom_prompt",
-                "type": "STRING",
-                "localized_name": "custom_prompt"
-              },
-              {
-                "widget": {
-                  "name": "system_prompt"
-                },
-                "name": "system_prompt",
-                "label": "system_prompt",
-                "type": "STRING",
-                "localized_name": "system_prompt"
-              },
-              {
-                "widget": {
-                  "name": "inference_mode"
-                },
-                "name": "inference_mode",
-                "label": "inference_mode",
-                "type": "COMBO",
-                "localized_name": "inference_mode"
-              },
-              {
-                "widget": {
-                  "name": "max_frames"
-                },
-                "name": "max_frames",
-                "label": "max_frames",
-                "type": "INT",
-                "localized_name": "max_frames"
-              },
-              {
-                "widget": {
-                  "name": "max_size"
-                },
-                "name": "max_size",
-                "label": "max_size",
-                "type": "INT",
-                "localized_name": "max_size"
-              },
-              {
-                "widget": {
-                  "name": "seed"
-                },
-                "name": "seed",
-                "label": "seed",
-                "type": "INT",
-                "localized_name": "seed"
-              },
-              {
-                "widget": {
-                  "name": "force_offload"
-                },
-                "name": "force_offload",
-                "label": "force_offload",
-                "type": "BOOLEAN",
-                "localized_name": "force_offload"
-              }
-            ],
-            "flags": {},
-            "index": 6,
-            "id": -1,
-            "type": "llama_cpp_instruct_adv",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "llama_cpp_instruct_adv"
-            },
-            "order": 34
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "any",
-                "links": [],
-                "label": "any",
-                "type": "*",
-                "localized_name": "any"
-              }
-            ],
-            "size": [
-              195.54061889648438,
-              26
-            ],
-            "pos": [
-              825.2235107421875,
-              -454.81280517578125
-            ],
-            "inputs": [
-              {
-                "name": "any",
-                "label": "any",
-                "type": "*",
-                "localized_name": "any"
-              }
-            ],
-            "flags": {},
-            "index": 7,
-            "id": -1,
-            "type": "llama_cpp_unload_model",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "llama_cpp_unload_model"
-            },
-            "order": 38
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "output",
-                "links": [],
-                "type": "*",
-                "localized_name": "output"
-              }
-            ],
-            "size": [
-              140,
-              26
-            ],
-            "pos": [
-              1032.1458740234375,
-              -454.3479309082031
-            ],
-            "inputs": [
-              {
-                "name": "anything",
-                "label": "输入任何",
-                "type": "*",
-                "localized_name": "anything"
-              }
-            ],
-            "flags": {},
-            "index": 8,
-            "id": -1,
-            "type": "easy cleanGpuUsed",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "easy cleanGpuUsed"
-            },
-            "order": 41
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "text",
-                "links": [],
-                "label": "text",
-                "type": "STRING",
-                "localized_name": "text"
-              }
-            ],
-            "size": [
-              332.3822021484375,
-              283.959716796875
-            ],
-            "pos": [
-              822.4772338867188,
-              -384.8912658691406
-            ],
-            "widgets_values": [
-              ""
-            ],
-            "inputs": [
-              {
-                "name": "text",
-                "label": "text",
-                "type": "STRING",
-                "localized_name": "text"
-              }
-            ],
-            "flags": {},
-            "index": 9,
-            "id": -1,
-            "type": "ShowText",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "ShowText"
-            },
-            "order": 43
-          }
-        ],
-        "links": [
-          [
-            3,
-            0,
-            5,
-            0,
-            384,
-            "STRING"
-          ],
-          [
-            4,
-            0,
-            5,
-            1,
-            386,
-            "STRING"
-          ],
-          [
-            2,
-            0,
-            6,
-            0,
-            376,
-            "LLAMACPPMODEL"
-          ],
-          [
-            1,
-            0,
-            6,
-            1,
-            378,
-            "LLAMACPPARAMS"
-          ],
-          [
-            0,
-            0,
-            6,
-            2,
-            380,
-            "IMAGE"
-          ],
-          [
-            5,
-            0,
-            6,
-            6,
-            385,
-            "STRING"
-          ],
-          [
-            6,
-            0,
-            7,
-            0,
-            377,
-            "STRING"
-          ],
-          [
-            7,
-            0,
-            8,
-            0,
-            379,
-            "*"
-          ],
-          [
-            8,
-            0,
-            9,
-            0,
-            389,
-            "*"
-          ]
-        ]
-      },
-      "edit text": {
-        "external": [
-          [
-            0,
-            0,
-            "CONDITIONING"
-          ],
-          [
-            0,
-            1,
-            "LATENT"
-          ],
-          [
-            2,
-            0,
-            "IMAGE"
-          ]
-        ],
-        "nodes": [
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "conditioning",
-                "links": [],
-                "label": "conditioning",
-                "type": "CONDITIONING",
-                "localized_name": "conditioning"
-              },
-              {
-                "name": "latent",
-                "links": [],
-                "label": "latent",
-                "type": "LATENT",
-                "localized_name": "latent"
-              },
-              {
-                "name": "custom_output",
-                "links": [],
-                "label": "custom_output",
-                "type": "ANY",
-                "localized_name": "custom_output"
-              },
-              {
-                "name": "main_image",
-                "label": "main_image",
-                "type": "IMAGE",
-                "localized_name": "main_image"
-              },
-              {
-                "name": "mask",
-                "label": "mask",
-                "type": "MASK",
-                "localized_name": "mask"
-              }
-            ],
-            "size": [
-              296.6783142089844,
-              212
-            ],
-            "pos": [
-              -310.697265625,
-              438.12646484375
-            ],
-            "widgets_values": [
-              "",
-              2160
-            ],
-            "inputs": [
-              {
-                "name": "clip",
-                "label": "clip",
-                "type": "CLIP",
-                "localized_name": "clip"
-              },
-              {
-                "name": "vae",
-                "label": "vae",
-                "type": "VAE",
-                "localized_name": "vae"
-              },
-              {
-                "shape": 7,
-                "name": "image1",
-                "label": "image1",
-                "type": "IMAGE",
-                "localized_name": "image1"
-              },
-              {
-                "shape": 7,
-                "name": "image2",
-                "label": "image2",
-                "type": "IMAGE",
-                "localized_name": "image2"
-              },
-              {
-                "shape": 7,
-                "name": "image3",
-                "label": "image3",
-                "type": "IMAGE",
-                "localized_name": "image3"
-              },
-              {
-                "shape": 7,
-                "name": "mask",
-                "label": "mask",
-                "type": "MASK",
-                "localized_name": "mask"
-              },
-              {
-                "widget": {
-                  "name": "prompt"
-                },
-                "name": "prompt",
-                "label": "prompt",
-                "type": "STRING",
-                "localized_name": "prompt"
-              },
-              {
-                "widget": {
-                  "name": "ref_longest_edge"
-                },
-                "shape": 7,
-                "name": "ref_longest_edge",
-                "label": "ref_longest_edge",
-                "type": "INT",
-                "localized_name": "ref_longest_edge"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 0,
-            "id": -1,
-            "type": "QwenEditTextEncode_EditUtils",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "QwenEditTextEncode_EditUtils"
-            },
-            "order": 35
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "pad_info",
-                "links": [],
-                "label": "pad_info",
-                "type": "ANY",
-                "localized_name": "pad_info"
-              },
-              {
-                "name": "full_refs_cond",
-                "label": "full_refs_cond",
-                "type": "CONDITIONING",
-                "localized_name": "full_refs_cond"
-              },
-              {
-                "name": "main_ref_cond",
-                "label": "main_ref_cond",
-                "type": "CONDITIONING",
-                "localized_name": "main_ref_cond"
-              },
-              {
-                "name": "main_image",
-                "label": "main_image",
-                "type": "IMAGE",
-                "localized_name": "main_image"
-              },
-              {
-                "name": "vae_images",
-                "label": "vae_images",
-                "type": "LIST",
-                "localized_name": "vae_images"
-              },
-              {
-                "name": "ref_latents",
-                "label": "ref_latents",
-                "type": "LIST",
-                "localized_name": "ref_latents"
-              },
-              {
-                "name": "vl_images",
-                "label": "vl_images",
-                "type": "LIST",
-                "localized_name": "vl_images"
-              },
-              {
-                "name": "full_prompt",
-                "label": "full_prompt",
-                "type": "STRING",
-                "localized_name": "full_prompt"
-              },
-              {
-                "name": "llama_template",
-                "label": "llama_template",
-                "type": "STRING",
-                "localized_name": "llama_template"
-              },
-              {
-                "name": "no_refs_cond",
-                "label": "no_refs_cond",
-                "type": "CONDITIONING",
-                "localized_name": "no_refs_cond"
-              },
-              {
-                "name": "mask",
-                "label": "mask",
-                "type": "MASK",
-                "localized_name": "mask"
-              }
-            ],
-            "size": [
-              321.5611267089844,
-              226
-            ],
-            "pos": [
-              -314.89605712890625,
-              477.03924560546875
-            ],
-            "inputs": [
-              {
-                "name": "custom_output",
-                "label": "custom_output",
-                "type": "ANY",
-                "localized_name": "custom_output"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 1,
-            "id": -1,
-            "type": "QwenEditOutputExtractor_EditUtils",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "QwenEditOutputExtractor_EditUtils"
-            },
-            "order": 42
-          },
-          {
-            "mode": 0,
-            "outputs": [
-              {
-                "name": "cropped_image",
-                "links": [],
-                "label": "cropped_image",
-                "type": "IMAGE",
-                "localized_name": "cropped_image"
-              },
-              {
-                "name": "scale_by",
-                "label": "scale_by",
-                "type": "FLOAT",
-                "localized_name": "scale_by"
-              }
-            ],
-            "size": [
-              269.4302673339844,
-              46
-            ],
-            "pos": [
-              -313.4798889160156,
-              514.56689453125
-            ],
-            "inputs": [
-              {
-                "name": "pad_info",
-                "label": "pad_info",
-                "type": "ANY",
-                "localized_name": "pad_info"
-              },
-              {
-                "name": "image",
-                "label": "image",
-                "type": "IMAGE",
-                "localized_name": "image"
-              }
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "index": 2,
-            "id": -1,
-            "type": "CropWithPadInfo_EditUtils",
-            "properties": {
-              "widget_ue_connectable": {},
-              "Node name for S&R": "CropWithPadInfo_EditUtils"
-            },
-            "order": 54
-          }
-        ],
-        "links": [
-          [
-            null,
-            0,
-            0,
-            0,
-            103,
-            "CLIP"
-          ],
-          [
-            null,
-            1,
-            0,
-            1,
-            424,
-            "*"
-          ],
-          [
-            null,
-            0,
-            0,
-            2,
-            108,
-            "IMAGE"
-          ],
-          [
-            null,
-            0,
-            0,
-            6,
-            467,
-            "STRING"
-          ],
-          [
-            0,
-            2,
-            1,
-            0,
-            511,
-            "ANY"
-          ],
-          [
-            1,
-            0,
-            2,
-            0,
-            512,
-            "ANY"
-          ],
-          [
-            null,
-            0,
-            2,
-            1,
-            8,
-            "IMAGE"
-          ]
-        ]
-      }
-    },
     "ds": {
-      "scale": 0.7247295000000007,
+      "scale": 0.6588450000000011,
       "offset": [
-        1656.4036406168307,
-        848.0983593282165
+        1184.9809093554115,
+        655.5974490246869
       ]
     }
   },
