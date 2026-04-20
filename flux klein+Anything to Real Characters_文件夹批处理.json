@@ -1,5 +1,5 @@
 {
-  "last_link_id": 396,
+  "last_link_id": 403,
   "nodes": [
     {
       "mode": 0,
@@ -1117,24 +1117,24 @@
     },
     {
       "mode": 0,
-      "outputs": [
-        {
-          "name": "image_urls",
-          "label": "image_urls",
-          "type": "STRING",
-          "localized_name": "image_urls"
-        }
-      ],
+      "outputs": [],
       "size": [
-        335.150390625,
-        425.983154296875
+        420,
+        390
       ],
       "pos": [
         2640.0,
         635.164
       ],
       "widgets_values": [
-        "#comfy/your_folder_name/flux_klein_Anything2RealCharacters"
+        "flux_klein_Anything2RealCharacters",
+        "None",
+        "png",
+        95,
+        true,
+        "",
+        false,
+        true
       ],
       "inputs": [
         {
@@ -1146,17 +1146,212 @@
         },
         {
           "widget": {
+            "name": "custom_path"
+          },
+          "name": "custom_path",
+          "link": 403,
+          "label": "custom_path",
+          "type": "STRING",
+          "localized_name": "custom_path"
+        },
+        {
+          "widget": {
             "name": "filename_prefix"
           },
           "name": "filename_prefix",
           "label": "filename_prefix",
           "type": "STRING",
           "localized_name": "filename_prefix"
+        },
+        {
+          "widget": {
+            "name": "timestamp"
+          },
+          "name": "timestamp",
+          "label": "timestamp",
+          "type": "COMBO",
+          "localized_name": "timestamp"
+        },
+        {
+          "widget": {
+            "name": "format"
+          },
+          "name": "format",
+          "label": "format",
+          "type": "COMBO",
+          "localized_name": "format"
+        },
+        {
+          "widget": {
+            "name": "quality"
+          },
+          "name": "quality",
+          "label": "quality",
+          "type": "INT",
+          "localized_name": "quality"
+        },
+        {
+          "widget": {
+            "name": "meta_data"
+          },
+          "name": "meta_data",
+          "label": "meta_data",
+          "type": "BOOLEAN",
+          "localized_name": "meta_data"
+        },
+        {
+          "widget": {
+            "name": "blind_watermark"
+          },
+          "name": "blind_watermark",
+          "label": "blind_watermark",
+          "type": "STRING",
+          "localized_name": "blind_watermark"
+        },
+        {
+          "widget": {
+            "name": "save_workflow_as_json"
+          },
+          "name": "save_workflow_as_json",
+          "label": "save_workflow_as_json",
+          "type": "BOOLEAN",
+          "localized_name": "save_workflow_as_json"
+        },
+        {
+          "widget": {
+            "name": "preview"
+          },
+          "name": "preview",
+          "label": "preview",
+          "type": "BOOLEAN",
+          "localized_name": "preview"
         }
       ],
       "flags": {},
       "id": 340,
-      "type": "SaveImage",
+      "type": "LayerUtility: SaveImagePlus",
+      "properties": {
+        "cnr_id": "comfyui_layerstyle",
+        "ver": "2.0.32",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "custom_path": true,
+          "filename_prefix": true,
+          "timestamp": true,
+          "format": true,
+          "quality": true,
+          "meta_data": true,
+          "blind_watermark": true,
+          "save_workflow_as_json": true,
+          "preview": true
+        },
+        "Node name for S&R": "LayerUtility: SaveImagePlus"
+      },
+      "order": 1000
+    },
+    {
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "links": [
+            398
+          ],
+          "label": "STRING",
+          "type": "STRING",
+          "localized_name": "STRING"
+        }
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "pos": [
+        2360.0,
+        980.0
+      ],
+      "widgets_values": [
+        "",
+        "(.+)[\\\\/][^\\\\/]+$",
+        "First Group",
+        true,
+        false,
+        false,
+        1
+      ],
+      "inputs": [
+        {
+          "widget": {
+            "name": "string"
+          },
+          "name": "string",
+          "link": 397,
+          "label": "string",
+          "type": "STRING",
+          "localized_name": "string"
+        },
+        {
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "name": "regex_pattern",
+          "label": "regex_pattern",
+          "type": "STRING",
+          "localized_name": "regex_pattern"
+        },
+        {
+          "widget": {
+            "name": "mode"
+          },
+          "name": "mode",
+          "label": "mode",
+          "type": "COMBO",
+          "localized_name": "mode"
+        },
+        {
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "name": "case_insensitive",
+          "label": "case_insensitive",
+          "type": "BOOLEAN",
+          "localized_name": "case_insensitive"
+        },
+        {
+          "widget": {
+            "name": "multiline"
+          },
+          "name": "multiline",
+          "label": "multiline",
+          "type": "BOOLEAN",
+          "localized_name": "multiline"
+        },
+        {
+          "widget": {
+            "name": "dotall"
+          },
+          "name": "dotall",
+          "label": "dotall",
+          "type": "BOOLEAN",
+          "localized_name": "dotall"
+        },
+        {
+          "widget": {
+            "name": "group_index"
+          },
+          "name": "group_index",
+          "label": "group_index",
+          "type": "INT",
+          "localized_name": "group_index"
+        }
+      ],
+      "flags": {},
+      "id": 342,
+      "type": "RegexExtract",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.14.1",
@@ -1166,11 +1361,411 @@
           "version": "7.5.2"
         },
         "widget_ue_connectable": {
-          "filename_prefix": true
+          "string": true,
+          "regex_pattern": true,
+          "mode": true,
+          "case_insensitive": true,
+          "multiline": true,
+          "dotall": true,
+          "group_index": true
         },
-        "Node name for S&R": "SaveImage"
+        "Node name for S&R": "RegexExtract"
       },
-      "order": 1000
+      "order": 1001
+    },
+    {
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "links": [
+            402
+          ],
+          "label": "STRING",
+          "type": "STRING",
+          "localized_name": "STRING"
+        }
+      ],
+      "size": [
+        340,
+        190
+      ],
+      "pos": [
+        2740.0,
+        980.0
+      ],
+      "widgets_values": [
+        "#comfy",
+        "",
+        ""
+      ],
+      "inputs": [
+        {
+          "widget": {
+            "name": "string_a"
+          },
+          "name": "string_a",
+          "label": "string_a",
+          "type": "STRING",
+          "localized_name": "string_a"
+        },
+        {
+          "widget": {
+            "name": "string_b"
+          },
+          "name": "string_b",
+          "link": 399,
+          "label": "string_b",
+          "type": "STRING",
+          "localized_name": "string_b"
+        },
+        {
+          "widget": {
+            "name": "delimiter"
+          },
+          "name": "delimiter",
+          "label": "delimiter",
+          "type": "STRING",
+          "localized_name": "delimiter"
+        }
+      ],
+      "flags": {},
+      "id": 343,
+      "type": "StringConcatenate",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "string_a": true,
+          "string_b": true,
+          "delimiter": true
+        },
+        "Node name for S&R": "StringConcatenate"
+      },
+      "order": 1002
+    },
+    {
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "links": [
+            400
+          ],
+          "label": "STRING",
+          "type": "STRING",
+          "localized_name": "STRING"
+        }
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "pos": [
+        2360.0,
+        1260.0
+      ],
+      "widgets_values": [
+        "",
+        "([^\\\\/]+)$",
+        "First Group",
+        true,
+        false,
+        false,
+        1
+      ],
+      "inputs": [
+        {
+          "widget": {
+            "name": "string"
+          },
+          "name": "string",
+          "link": 398,
+          "label": "string",
+          "type": "STRING",
+          "localized_name": "string"
+        },
+        {
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "name": "regex_pattern",
+          "label": "regex_pattern",
+          "type": "STRING",
+          "localized_name": "regex_pattern"
+        },
+        {
+          "widget": {
+            "name": "mode"
+          },
+          "name": "mode",
+          "label": "mode",
+          "type": "COMBO",
+          "localized_name": "mode"
+        },
+        {
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "name": "case_insensitive",
+          "label": "case_insensitive",
+          "type": "BOOLEAN",
+          "localized_name": "case_insensitive"
+        },
+        {
+          "widget": {
+            "name": "multiline"
+          },
+          "name": "multiline",
+          "label": "multiline",
+          "type": "BOOLEAN",
+          "localized_name": "multiline"
+        },
+        {
+          "widget": {
+            "name": "dotall"
+          },
+          "name": "dotall",
+          "label": "dotall",
+          "type": "BOOLEAN",
+          "localized_name": "dotall"
+        },
+        {
+          "widget": {
+            "name": "group_index"
+          },
+          "name": "group_index",
+          "label": "group_index",
+          "type": "INT",
+          "localized_name": "group_index"
+        }
+      ],
+      "flags": {},
+      "id": 344,
+      "type": "RegexExtract",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "string": true,
+          "regex_pattern": true,
+          "mode": true,
+          "case_insensitive": true,
+          "multiline": true,
+          "dotall": true,
+          "group_index": true
+        },
+        "Node name for S&R": "RegexExtract"
+      },
+      "order": 1003
+    },
+    {
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "links": [
+            398,
+            401
+          ],
+          "label": "STRING",
+          "type": "STRING",
+          "localized_name": "STRING"
+        }
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "pos": [
+        2740.0,
+        1260.0
+      ],
+      "widgets_values": [
+        "",
+        "(.+)[\\\\/][^\\\\/]+$",
+        "First Group",
+        true,
+        false,
+        false,
+        1
+      ],
+      "inputs": [
+        {
+          "widget": {
+            "name": "string"
+          },
+          "name": "string",
+          "link": 397,
+          "label": "string",
+          "type": "STRING",
+          "localized_name": "string"
+        },
+        {
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "name": "regex_pattern",
+          "label": "regex_pattern",
+          "type": "STRING",
+          "localized_name": "regex_pattern"
+        },
+        {
+          "widget": {
+            "name": "mode"
+          },
+          "name": "mode",
+          "label": "mode",
+          "type": "COMBO",
+          "localized_name": "mode"
+        },
+        {
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "name": "case_insensitive",
+          "label": "case_insensitive",
+          "type": "BOOLEAN",
+          "localized_name": "case_insensitive"
+        },
+        {
+          "widget": {
+            "name": "multiline"
+          },
+          "name": "multiline",
+          "label": "multiline",
+          "type": "BOOLEAN",
+          "localized_name": "multiline"
+        },
+        {
+          "widget": {
+            "name": "dotall"
+          },
+          "name": "dotall",
+          "label": "dotall",
+          "type": "BOOLEAN",
+          "localized_name": "dotall"
+        },
+        {
+          "widget": {
+            "name": "group_index"
+          },
+          "name": "group_index",
+          "label": "group_index",
+          "type": "INT",
+          "localized_name": "group_index"
+        }
+      ],
+      "flags": {},
+      "id": 345,
+      "type": "RegexExtract",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "string": true,
+          "regex_pattern": true,
+          "mode": true,
+          "case_insensitive": true,
+          "multiline": true,
+          "dotall": true,
+          "group_index": true
+        },
+        "Node name for S&R": "RegexExtract"
+      },
+      "order": 1004
+    },
+    {
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "links": [
+            403
+          ],
+          "label": "STRING",
+          "type": "STRING",
+          "localized_name": "STRING"
+        }
+      ],
+      "size": [
+        340,
+        190
+      ],
+      "pos": [
+        3120.0,
+        1120.0
+      ],
+      "widgets_values": [
+        "",
+        "",
+        "/"
+      ],
+      "inputs": [
+        {
+          "widget": {
+            "name": "string_a"
+          },
+          "name": "string_a",
+          "link": 400,
+          "label": "string_a",
+          "type": "STRING",
+          "localized_name": "string_a"
+        },
+        {
+          "widget": {
+            "name": "string_b"
+          },
+          "name": "string_b",
+          "link": 401,
+          "label": "string_b",
+          "type": "STRING",
+          "localized_name": "string_b"
+        },
+        {
+          "widget": {
+            "name": "delimiter"
+          },
+          "name": "delimiter",
+          "label": "delimiter",
+          "type": "STRING",
+          "localized_name": "delimiter"
+        }
+      ],
+      "flags": {},
+      "id": 346,
+      "type": "StringConcatenate",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "string_a": true,
+          "string_b": true,
+          "delimiter": true
+        },
+        "Node name for S&R": "StringConcatenate"
+      },
+      "order": 1005
     }
   ],
   "extra": {
@@ -1362,11 +1957,59 @@
       265,
       0,
       "IMAGE"
+    ],
+    [
+      397,
+      254,
+      3,
+      345,
+      0,
+      "STRING"
+    ],
+    [
+      398,
+      345,
+      0,
+      344,
+      0,
+      "STRING"
+    ],
+    [
+      399,
+      344,
+      0,
+      343,
+      1,
+      "STRING"
+    ],
+    [
+      400,
+      345,
+      0,
+      346,
+      0,
+      "STRING"
+    ],
+    [
+      401,
+      343,
+      0,
+      346,
+      1,
+      "STRING"
+    ],
+    [
+      403,
+      346,
+      0,
+      340,
+      1,
+      "STRING"
     ]
   ],
   "id": "ba29340b-3fcd-4d2a-af94-074e7bc4e413",
   "config": {},
   "version": 0.4,
-  "last_node_id": 341,
+  "last_node_id": 346,
   "revision": 0
 }
