@@ -1,15 +1,15 @@
 {
   "id": "91f6bbe2-ed41-4fd6-bac7-71d5b5864ecb",
   "revision": 0,
-  "last_node_id": 517,
-  "last_link_id": 914,
+  "last_node_id": 518,
+  "last_link_id": 916,
   "nodes": [
     {
       "id": 380,
       "type": "GetNode",
       "pos": [
-        -112.05258517795141,
-        -223.30864122178832
+        -317.08860294906526,
+        -218.95218020028108
       ],
       "size": [
         210,
@@ -26,7 +26,9 @@
           "label": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
-          "links": []
+          "links": [
+            913
+          ]
         }
       ],
       "title": "Get_ref_img1",
@@ -45,8 +47,8 @@
       "id": 426,
       "type": "llama_cpp_unload_model",
       "pos": [
-        760.3314208984375,
-        -271.16326904296875
+        780.208251953125,
+        -270.4778747558594
       ],
       "size": [
         206.8609375,
@@ -85,8 +87,8 @@
       "id": 389,
       "type": "easy cleanGpuUsed",
       "pos": [
-        776.7506103515625,
-        -197.55078125
+        796.62744140625,
+        -196.86538696289062
       ],
       "size": [
         157.38925170898438,
@@ -125,8 +127,8 @@
       "id": 402,
       "type": "SetNode",
       "pos": [
-        787.35302734375,
-        -134.14820861816406
+        807.2298583984375,
+        -133.4628143310547
       ],
       "size": [
         210,
@@ -166,8 +168,8 @@
       "id": 38,
       "type": "CLIPLoader",
       "pos": [
-        -407.56596634068467,
-        890.5223597328472
+        -446.4215443211965,
+        1067.802475471652
       ],
       "size": [
         330,
@@ -254,8 +256,8 @@
       "id": 102,
       "type": "SetNode",
       "pos": [
-        -420.83038330078125,
-        1048.3134765625
+        -459.68621826171875,
+        1225.5936279296875
       ],
       "size": [
         210,
@@ -303,8 +305,8 @@
       "id": 104,
       "type": "SetNode",
       "pos": [
-        -171.56222534179688,
-        1052.6029052734375
+        -210.4180450439453,
+        1229.883056640625
       ],
       "size": [
         210,
@@ -352,8 +354,8 @@
       "id": 39,
       "type": "VAELoader",
       "pos": [
-        -404.62886901786453,
-        641.3324768414313
+        -443.4842613350854,
+        818.6126154456106
       ],
       "size": [
         330,
@@ -419,11 +421,11 @@
       "id": 294,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -310.0933433973415,
-        308.5643266749003
+        -348.94846760678683,
+        485.84433202547183
       ],
       "size": [
-        317.515625,
+        317.5,
         114.25
       ],
       "flags": {},
@@ -503,8 +505,8 @@
       "id": 106,
       "type": "GetNode",
       "pos": [
-        -475.9992980957031,
-        357.87841796875
+        -514.8551635742188,
+        535.1583862304688
       ],
       "size": [
         210,
@@ -547,8 +549,8 @@
       "id": 306,
       "type": "Fast Bypasser (rgthree)",
       "pos": [
-        -294.3156661841224,
-        179.77905939050186
+        -333.1708118993216,
+        357.05899945168716
       ],
       "size": [
         250.8125,
@@ -589,8 +591,8 @@
       "id": 325,
       "type": "SamplerCustom",
       "pos": [
-        951.3316358966563,
-        164.3366553298091
+        951.331887210921,
+        164.3366280324164
       ],
       "size": [
         225,
@@ -684,7 +686,7 @@
       },
       "widgets_values": [
         true,
-        634777285331009,
+        1117832897821602,
         "randomize",
         1
       ]
@@ -693,8 +695,8 @@
       "id": 249,
       "type": "CLIPLoader",
       "pos": [
-        459.5977298990333,
-        312.01235834725026
+        459.59835313974054,
+        312.01234146557607
       ],
       "size": [
         270,
@@ -890,8 +892,8 @@
       "id": 250,
       "type": "VAELoader",
       "pos": [
-        464.9403568232701,
-        474.5775848472264
+        464.9412350841849,
+        474.57764908276346
       ],
       "size": [
         270,
@@ -969,8 +971,8 @@
       "id": 101,
       "type": "SetNode",
       "pos": [
-        -293.45196533203125,
-        1051.1361083984375
+        -332.30780029296875,
+        1228.416259765625
       ],
       "size": [
         210,
@@ -979,7 +981,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1018,8 +1020,8 @@
       "id": 308,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        50.99188937704639,
-        190.2507444417904
+        12.136466203976852,
+        367.530665575819
       ],
       "size": [
         270,
@@ -1076,8 +1078,8 @@
       "id": 476,
       "type": "CFGNorm",
       "pos": [
-        95.93817138671875,
-        520.5729370117188
+        57.082332611083984,
+        697.8529052734375
       ],
       "size": [
         270,
@@ -1126,8 +1128,8 @@
       "id": 466,
       "type": "GetNode",
       "pos": [
-        -468.5162353515625,
-        308.0557556152344
+        -507.3720397949219,
+        485.3357238769531
       ],
       "size": [
         210,
@@ -1257,8 +1259,8 @@
       "id": 471,
       "type": "UNETLoader",
       "pos": [
-        453.47784883282793,
-        180.63868432640172
+        453.4785614730738,
+        180.63864354890944
       ],
       "size": [
         270,
@@ -1446,11 +1448,11 @@
       "id": 3,
       "type": "KSampler",
       "pos": [
-        100.51221155865619,
-        579.0560988605112
+        61.65686550953228,
+        756.3361397511662
       ],
       "size": [
-        264.921875,
+        264.875,
         316.921875
       ],
       "flags": {
@@ -1569,7 +1571,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        288859268631388,
+        869356538730899,
         "randomize",
         4,
         1,
@@ -1582,8 +1584,8 @@
       "id": 107,
       "type": "SetNode",
       "pos": [
-        -657.1593627929688,
-        621.20751953125
+        -696.0151977539062,
+        798.4874877929688
       ],
       "size": [
         210,
@@ -1592,7 +1594,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1631,8 +1633,8 @@
       "id": 312,
       "type": "FlowMatchEulerDiscreteScheduler (Custom)",
       "pos": [
-        1180.9390324890308,
-        163.91669539263088
+        1180.9390920720318,
+        163.91663834057607
       ],
       "size": [
         344.625,
@@ -1828,8 +1830,8 @@
       "id": 105,
       "type": "GetNode",
       "pos": [
-        -476.7776184082031,
-        470.28082275390625
+        -515.6334838867188,
+        647.560791015625
       ],
       "size": [
         210,
@@ -1872,8 +1874,8 @@
       "id": 425,
       "type": "GetNode",
       "pos": [
-        -470.0973815917969,
-        419.8548278808594
+        -508.9532165527344,
+        597.134765625
       ],
       "size": [
         210,
@@ -1909,8 +1911,8 @@
       "id": 103,
       "type": "GetNode",
       "pos": [
-        -469.72503662109375,
-        535.8687133789062
+        -508.5808410644531,
+        713.148681640625
       ],
       "size": [
         210,
@@ -1953,8 +1955,8 @@
       "id": 424,
       "type": "ImpactExecutionOrderController",
       "pos": [
-        -719.9124145507812,
-        503.1891784667969
+        -758.7682495117188,
+        680.4691772460938
       ],
       "size": [
         215.460546875,
@@ -2005,8 +2007,8 @@
       "id": 108,
       "type": "GetNode",
       "pos": [
-        -475.31036376953125,
-        591.1898193359375
+        -514.1661987304688,
+        768.4697875976562
       ],
       "size": [
         210,
@@ -2049,8 +2051,8 @@
       "id": 467,
       "type": "JoinStrings",
       "pos": [
-        -453.4635925292969,
-        255.37144470214844
+        -492.31939697265625,
+        432.6513366699219
       ],
       "size": [
         270,
@@ -2107,8 +2109,8 @@
       "id": 311,
       "type": "ConditioningZeroOut",
       "pos": [
-        -125.66499328613281,
-        581.9991455078125
+        -164.5207977294922,
+        759.2791137695312
       ],
       "size": [
         204.134765625,
@@ -2147,8 +2149,8 @@
       "id": 512,
       "type": "QwenEditOutputExtractor_EditUtils",
       "pos": [
-        -308.6358642578125,
-        467.74505615234375
+        -347.49169921875,
+        645.0250244140625
       ],
       "size": [
         337.8921875,
@@ -2237,8 +2239,8 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": [
-        -49.929630279541016,
-        684.7470092773438
+        -88.78545379638672,
+        862.0269775390625
       ],
       "size": [
         210,
@@ -2353,8 +2355,8 @@
       "id": 511,
       "type": "QwenEditTextEncode_EditUtils",
       "pos": [
-        -298.9849548339844,
-        428.053466796875
+        -337.8407897949219,
+        605.3334350585938
       ],
       "size": [
         310.84921875,
@@ -2472,8 +2474,8 @@
       "id": 513,
       "type": "CropWithPadInfo_EditUtils",
       "pos": [
-        -298.6520690917969,
-        514.614013671875
+        -337.5079040527344,
+        691.8939819335938
       ],
       "size": [
         282.2955078125,
@@ -2523,8 +2525,8 @@
       "id": 417,
       "type": "SetNode",
       "pos": [
-        -54.50151824951172,
-        640.7567138671875
+        -93.35734558105469,
+        818.0366821289062
       ],
       "size": [
         210,
@@ -2533,7 +2535,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 56,
+      "order": 55,
       "mode": 0,
       "inputs": [
         {
@@ -2563,156 +2565,11 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 378,
-      "type": "llama_cpp_parameters",
-      "pos": [
-        -130.2516326904297,
-        -304.7982177734375
-      ],
-      "size": [
-        269.29193115234375,
-        322
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "max_tokens",
-          "name": "max_tokens",
-          "type": "INT",
-          "widget": {
-            "name": "max_tokens"
-          }
-        },
-        {
-          "label": "top_k",
-          "name": "top_k",
-          "type": "INT",
-          "widget": {
-            "name": "top_k"
-          }
-        },
-        {
-          "label": "top_p",
-          "name": "top_p",
-          "type": "FLOAT",
-          "widget": {
-            "name": "top_p"
-          }
-        },
-        {
-          "label": "min_p",
-          "name": "min_p",
-          "type": "FLOAT",
-          "widget": {
-            "name": "min_p"
-          }
-        },
-        {
-          "label": "typical_p",
-          "name": "typical_p",
-          "type": "FLOAT",
-          "widget": {
-            "name": "typical_p"
-          }
-        },
-        {
-          "label": "temperature",
-          "name": "temperature",
-          "type": "FLOAT",
-          "widget": {
-            "name": "temperature"
-          }
-        },
-        {
-          "label": "repeat_penalty",
-          "name": "repeat_penalty",
-          "type": "FLOAT",
-          "widget": {
-            "name": "repeat_penalty"
-          }
-        },
-        {
-          "label": "frequency_penalty",
-          "name": "frequency_penalty",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frequency_penalty"
-          }
-        },
-        {
-          "label": "presence_penalty",
-          "name": "presence_penalty",
-          "type": "FLOAT",
-          "widget": {
-            "name": "presence_penalty"
-          }
-        },
-        {
-          "label": "mirostat_mode",
-          "name": "mirostat_mode",
-          "type": "INT",
-          "widget": {
-            "name": "mirostat_mode"
-          }
-        },
-        {
-          "label": "mirostat_eta",
-          "name": "mirostat_eta",
-          "type": "FLOAT",
-          "widget": {
-            "name": "mirostat_eta"
-          }
-        },
-        {
-          "label": "mirostat_tau",
-          "name": "mirostat_tau",
-          "type": "FLOAT",
-          "widget": {
-            "name": "mirostat_tau"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "label": "parameters",
-          "name": "parameters",
-          "type": "LLAMACPPARAMS",
-          "links": [
-            914
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "llama_cpp_parameters",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        1024,
-        30,
-        0.9,
-        0.05,
-        1,
-        0.7000000000000002,
-        1,
-        0,
-        1,
-        0,
-        0.1,
-        5,
-        0,
-        0
-      ]
-    },
-    {
       "id": 473,
       "type": "ModelSamplingAuraFlow",
       "pos": [
-        54.371978759765625,
-        459.2981262207031
+        15.516139030456543,
+        636.578125
       ],
       "size": [
         270,
@@ -2761,17 +2618,17 @@
       "id": 384,
       "type": "JjkText",
       "pos": [
-        -91.25152283892794,
-        -156.5995158505716
+        -285.523508168493,
+        -108.44829465187684
       ],
       "size": [
         400,
         200
       ],
       "flags": {
-        "collapsed": false
+        "collapsed": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -2789,7 +2646,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            913
+            914
           ]
         }
       ],
@@ -2805,11 +2662,11 @@
       "id": 298,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        38.91106928548743,
-        334.6326014335677
+        0.055709910574023525,
+        511.9127185272079
       ],
       "size": [
-        280.703125,
+        280.6875,
         114.25
       ],
       "flags": {},
@@ -2889,8 +2746,8 @@
       "id": 392,
       "type": "easy showAnything",
       "pos": [
-        413.3105307632461,
-        -352.42495653788495
+        433.18789849564337,
+        -351.73959979147656
       ],
       "size": [
         312.1875,
@@ -2905,7 +2762,7 @@
           "name": "anything",
           "shape": 7,
           "type": "*",
-          "link": 912
+          "link": 915
         }
       ],
       "outputs": [
@@ -2930,17 +2787,17 @@
       "id": 383,
       "type": "JjkText",
       "pos": [
-        -790.9703634077246,
-        239.2422455521488
+        -829.8257801610401,
+        416.52216134404824
       ],
       "size": [
         299.625,
-        175.359375
+        175.3125
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -2972,72 +2829,11 @@
       ]
     },
     {
-      "id": 295,
-      "type": "CompressImages",
-      "pos": [
-        1583.7528290444882,
-        669.3631230762937
-      ],
-      "size": [
-        287.09375,
-        131.578125
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 54,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 652
-        },
-        {
-          "label": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          }
-        },
-        {
-          "label": "images or video_path",
-          "name": "images or video_path",
-          "type": "*",
-          "link": null
-        },
-        {
-          "label": "password",
-          "name": "password",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "password"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "label": "zip_filename",
-          "name": "temp_dir",
-          "type": "STRING"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CompressImages",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 277,
       "type": "VAEDecode",
       "pos": [
-        1175.487228613804,
-        684.1806020210438
+        1175.4885169852262,
+        684.1810562008191
       ],
       "size": [
         225,
@@ -3068,7 +2864,6 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            652,
             909
           ]
         }
@@ -3083,15 +2878,15 @@
       "id": 515,
       "type": "SaveImage",
       "pos": [
-        1605.7220490533139,
-        340.10155512437734
+        1605.723163252587,
+        340.10153417390933
       ],
       "size": [
         270,
         270
       ],
       "flags": {},
-      "order": 55,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -3125,15 +2920,57 @@
       ]
     },
     {
+      "id": 475,
+      "type": "UnetLoaderGGUF",
+      "pos": [
+        -509.7653892647729,
+        941.6438925723467
+      ],
+      "size": [
+        270,
+        106.25
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "unet_name",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            808
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UnetLoaderGGUF",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "qwen-image-edit-2511-Q4_K_M.gguf"
+      ]
+    },
+    {
       "id": 78,
       "type": "LoadImage",
       "pos": [
-        -777.1710973419714,
-        669.5717919261691
+        -1043.0906903557493,
+        837.1380034287603
       ],
       "size": [
-        332.734375,
-        343.5625
+        332.6875,
+        343.125
       ],
       "flags": {},
       "order": 19,
@@ -3196,58 +3033,123 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "1733213290078.jpg",
+        "キャストリス Castorice_143673427_p1.webp",
         "image"
       ]
     },
     {
-      "id": 475,
-      "type": "UnetLoaderGGUF",
+      "id": 516,
+      "type": "llama_cpp_parameters",
       "pos": [
-        -795.0437891362872,
-        998.1803270565804
+        -660.7215844960226,
+        -66.56530788292366
       ],
       "size": [
-        270,
-        106.25
+        271.390625,
+        519.59375
       ],
       "flags": {},
       "order": 20,
       "mode": 0,
-      "inputs": [
-        {
-          "label": "unet_name",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          }
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "label": "MODEL",
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "parameters",
+          "type": "LLAMACPPARAMS",
           "links": [
-            808
+            912
           ]
         }
       ],
       "properties": {
-        "Node name for S&R": "UnetLoaderGGUF",
-        "widget_ue_connectable": {}
+        "Node name for S&R": "llama_cpp_parameters"
       },
       "widgets_values": [
-        "qwen-image-edit-2511-Q4_K_M.gguf"
+        1024,
+        30,
+        0.9,
+        0.05,
+        1,
+        0.8,
+        1,
+        0,
+        1,
+        0,
+        0.1,
+        5,
+        0,
+        0
       ]
     },
     {
-      "id": 516,
+      "id": 517,
+      "type": "llama_cpp_instruct_adv",
+      "pos": [
+        17.04846787782799,
+        -323.488727847825
+      ],
+      "size": [
+        400,
+        423.578125
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "llamamodel",
+          "type": "LLAMACPPMODEL",
+          "link": 916
+        },
+        {
+          "name": "parameters",
+          "type": "LLAMACPPARAMS",
+          "link": 912
+        },
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 913
+        },
+        {
+          "name": "custom_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_prompt"
+          },
+          "link": 914
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            915
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "llama_cpp_instruct_adv"
+      },
+      "widgets_values": [
+        "Normal - Describe",
+        "",
+        "只输出结果",
+        "one by one",
+        24,
+        256,
+        1107647079626854,
+        "randomize"
+      ]
+    },
+    {
+      "id": 518,
       "type": "llama_cpp_model_loader",
       "pos": [
-        -647.2824744448309,
-        -868.0158335687679
+        -983.048877170392,
+        -416.2131219283275
       ],
       "size": [
         277,
@@ -3262,7 +3164,7 @@
           "name": "llamamodel",
           "type": "LLAMACPPMODEL",
           "links": [
-            910
+            916
           ]
         }
       ],
@@ -3277,69 +3179,6 @@
         8192,
         -1,
         true
-      ]
-    },
-    {
-      "id": 517,
-      "type": "llama_cpp_instruct_adv",
-      "pos": [
-        -294.15130927753285,
-        -1063.5714569411641
-      ],
-      "size": [
-        400,
-        423.578125
-      ],
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "llamamodel",
-          "type": "LLAMACPPMODEL",
-          "link": 910
-        },
-        {
-          "name": "parameters",
-          "type": "LLAMACPPARAMS",
-          "link": 914
-        },
-        {
-          "name": "images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "custom_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "custom_prompt"
-          },
-          "link": 913
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "STRING",
-          "links": [
-            912
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "llama_cpp_instruct_adv"
-      },
-      "widgets_values": [
-        "Normal - Describe",
-        "",
-        "只输出结果",
-        "one by one",
-        24,
-        256,
-        0,
-        "randomize"
       ]
     }
   ],
@@ -3415,14 +3254,6 @@
       294,
       0,
       "MODEL"
-    ],
-    [
-      652,
-      277,
-      0,
-      295,
-      0,
-      "IMAGE"
     ],
     [
       667,
@@ -3769,23 +3600,23 @@
       "IMAGE"
     ],
     [
-      910,
+      912,
       516,
       0,
       517,
-      0,
-      "LLAMACPPMODEL"
-    ],
-    [
-      912,
-      517,
-      0,
-      392,
-      0,
-      "STRING"
+      1,
+      "LLAMACPPARAMS"
     ],
     [
       913,
+      380,
+      0,
+      517,
+      2,
+      "IMAGE"
+    ],
+    [
+      914,
       384,
       0,
       517,
@@ -3793,12 +3624,20 @@
       "STRING"
     ],
     [
-      914,
-      378,
+      915,
+      517,
+      0,
+      392,
+      0,
+      "STRING"
+    ],
+    [
+      916,
+      518,
       0,
       517,
-      1,
-      "LLAMACPPARAMS"
+      0,
+      "LLAMACPPMODEL"
     ]
   ],
   "groups": [
@@ -3819,8 +3658,8 @@
       "id": 11,
       "title": "反推",
       "bounding": [
-        -140.95973205566406,
-        -432.2184753417969,
+        -121.08287811279297,
+        -431.5330810546875,
         1116.1300048828125,
         480.7611389160156
       ],
@@ -3832,8 +3671,8 @@
       "id": 12,
       "title": "转真人",
       "bounding": [
-        -840.6141967773438,
-        91.2896957397461,
+        -879.4700317382812,
+        268.569580078125,
         1232.101318359375,
         996.6995239257812
       ],
@@ -4976,10 +4815,10 @@
       }
     },
     "ds": {
-      "scale": 0.4950000000000003,
+      "scale": 0.7247295000000007,
       "offset": [
-        1282.8380423307208,
-        1604.581582611934
+        1656.4036406168307,
+        848.0983593282165
       ]
     }
   },
