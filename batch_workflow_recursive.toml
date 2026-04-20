@@ -1,0 +1,16 @@
+# ComfyUI 递归批量处理 - 配置文件
+# 可直接编辑此文件，或运行脚本进入引导式配置界面
+
+[comfyui]
+server = "http://127.0.0.1:8000"
+
+[paths]
+workflow   = ""
+input_dir  = ""
+output_dir = ""
+
+[options]
+sleep             = 0.0
+skip_existing     = true
+continue_on_error = true
+timeout           = 3600
