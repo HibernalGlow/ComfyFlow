@@ -1,19 +1,19 @@
 {
   "id": "0d43902d-a8f8-455e-b36c-6c57b1c0af36",
   "revision": 0,
-  "last_node_id": 1711,
+  "last_node_id": 1712,
   "last_link_id": 36846,
   "nodes": [
     {
       "id": 1257,
       "type": "KSamplerSelect",
       "pos": [
-        2570.968017578125,
-        -1236.2115478515625
+        2570.967941742758,
+        -1236.211414467612
       ],
       "size": [
         270,
-        58
+        82.25
       ],
       "flags": {},
       "order": 0,
@@ -66,15 +66,15 @@
       "id": 1261,
       "type": "SamplerCustomAdvanced",
       "pos": [
-        2910.968017578125,
-        -1376.2115478515625
+        2910.9678215041295,
+        -1376.2113142029527
       ],
       "size": [
         290,
         490
       ],
       "flags": {},
-      "order": 109,
+      "order": 110,
       "mode": 0,
       "inputs": [
         {
@@ -147,12 +147,12 @@
       "id": 1255,
       "type": "CLIPLoader",
       "pos": [
-        1510.968017578125,
-        -1356.2115478515625
+        1510.9679037999888,
+        -1356.2114600051518
       ],
       "size": [
         380,
-        110
+        116.921875
       ],
       "flags": {},
       "order": 1,
@@ -236,17 +236,17 @@
       "id": 1271,
       "type": "VAEEncode",
       "pos": [
-        1990.968017578125,
-        -1336.2115478515625
+        1990.967970906306,
+        -1336.2114907635091
       ],
       "size": [
-        210,
-        50
+        225,
+        71.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 106,
+      "order": 107,
       "mode": 0,
       "inputs": [
         {
@@ -296,8 +296,8 @@
       "id": 1256,
       "type": "RandomNoise",
       "pos": [
-        2570.968017578125,
-        -1356.2115478515625
+        2570.967941742758,
+        -1356.2114600051518
       ],
       "size": [
         270,
@@ -355,12 +355,12 @@
       "id": 1272,
       "type": "FlowMatchEulerDiscreteScheduler (Custom)",
       "pos": [
-        2210.968017578125,
-        -1356.2115478515625
+        2210.967575042455,
+        -1356.2114600051518
       ],
       "size": [
-        344.6392517089844,
-        490
+        344.6392578125,
+        668.890625
       ],
       "flags": {},
       "order": 3,
@@ -584,12 +584,12 @@
       "id": 1262,
       "type": "VAELoader",
       "pos": [
-        1530.968017578125,
-        463.7886047363281
+        1530.9678155197105,
+        463.78809938308996
       ],
       "size": [
         380,
-        58
+        82.25
       ],
       "flags": {},
       "order": 4,
@@ -652,15 +652,15 @@
       "id": 1270,
       "type": "BasicGuider",
       "pos": [
-        1980.968017578125,
-        -966.2115478515625
+        1980.9676699149197,
+        -966.2114558129499
       ],
       "size": [
-        210,
-        50
+        225,
+        71.59375
       ],
       "flags": {},
-      "order": 83,
+      "order": 84,
       "mode": 0,
       "inputs": [
         {
@@ -710,12 +710,12 @@
       "id": 1253,
       "type": "VAELoader",
       "pos": [
-        1510.968017578125,
-        -1196.2115478515625
+        1510.9679037999888,
+        -1196.2114759843266
       ],
       "size": [
         380,
-        58
+        82.25
       ],
       "flags": {},
       "order": 5,
@@ -779,12 +779,12 @@
       "id": 1410,
       "type": "MarkdownNote",
       "pos": [
-        2580.968017578125,
-        -1006.2115478515625
+        2580.967782558777,
+        -1006.2115093400771
       ],
       "size": [
-        265.56988525390625,
-        112.83685302734375
+        265.5625,
+        146
       ],
       "flags": {},
       "order": 6,
@@ -809,17 +809,17 @@
       "id": 1268,
       "type": "LazyCache",
       "pos": [
-        1970.968017578125,
-        -1156.2115478515625
+        1970.9678290989004,
+        -1156.2114224571994
       ],
       "size": [
-        212.96725463867188,
+        225,
         130
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 76,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -905,12 +905,12 @@
       "id": 1409,
       "type": "MarkdownNote",
       "pos": [
-        1510.968017578125,
-        -836.2115478515625
+        1510.9679037999888,
+        -836.2111092840239
       ],
       "size": [
-        387.9411926269531,
-        195.32308959960938
+        387.9375,
+        251.59375
       ],
       "flags": {},
       "order": 7,
@@ -935,17 +935,17 @@
       "id": 1267,
       "type": "ModelSamplingAuraFlow",
       "pos": [
-        1530.968017578125,
-        813.7884521484375
+        1530.9678155197105,
+        813.7878199604811
       ],
       "size": [
-        381.5169677734375,
-        58
+        381.5,
+        79.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 77,
+      "order": 78,
       "mode": 0,
       "inputs": [
         {
@@ -1003,12 +1003,12 @@
       "id": 1266,
       "type": "CLIPLoader",
       "pos": [
-        1530.968017578125,
-        313.7886047363281
+        1530.9678155197105,
+        313.78864644133455
       ],
       "size": [
         380,
-        110
+        116.921875
       ],
       "flags": {},
       "order": 8,
@@ -1103,7 +1103,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 78,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -1175,15 +1175,15 @@
       "id": 1573,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        3392.517578125,
-        -4122.896484375
+        3392.5174141155085,
+        -4122.896439532688
       ],
       "size": [
         270,
         340
       ],
       "flags": {},
-      "order": 97,
+      "order": 98,
       "mode": 4,
       "inputs": [
         {
@@ -1248,17 +1248,17 @@
       "id": 1251,
       "type": "LayerUtility: ImageScaleByAspectRatio V2",
       "pos": [
-        2810.968017578125,
-        -2156.21142578125
+        2810.9680328178365,
+        -2156.211272255676
       ],
       "size": [
-        303.6851501464844,
-        475.84918212890625
+        317.2681640625,
+        475.8125
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 69,
+      "order": 70,
       "mode": 0,
       "inputs": [
         {
@@ -1428,12 +1428,12 @@
       "id": 1568,
       "type": "VAELoader",
       "pos": [
-        1922.5194091796875,
-        -4192.896484375
+        1922.5193009622844,
+        -4192.896245595557
       ],
       "size": [
-        370.8294677734375,
-        58.676795959472656
+        370.8125,
+        82.25
       ],
       "flags": {},
       "order": 9,
@@ -1489,17 +1489,17 @@
       "id": 1572,
       "type": "VAEDecode",
       "pos": [
-        4322.51806640625,
-        -4512.89501953125
+        4322.517795792402,
+        -4512.894603023422
       ],
       "size": [
-        140,
-        46
+        225,
+        71.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 95,
+      "order": 96,
       "mode": 4,
       "inputs": [
         {
@@ -1551,12 +1551,12 @@
       "id": 1578,
       "type": "INTConstant",
       "pos": [
-        3032.517578125,
-        -3842.893310546875
+        3032.5171624590475,
+        -3842.8933037905954
       ],
       "size": [
         350,
-        58
+        103.59375
       ],
       "flags": {},
       "order": 10,
@@ -1614,15 +1614,15 @@
       "id": 1571,
       "type": "KSampler",
       "pos": [
-        4022.51708984375,
-        -4512.89501953125
+        4022.517279295106,
+        -4512.894603023422
       ],
       "size": [
-        287.5678405761719,
-        481.6680908203125
+        287.5625,
+        481.625
       ],
       "flags": {},
-      "order": 91,
+      "order": 92,
       "mode": 4,
       "inputs": [
         {
@@ -1748,17 +1748,17 @@
       "id": 1587,
       "type": "LayerUtility: ImageScaleByAspectRatio V2",
       "pos": [
-        2742.517578125,
-        -4512.89501953125
+        2742.5176372161886,
+        -4512.894603023422
       ],
       "size": [
-        303.6851501464844,
-        475.84918212890625
+        317.2681640625,
+        475.8125
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 65,
+      "order": 66,
       "mode": 4,
       "inputs": [
         {
@@ -1931,17 +1931,17 @@
       "id": 1621,
       "type": "DrawMaskOnImage",
       "pos": [
-        2762.517578125,
-        -3942.8935546875
+        2762.517548935911,
+        -3942.8933225645715
       ],
       "size": [
-        210,
-        102
+        225,
+        166.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 75,
+      "order": 76,
       "mode": 4,
       "inputs": [
         {
@@ -2013,17 +2013,17 @@
       "id": 1582,
       "type": "ImageAndMaskPreview",
       "pos": [
-        3392.517578125,
-        -4512.89501953125
+        3392.5174141155085,
+        -4512.894603023422
       ],
       "size": [
-        267.06854248046875,
+        267.0625,
         350
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 88,
+      "order": 89,
       "mode": 4,
       "inputs": [
         {
@@ -2109,16 +2109,16 @@
       "id": 1577,
       "type": "SaveImage",
       "pos": [
-        2472.68994140625,
-        -5364.22265625
+        2472.6896691050015,
+        -5364.222253492628
       ],
       "size": [
         490,
         680
       ],
       "flags": {},
-      "order": 104,
-      "mode": 0,
+      "order": 105,
+      "mode": 4,
       "inputs": [
         {
           "label": "images",
@@ -2170,12 +2170,12 @@
       "id": 1620,
       "type": "Seed (rgthree)",
       "pos": [
-        4032.51708984375,
-        -3972.89404296875
+        4032.5173501988083,
+        -3972.893995451047
       ],
       "size": [
-        281.0535583496094,
-        130
+        281,
+        187.59375
       ],
       "flags": {},
       "order": 11,
@@ -2194,10 +2194,11 @@
         }
       ],
       "properties": {
+        "randomMax": 1125899906842624,
+        "randomMin": 0,
         "hasSecondTab": false,
         "cnr_id": "rgthree-comfy",
         "ver": "8ff50e4521881eca1fe26aec9615fc9362474931",
-        "randomMin": 0,
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
@@ -2206,7 +2207,6 @@
         "secondTabOffset": 80,
         "tabWidth": 65,
         "secondTabWidth": 65,
-        "randomMax": 1125899906842624,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
         "aux_id": "rgthree/rgthree-comfy",
@@ -2226,12 +2226,12 @@
       "id": 1396,
       "type": "MarkdownNote",
       "pos": [
-        2390.968017578125,
-        -2166.21142578125
+        2390.967815914527,
+        -2166.2116631250633
       ],
       "size": [
-        370.45538330078125,
-        302.09991455078125
+        370.4375,
+        392.390625
       ],
       "flags": {},
       "order": 12,
@@ -2256,12 +2256,12 @@
       "id": 1633,
       "type": "CR Prompt Text",
       "pos": [
-        1031.4779052734375,
-        -4523.36474609375
+        1031.477883566245,
+        -4523.364743064676
       ],
       "size": [
-        361.74761962890625,
-        108.62309265136719
+        361.6875,
+        163.59375
       ],
       "flags": {},
       "order": 13,
@@ -2322,17 +2322,17 @@
       "id": 1583,
       "type": "PainterFluxImageEdit",
       "pos": [
-        3672.517578125,
-        -4512.89501953125
+        3672.5175587177146,
+        -4512.894603023422
       ],
       "size": [
-        336.1328125,
-        482.78814697265625
+        336.125,
+        558.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 87,
+      "order": 88,
       "mode": 4,
       "inputs": [
         {
@@ -2347,6 +2347,12 @@
           "shape": 7,
           "type": "VAE",
           "link": 36619
+        },
+        {
+          "label": "image1_mask",
+          "name": "image1_mask",
+          "shape": 7,
+          "type": "MASK"
         },
         {
           "label": "image1",
@@ -2368,10 +2374,46 @@
           "type": "IMAGE"
         },
         {
-          "label": "image1_mask",
-          "name": "image1_mask",
+          "name": "image4",
           "shape": 7,
-          "type": "MASK"
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
         },
         {
           "label": "prompt",
@@ -2452,6 +2494,8 @@
       "widgets_values": [
         "",
         1024,
+        1024,
+        1024,
         1024
       ]
     },
@@ -2459,12 +2503,12 @@
       "id": 1639,
       "type": "CR Prompt Text",
       "pos": [
-        1039.99951171875,
-        -6426.244140625
+        1039.999468537191,
+        -6426.244647130212
       ],
       "size": [
-        361.74761962890625,
-        108.62309265136719
+        361.6875,
+        163.59375
       ],
       "flags": {},
       "order": 14,
@@ -2525,17 +2569,17 @@
       "id": 1608,
       "type": "LayerUtility: ImageScaleByAspectRatio V2",
       "pos": [
-        2700,
-        -6646.244140625
+        2699.999964255342,
+        -6646.243445959468
       ],
       "size": [
-        303.6851501464844,
-        475.84918212890625
+        317.2681640625,
+        475.8125
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 60,
+      "order": 61,
       "mode": 4,
       "inputs": [
         {
@@ -2706,16 +2750,16 @@
       "id": 1590,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1031.4779052734375,
-        -4853.36474609375
+        1031.477926692516,
+        -4853.364414655738
       ],
       "size": [
-        377.3629150390625,
-        82
+        377.3125,
+        99.59375
       ],
       "flags": {},
       "order": 15,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -2729,6 +2773,7 @@
         "matchColors": "",
         "matchTitle": "后位时开启2",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -2743,7 +2788,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       },
@@ -2754,17 +2798,17 @@
       "id": 1575,
       "type": "InpaintStitchImproved",
       "pos": [
-        4322.51806640625,
-        -4412.8955078125
+        4322.517795792402,
+        -4412.895044424813
       ],
       "size": [
-        225.26327514648438,
-        46
+        225.25,
+        95.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 102,
+      "order": 103,
       "mode": 4,
       "inputs": [
         {
@@ -2817,12 +2861,12 @@
       "id": 1649,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1000.968017578125,
-        1553.7884521484375
+        1000.9679508353114,
+        1553.7882546150386
       ],
       "size": [
-        431.418212890625,
-        247.47979736328125
+        431.375,
+        267.59375
       ],
       "flags": {},
       "order": 16,
@@ -2839,6 +2883,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -2853,7 +2898,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -2862,15 +2906,15 @@
       "id": 1653,
       "type": "ColorCorrect",
       "pos": [
-        1212.412353515625,
-        -4139.064453125
+        1212.412280433647,
+        -4139.064355926247
       ],
       "size": [
-        210,
-        178
+        225,
+        263.59375
       ],
       "flags": {},
-      "order": 100,
+      "order": 101,
       "mode": 4,
       "inputs": [
         {
@@ -2976,15 +3020,15 @@
       "id": 1574,
       "type": "ImageColorMatch+",
       "pos": [
-        992.9398193359375,
-        -4144.77001953125
+        992.9398071805776,
+        -4144.769840215951
       ],
       "size": [
-        211.24618530273438,
-        183.08514404296875
+        225,
+        252.921875
       ],
       "flags": {},
-      "order": 98,
+      "order": 99,
       "mode": 4,
       "inputs": [
         {
@@ -3083,16 +3127,16 @@
       "id": 1601,
       "type": "SaveImage",
       "pos": [
-        2980,
-        -7496.244140625
+        2979.999878769865,
+        -7496.24257014369
       ],
       "size": [
         490,
         680
       ],
       "flags": {},
-      "order": 92,
-      "mode": 0,
+      "order": 93,
+      "mode": 4,
       "inputs": [
         {
           "label": "images",
@@ -3144,17 +3188,17 @@
       "id": 1635,
       "type": "CR Text Concatenate",
       "pos": [
-        2355.512939453125,
-        -4282.896484375
+        2355.512684401132,
+        -4282.895963378147
       ],
       "size": [
-        322.73504638671875,
-        78.80095672607422
+        322.6875,
+        131.578125
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 64,
+      "order": 65,
       "mode": 4,
       "inputs": [
         {
@@ -3226,15 +3270,15 @@
       "id": 1570,
       "type": "InpaintCropImproved",
       "pos": [
-        3027.686279296875,
-        -4513.63330078125
+        3027.6860113669427,
+        -4513.632724312343
       ],
       "size": [
         350,
-        626
+        880.90625
       ],
       "flags": {},
-      "order": 82,
+      "order": 83,
       "mode": 4,
       "inputs": [
         {
@@ -3541,7 +3585,8 @@
         true,
         512,
         512,
-        "32"
+        "32",
+        "gpu (much faster)"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -3550,16 +3595,16 @@
       "id": 1623,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1011.4779663085938,
-        -3903.362548828125
+        1011.4780623261967,
+        -3903.3625022208507
       ],
       "size": [
-        387.8150329589844,
-        84.49998474121094
+        387.8125,
+        99.59375
       ],
       "flags": {},
       "order": 17,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -3573,6 +3618,7 @@
         "matchColors": "",
         "matchTitle": "有色差时开启",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -3587,7 +3633,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       },
@@ -3598,12 +3643,12 @@
       "id": 1648,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1000.968017578125,
-        193.78871154785156
+        1000.9679508353114,
+        193.7883766853629
       ],
       "size": [
-        431.418212890625,
-        247.47979736328125
+        431.375,
+        267.59375
       ],
       "flags": {},
       "order": 18,
@@ -3620,6 +3665,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -3634,7 +3680,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -3643,15 +3688,15 @@
       "id": 1258,
       "type": "SplitSigmasDenoise",
       "pos": [
-        2570.968017578125,
-        -1126.2115478515625
+        2570.967941742758,
+        -1126.211554877617
       ],
       "size": [
         270,
-        78
+        103.59375
       ],
       "flags": {},
-      "order": 57,
+      "order": 58,
       "mode": 0,
       "inputs": [
         {
@@ -3725,7 +3770,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 56,
+      "order": 57,
       "mode": 0,
       "inputs": [
         {
@@ -3849,12 +3894,12 @@
       "id": 1249,
       "type": "VAELoader",
       "pos": [
-        1910.968017578125,
-        -1606.2115478515625
+        1910.9679788958933,
+        -1606.2113918962505
       ],
       "size": [
         380,
-        58
+        82.25
       ],
       "flags": {},
       "order": 20,
@@ -3918,12 +3963,12 @@
       "id": 1647,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        990.968017578125,
-        -536.2115478515625
+        994.9750037867003,
+        -331.8538623554309
       ],
       "size": [
-        431.418212890625,
-        247.47979736328125
+        431.375,
+        267.59375
       ],
       "flags": {},
       "order": 21,
@@ -3940,6 +3985,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -3954,7 +4000,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -3963,16 +4008,16 @@
       "id": 1607,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1029.9996337890625,
-        -6796.244140625
+        1029.9997569334012,
+        -6796.243592173081
       ],
       "size": [
         370,
-        82
+        99.59375
       ],
       "flags": {},
       "order": 22,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -3986,6 +4031,7 @@
         "matchColors": "",
         "matchTitle": "后位时开启1",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -4000,7 +4046,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       },
@@ -4011,12 +4056,12 @@
       "id": 1602,
       "type": "UNETLoader",
       "pos": [
-        1529.99951171875,
-        -6596.244140625
+        1529.9993764595274,
+        -6596.243551616322
       ],
       "size": [
         360,
-        82
+        82.25
       ],
       "flags": {},
       "order": 23,
@@ -4081,15 +4126,15 @@
       "id": 1603,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1529.99951171875,
-        -6476.244140625
+        1529.9993764595274,
+        -6476.243621122624
       ],
       "size": [
         360,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 59,
+      "order": 60,
       "mode": 4,
       "inputs": [
         {
@@ -4170,12 +4215,12 @@
       "id": 1604,
       "type": "UNETLoader",
       "pos": [
-        1929.99951171875,
-        -6596.244140625
+        1929.9993365115902,
+        -6596.243551616322
       ],
       "size": [
-        355.4308166503906,
-        82
+        355.375,
+        82.25
       ],
       "flags": {},
       "order": 24,
@@ -4238,12 +4283,12 @@
       "id": 1605,
       "type": "CLIPLoader",
       "pos": [
-        1919.99951171875,
-        -6466.244140625
+        1919.9993806517293,
+        -6466.243550218921
       ],
       "size": [
-        369.47576904296875,
-        106
+        369.4375,
+        116.921875
       ],
       "flags": {},
       "order": 25,
@@ -4319,12 +4364,12 @@
       "id": 1606,
       "type": "VAELoader",
       "pos": [
-        1919.99951171875,
-        -6316.244140625
+        1919.9993806517293,
+        -6316.242486663381
       ],
       "size": [
-        370.8294677734375,
-        58.676795959472656
+        370.8125,
+        82.25
       ],
       "flags": {},
       "order": 26,
@@ -4380,15 +4425,15 @@
       "id": 1638,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1039.99951171875,
-        -6566.244140625
+        1039.999468537191,
+        -6566.243338905214
       ],
       "size": [
         360,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 71,
+      "order": 72,
       "mode": 4,
       "inputs": [
         {
@@ -4470,15 +4515,15 @@
       "id": 1610,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1029.9996337890625,
-        -6946.244140625
+        1029.9995701992511,
+        -6946.243272193713
       ],
       "size": [
-        372.8670959472656,
-        82
+        372.8125,
+        114.25
       ],
       "flags": {},
-      "order": 79,
+      "order": 80,
       "mode": 4,
       "inputs": [
         {
@@ -4556,7 +4601,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 62,
+      "order": 63,
       "mode": 4,
       "inputs": [
         {
@@ -4628,17 +4673,17 @@
       "id": 1598,
       "type": "PainterFluxImageEdit",
       "pos": [
-        3020,
-        -6646.244140625
+        3019.9997022093085,
+        -6646.243445959468
       ],
       "size": [
-        336.1328125,
-        482.78814697265625
+        336.125,
+        558.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 73,
+      "order": 74,
       "mode": 4,
       "inputs": [
         {
@@ -4653,6 +4698,12 @@
           "shape": 7,
           "type": "VAE",
           "link": 36654
+        },
+        {
+          "label": "image1_mask",
+          "name": "image1_mask",
+          "shape": 7,
+          "type": "MASK"
         },
         {
           "label": "image1",
@@ -4675,10 +4726,46 @@
           "type": "IMAGE"
         },
         {
-          "label": "image1_mask",
-          "name": "image1_mask",
+          "name": "image4",
           "shape": 7,
-          "type": "MASK"
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
         },
         {
           "label": "prompt",
@@ -4759,6 +4846,8 @@
       "widgets_values": [
         "",
         1024,
+        1024,
+        1024,
         1024
       ]
     },
@@ -4766,15 +4855,15 @@
       "id": 1593,
       "type": "KSampler",
       "pos": [
-        3360,
-        -6646.244140625
+        3359.999581970681,
+        -6646.243445959468
       ],
       "size": [
-        287.5678405761719,
-        481.6680908203125
+        287.5625,
+        481.625
       ],
       "flags": {},
-      "order": 85,
+      "order": 86,
       "mode": 4,
       "inputs": [
         {
@@ -4899,17 +4988,17 @@
       "id": 1614,
       "type": "VAEDecode",
       "pos": [
-        3650,
-        -6646.244140625
+        3649.99979747659,
+        -6646.243445959468
       ],
       "size": [
-        140,
-        46
+        225,
+        71.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 89,
+      "order": 90,
       "mode": 4,
       "inputs": [
         {
@@ -4961,16 +5050,16 @@
       "id": 1599,
       "type": "LoadImage",
       "pos": [
-        1519.99951171875,
-        -7496.244140625
+        1519.9995356435081,
+        -7496.24257014369
       ],
       "size": [
-        430.3860168457031,
-        678.895263671875
+        430.375,
+        678.875
       ],
       "flags": {},
       "order": 27,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "label": "image",
@@ -5038,12 +5127,12 @@
       "id": 1643,
       "type": "LoadImage",
       "pos": [
-        2009.99951171875,
-        -7496.244140625
+        2009.999213478161,
+        -7496.24257014369
       ],
       "size": [
-        430.3860168457031,
-        678.895263671875
+        430.375,
+        678.875
       ],
       "flags": {},
       "order": 28,
@@ -5114,16 +5203,16 @@
       "id": 1640,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1029.9996337890625,
-        -6236.244140625
+        1029.9997569334012,
+        -6236.243809186975
       ],
       "size": [
-        368.9394836425781,
-        82
+        368.9375,
+        99.59375
       ],
       "flags": {},
       "order": 29,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -5137,6 +5226,7 @@
         "matchColors": "",
         "matchTitle": "没福关闭1Pussy is not turned off",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -5151,7 +5241,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       },
@@ -5162,15 +5251,15 @@
       "id": 1580,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1031.4779052734375,
-        -5023.36474609375
+        1031.477883566245,
+        -5023.364606846873
       ],
       "size": [
-        372.8670959472656,
-        82
+        372.8125,
+        114.25
       ],
       "flags": {},
-      "order": 80,
+      "order": 81,
       "mode": 4,
       "inputs": [
         {
@@ -5238,16 +5327,16 @@
       "id": 1634,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1031.4779052734375,
-        -4323.3662109375
+        1031.477926692516,
+        -4323.365770992548
       ],
       "size": [
-        368.9394836425781,
-        82
+        368.9375,
+        99.59375
       ],
       "flags": {},
       "order": 30,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -5261,6 +5350,7 @@
         "matchColors": "",
         "matchTitle": "没福关闭2Pussy is not turned off",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -5275,7 +5365,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       },
@@ -5286,15 +5375,15 @@
       "id": 1566,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1031.4779052734375,
-        -4653.36474609375
+        1031.477883566245,
+        -4653.3647444620765
       ],
       "size": [
         360,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 72,
+      "order": 73,
       "mode": 4,
       "inputs": [
         {
@@ -5376,12 +5465,12 @@
       "id": 1585,
       "type": "UNETLoader",
       "pos": [
-        1532.52001953125,
-        -4472.89453125
+        1532.5199870331332,
+        -4472.894319408611
       ],
       "size": [
         360,
-        82
+        82.25
       ],
       "flags": {},
       "order": 31,
@@ -5446,15 +5535,15 @@
       "id": 1565,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1532.52001953125,
-        -4352.8955078125
+        1532.5199870331332,
+        -4352.8953092656475
       ],
       "size": [
         360,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 61,
+      "order": 62,
       "mode": 4,
       "inputs": [
         {
@@ -5535,12 +5624,12 @@
       "id": 1567,
       "type": "CLIPLoader",
       "pos": [
-        1922.5194091796875,
-        -4342.8955078125
+        1922.5193009622844,
+        -4342.895238361945
       ],
       "size": [
-        369.47576904296875,
-        106
+        369.4375,
+        116.921875
       ],
       "flags": {},
       "order": 32,
@@ -5616,12 +5705,12 @@
       "id": 1584,
       "type": "UNETLoader",
       "pos": [
-        1935.4677734375,
-        -4473.06689453125
+        1935.4677154433662,
+        -4473.066655083612
       ],
       "size": [
-        355.4308166503906,
-        82
+        355.375,
+        82.25
       ],
       "flags": {},
       "order": 33,
@@ -5684,12 +5773,12 @@
       "id": 1671,
       "type": "CR Prompt Text",
       "pos": [
-        2340,
-        -6646.244140625
+        2339.9999426865643,
+        -6646.243445959468
       ],
       "size": [
-        320.1142883300781,
-        183.28599548339844
+        320.0625,
+        183.25
       ],
       "flags": {
         "collapsed": false
@@ -5752,16 +5841,16 @@
       "id": 1600,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        2500,
-        -7496.244140625
+        2499.99992670739,
+        -7496.24257014369
       ],
       "size": [
         460,
         680
       ],
       "flags": {},
-      "order": 93,
-      "mode": 0,
+      "order": 94,
+      "mode": 4,
       "inputs": [
         {
           "dir": 3,
@@ -5820,16 +5909,16 @@
       "id": 1576,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        1989.9931640625,
-        -5360.02197265625
+        1989.9932044348243,
+        -5360.022232916579
       ],
       "size": [
         460,
         680
       ],
       "flags": {},
-      "order": 105,
-      "mode": 0,
+      "order": 106,
+      "mode": 4,
       "inputs": [
         {
           "dir": 3,
@@ -5888,16 +5977,16 @@
       "id": 1630,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        999.999755859375,
-        -7366.244140625
+        999.9997365883495,
+        -7366.243456539396
       ],
       "size": [
-        454.23724365234375,
-        221.24339294433594
+        454.1875,
+        267.59375
       ],
       "flags": {},
       "order": 35,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -5910,6 +5999,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -5924,7 +6014,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -5933,12 +6022,12 @@
       "id": 1288,
       "type": "UNETLoader",
       "pos": [
-        1500.968017578125,
-        -2156.21142578125
+        1500.9678328962862,
+        -2156.211272255676
       ],
       "size": [
         380,
-        82
+        82.25
       ],
       "flags": {},
       "order": 36,
@@ -6003,15 +6092,15 @@
       "id": 1301,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1500.968017578125,
-        -2026.21142578125
+        1500.9678328962862,
+        -2026.2112780485154
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 63,
+      "order": 64,
       "mode": 0,
       "inputs": [
         {
@@ -6092,15 +6181,15 @@
       "id": 1303,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1500.968017578125,
-        -1886.2115478515625
+        1500.9678328962862,
+        -1886.2116803032593
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 74,
+      "order": 75,
       "mode": 0,
       "inputs": [
         {
@@ -6181,12 +6270,12 @@
       "id": 1636,
       "type": "CR Prompt Text",
       "pos": [
-        2342.517578125,
-        -4522.89501953125
+        2342.517101944917,
+        -4522.894904014808
       ],
       "size": [
-        358.0924987792969,
-        187.79188537597656
+        358.0625,
+        187.75
       ],
       "flags": {
         "collapsed": false
@@ -6249,16 +6338,16 @@
       "id": 1589,
       "type": "LoadImage",
       "pos": [
-        1512.6923828125,
-        -5364.22265625
+        1512.6924109884121,
+        -5364.222253492628
       ],
       "size": [
-        430.3860168457031,
-        678.895263671875
+        430.375,
+        678.875
       ],
       "flags": {},
       "order": 38,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "label": "image",
@@ -6327,15 +6416,15 @@
       "id": 1237,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1500.968017578125,
-        -1756.2115478515625
+        1500.9678328962862,
+        -1756.2116789058587
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 81,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -6416,15 +6505,15 @@
       "id": 1289,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1500.15185546875,
-        -1629.739013671875
+        1500.151711882632,
+        -1629.739410634049
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 86,
+      "order": 87,
       "mode": 0,
       "inputs": [
         {
@@ -6495,7 +6584,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "detail_slider_klein_9bV2_20260121_160332.safetensors",
+        "detail_slider_klein_9b_20260123_065513.safetensors",
         0.5
       ],
       "color": "#223",
@@ -6505,15 +6594,15 @@
       "id": 1298,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1910.968017578125,
-        -2156.21142578125
+        1910.9679788958933,
+        -2156.211272255676
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 90,
+      "order": 91,
       "mode": 0,
       "inputs": [
         {
@@ -6594,15 +6683,15 @@
       "id": 1299,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1910.968017578125,
-        -2026.21142578125
+        1910.9679788958933,
+        -2026.2112780485154
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 94,
+      "order": 95,
       "mode": 0,
       "inputs": [
         {
@@ -6683,15 +6772,15 @@
       "id": 1300,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1910.968017578125,
-        -1886.2115478515625
+        1910.9679788958933,
+        -1886.2116803032593
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 96,
+      "order": 97,
       "mode": 0,
       "inputs": [
         {
@@ -6772,16 +6861,16 @@
       "id": 1631,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1011.4779663085938,
-        -5363.36474609375
+        1011.4780623261967,
+        -5363.3640891349005
       ],
       "size": [
-        419.20172119140625,
-        223.05169677734375
+        419.1875,
+        267.59375
       ],
       "flags": {},
       "order": 39,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -6794,6 +6883,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -6808,7 +6898,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -6817,12 +6906,12 @@
       "id": 1248,
       "type": "CLIPLoader",
       "pos": [
-        1910.968017578125,
-        -1766.2115478515625
+        1910.9679788958933,
+        -1766.2116922876403
       ],
       "size": [
         380,
-        110
+        116.921875
       ],
       "flags": {},
       "order": 40,
@@ -6906,17 +6995,17 @@
       "id": 1292,
       "type": "PainterFluxImageEdit",
       "pos": [
-        3115.355224609375,
-        -2161.033203125
+        3115.354710827196,
+        -2161.033338479399
       ],
       "size": [
-        336.1328125,
-        482.78814697265625
+        336.125,
+        558.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 84,
+      "order": 85,
       "mode": 0,
       "inputs": [
         {
@@ -6931,6 +7020,12 @@
           "shape": 7,
           "type": "VAE",
           "link": 36156
+        },
+        {
+          "label": "image1_mask",
+          "name": "image1_mask",
+          "shape": 7,
+          "type": "MASK"
         },
         {
           "label": "image1",
@@ -6952,10 +7047,46 @@
           "type": "IMAGE"
         },
         {
-          "label": "image1_mask",
-          "name": "image1_mask",
+          "name": "image4",
           "shape": 7,
-          "type": "MASK"
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
         },
         {
           "label": "prompt",
@@ -7036,6 +7167,8 @@
       "widgets_values": [
         "",
         1024,
+        1024,
+        1024,
         1024
       ]
     },
@@ -7043,12 +7176,12 @@
       "id": 1254,
       "type": "UNETLoader",
       "pos": [
-        1510.968017578125,
-        -1096.2115478515625
+        1510.9679037999888,
+        -1096.2114572103505
       ],
       "size": [
         380,
-        82
+        82.25
       ],
       "flags": {},
       "order": 41,
@@ -7113,15 +7246,15 @@
       "id": 1252,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1510.968017578125,
-        -956.2115478515625
+        1510.9679037999888,
+        -956.2114999530891
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 66,
+      "order": 67,
       "mode": 0,
       "inputs": [
         {
@@ -7202,12 +7335,12 @@
       "id": 1263,
       "type": "UNETLoader",
       "pos": [
-        1530.968017578125,
-        563.7884521484375
+        1530.9678155197105,
+        563.788118157066
       ],
       "size": [
         380,
-        82
+        82.25
       ],
       "flags": {},
       "order": 42,
@@ -7272,15 +7405,15 @@
       "id": 1529,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1530.968017578125,
-        683.7884521484375
+        1530.9678155197105,
+        683.7880486507643
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 67,
+      "order": 68,
       "mode": 0,
       "inputs": [
         {
@@ -7361,8 +7494,8 @@
       "id": 1675,
       "type": "SeedVR2ExtraArgs",
       "pos": [
-        2405.633056640625,
-        1830.9888916015625
+        2405.63291460279,
+        1830.988442573861
       ],
       "size": [
         230.18247985839844,
@@ -7463,12 +7596,12 @@
       "id": 1528,
       "type": "MarkdownNote",
       "pos": [
-        1516.691162109375,
-        947.0389404296875
+        1516.6911048413283,
+        947.0387302391669
       ],
       "size": [
-        387.9411926269531,
-        195.32308959960938
+        387.9375,
+        251.59375
       ],
       "flags": {},
       "order": 44,
@@ -7493,17 +7626,17 @@
       "id": 1265,
       "type": "ConditioningZeroOut",
       "pos": [
-        2351.953125,
-        559.6607666015625
+        2351.9529978484843,
+        559.6603451136621
       ],
       "size": [
-        268.01806640625,
-        26
+        268,
+        47.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 70,
+      "order": 71,
       "mode": 0,
       "inputs": [
         {
@@ -7547,12 +7680,12 @@
       "id": 1679,
       "type": "MarkdownNote",
       "pos": [
-        1963.0648193359375,
-        631.0679931640625
+        1963.0647773433352,
+        631.0675975369818
       ],
       "size": [
-        663.23046875,
-        421.0307312011719
+        663.1875,
+        526.796875
       ],
       "flags": {},
       "order": 45,
@@ -7577,15 +7710,15 @@
       "id": 1677,
       "type": "easy cleanGpuUsed",
       "pos": [
-        2376.308349609375,
-        1684.336181640625
+        2376.308469418353,
+        1684.3360751651267
       ],
       "size": [
-        157.38925170898438,
-        26
+        225,
+        71.59375
       ],
       "flags": {},
-      "order": 122,
+      "order": 123,
       "mode": 4,
       "inputs": [
         {
@@ -7628,12 +7761,12 @@
       "id": 1466,
       "type": "SAMLoader",
       "pos": [
-        2340.736572265625,
-        452.0478210449219
+        2340.736223274017,
+        452.047645240797
       ],
       "size": [
         320,
-        82
+        140.921875
       ],
       "flags": {},
       "order": 46,
@@ -7697,15 +7830,15 @@
       "id": 1250,
       "type": "KSampler",
       "pos": [
-        3465.765869140625,
-        -2166.21142578125
+        3465.7658281828253,
+        -2166.2114689885802
       ],
       "size": [
-        253.45968627929688,
+        253.4375,
         486
       ],
       "flags": {},
-      "order": 101,
+      "order": 102,
       "mode": 0,
       "inputs": [
         {
@@ -7830,8 +7963,8 @@
       "id": 1465,
       "type": "UltralyticsDetectorProvider",
       "pos": [
-        2339.92236328125,
-        336.1180114746094
+        2334.0552166163457,
+        287.22884689303623
       ],
       "size": [
         320,
@@ -7894,12 +8027,12 @@
       "id": 1678,
       "type": "MarkdownNote",
       "pos": [
-        289.651123046875,
-        -3142.865966796875
+        317.2476234405942,
+        -2917.678458322537
       ],
       "size": [
-        594.93115234375,
-        374.58856201171875
+        594.875,
+        374.5625
       ],
       "flags": {},
       "order": 48,
@@ -7919,12 +8052,12 @@
       "id": 1506,
       "type": "CR Prompt Text",
       "pos": [
-        2400.968017578125,
-        -1816.2115478515625
+        2400.9678868182295,
+        -1816.2118742403911
       ],
       "size": [
-        331.9312438964844,
-        108
+        331.875,
+        163.59375
       ],
       "flags": {
         "collapsed": false
@@ -7987,17 +8120,17 @@
       "id": 1264,
       "type": "CLIPTextEncode",
       "pos": [
-        1973.0216064453125,
-        373.64471435546875
+        1973.0217068063669,
+        373.6445767982632
       ],
       "size": [
-        358.0787048339844,
-        181.12474060058594
+        373.7740234375,
+        181.0625
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 58,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -8057,12 +8190,12 @@
       "id": 1399,
       "type": "CR Prompt Text",
       "pos": [
-        1010.968017578125,
-        -1736.2115478515625
+        1010.9678674520289,
+        -1736.2114795765324
       ],
       "size": [
-        377.9482727050781,
-        108
+        377.9375,
+        163.59375
       ],
       "flags": {},
       "order": 50,
@@ -8123,15 +8256,15 @@
       "id": 1304,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        1009.8515014648438,
-        -1869.56005859375
+        1009.8514820113045,
+        -1869.5601195988183
       ],
       "size": [
         380,
-        82
+        114.25
       ],
       "flags": {},
-      "order": 99,
+      "order": 100,
       "mode": 4,
       "inputs": [
         {
@@ -8222,7 +8355,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 68,
+      "order": 69,
       "mode": 0,
       "inputs": [
         {
@@ -8294,15 +8427,15 @@
       "id": 1694,
       "type": "ImageAndMaskPreview",
       "pos": [
-        2461.1064453125,
-        -442.602294921875
+        2461.1061347629093,
+        -442.6020647310463
       ],
       "size": [
-        429.24114990234375,
-        559.9542236328125
+        429.1875,
+        559.9375
       ],
       "flags": {},
-      "order": 117,
+      "order": 118,
       "mode": 4,
       "inputs": [
         {
@@ -8387,21 +8520,21 @@
       "id": 1695,
       "type": "easy sam3ImageSegmentation",
       "pos": [
-        1741.105712890625,
-        -432.602294921875
+        1741.1056314499874,
+        -432.60245400271083
       ],
       "size": [
-        216.439453125,
-        284
+        226.013671875,
+        386.25
       ],
       "flags": {},
-      "order": 110,
+      "order": 111,
       "mode": 4,
       "inputs": [
         {
           "label": "sam3_model",
           "name": "sam3_model",
-          "type": "*",
+          "type": "EASY_SAM3_MODEL",
           "link": 36818
         },
         {
@@ -8546,21 +8679,21 @@
       "id": 1696,
       "type": "easy sam3ImageSegmentation",
       "pos": [
-        1971.1063232421875,
-        -432.602294921875
+        1971.1062268405733,
+        -432.60245400271083
       ],
       "size": [
-        216.439453125,
-        284
+        226.013671875,
+        386.25
       ],
       "flags": {},
-      "order": 111,
+      "order": 112,
       "mode": 4,
       "inputs": [
         {
           "label": "sam3_model",
           "name": "sam3_model",
-          "type": "*",
+          "type": "EASY_SAM3_MODEL",
           "link": 36820
         },
         {
@@ -8705,17 +8838,17 @@
       "id": 1697,
       "type": "INPAINT_ExpandMask",
       "pos": [
-        1751.105712890625,
-        -92.60223388671875
+        1751.1055873098483,
+        -92.6023441536554
       ],
       "size": [
-        210,
-        82
+        225,
+        170.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 113,
+      "order": 114,
       "mode": 4,
       "inputs": [
         {
@@ -8744,7 +8877,7 @@
       "outputs": [
         {
           "label": "MASK",
-          "name": "MASK",
+          "name": "mask",
           "type": "MASK",
           "slot_index": 0,
           "links": [
@@ -8779,24 +8912,25 @@
       },
       "widgets_values": [
         10,
-        35
+        35,
+        "gaussian"
       ]
     },
     {
       "id": 1698,
       "type": "Masks Subtract",
       "pos": [
-        2211.1064453125,
-        -432.602294921875
+        2211.1063179156527,
+        -432.60245400271083
       ],
       "size": [
-        215.32125854492188,
-        46.870792388916016
+        225,
+        95.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 116,
+      "order": 117,
       "mode": 4,
       "inputs": [
         {
@@ -8847,17 +8981,17 @@
       "id": 1699,
       "type": "INPAINT_ExpandMask",
       "pos": [
-        1971.1063232421875,
-        -92.60223388671875
+        1971.1062268405733,
+        -92.6023441536554
       ],
       "size": [
-        210,
-        82
+        225,
+        170.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 114,
+      "order": 115,
       "mode": 4,
       "inputs": [
         {
@@ -8886,7 +9020,7 @@
       "outputs": [
         {
           "label": "MASK",
-          "name": "MASK",
+          "name": "mask",
           "type": "MASK",
           "slot_index": 0,
           "links": [
@@ -8921,22 +9055,23 @@
       },
       "widgets_values": [
         5,
-        20
+        20,
+        "gaussian"
       ]
     },
     {
       "id": 1700,
       "type": "Reroute",
       "pos": [
-        1581.105712890625,
-        -282.6023254394531
+        1581.1056474291624,
+        -282.6023107979049
       ],
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 107,
+      "order": 108,
       "mode": 4,
       "inputs": [
         {
@@ -8975,15 +9110,15 @@
       "id": 1701,
       "type": "easy imageColorMatch",
       "pos": [
-        2928.59765625,
-        -505.3216857910156
+        2928.597369907622,
+        -505.3217814416389
       ],
       "size": [
-        210,
+        225,
         326
       ],
       "flags": {},
-      "order": 115,
+      "order": 116,
       "mode": 4,
       "inputs": [
         {
@@ -9065,17 +9200,17 @@
       "id": 1259,
       "type": "VAEDecode",
       "pos": [
-        3280.968017578125,
-        -1376.2115478515625
+        3280.9679139766095,
+        -1376.2113142029527
       ],
       "size": [
-        140,
-        46
+        225,
+        71.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 112,
+      "order": 113,
       "mode": 0,
       "inputs": [
         {
@@ -9125,12 +9260,12 @@
       "id": 1704,
       "type": "easy sam3ModelLoader",
       "pos": [
-        1475.5887451171875,
-        -430.93560791015625
+        1475.5887012221751,
+        -430.935583779024
       ],
       "size": [
-        245.9164276123047,
-        130
+        245.890625,
+        210.25
       ],
       "flags": {
         "collapsed": false
@@ -9217,15 +9352,15 @@
       "id": 1706,
       "type": "SaveImage",
       "pos": [
-        2971.91552734375,
-        -3026.842529296875
+        2971.9150577442724,
+        -3026.842696967695
       ],
       "size": [
-        444.26617431640625,
-        694.0595703125
+        444.25,
+        694
       ],
       "flags": {},
-      "order": 127,
+      "order": 128,
       "mode": 0,
       "inputs": [
         {
@@ -9279,15 +9414,15 @@
       "id": 1709,
       "type": "SaveImage",
       "pos": [
-        2002.4969482421875,
-        -3035.802490234375
+        2002.4966293358646,
+        -3035.802598975859
       ],
       "size": [
-        479.9551696777344,
-        701.0588989257812
+        479.9375,
+        701
       ],
       "flags": {},
-      "order": 121,
+      "order": 122,
       "mode": 0,
       "inputs": [
         {
@@ -9341,15 +9476,15 @@
       "id": 1708,
       "type": "SaveImage",
       "pos": [
-        1499.490966796875,
-        -3030.941162109375
+        1499.490785011552,
+        -3030.941306397205
       ],
       "size": [
-        481.1337585449219,
-        699.0877685546875
+        481.125,
+        699.0625
       ],
       "flags": {},
-      "order": 108,
+      "order": 109,
       "mode": 0,
       "inputs": [
         {
@@ -9403,15 +9538,15 @@
       "id": 1282,
       "type": "VAEDecode",
       "pos": [
-        3720.968017578125,
-        -2156.21142578125
+        3720.967582424274,
+        -2156.211272255676
       ],
       "size": [
-        140,
-        46
+        225,
+        71.59375
       ],
       "flags": {},
-      "order": 103,
+      "order": 104,
       "mode": 0,
       "inputs": [
         {
@@ -9464,15 +9599,15 @@
       "id": 1702,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        3461.10693359375,
-        -452.602294921875
+        3461.1070127657213,
+        -452.60248076627454
       ],
       "size": [
-        397.353271484375,
-        565.994384765625
+        397.3125,
+        565.9375
       ],
       "flags": {},
-      "order": 119,
+      "order": 120,
       "mode": 4,
       "inputs": [
         {
@@ -9536,15 +9671,15 @@
       "id": 1710,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        3478.65087890625,
-        358.9681396484375
+        3478.6507384632396,
+        358.96774363813756
       ],
       "size": [
-        397.353271484375,
-        565.994384765625
+        397.3125,
+        565.9375
       ],
       "flags": {},
-      "order": 124,
+      "order": 125,
       "mode": 0,
       "inputs": [
         {
@@ -9608,17 +9743,17 @@
       "id": 1703,
       "type": "ImageCompositeMasked",
       "pos": [
-        3162.325927734375,
-        -457.6198425292969
+        3162.3255008160268,
+        -457.6197727943943
       ],
       "size": [
-        217.0802764892578,
-        146
+        225,
+        187.59375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 118,
+      "order": 119,
       "mode": 4,
       "inputs": [
         {
@@ -9715,15 +9850,15 @@
       "id": 1467,
       "type": "PreviewImage",
       "pos": [
-        3062.32763671875,
-        404.24395751953125
+        3062.3277829188864,
+        404.2439378374106
       ],
       "size": [
-        305.5406799316406,
+        305.5,
         258
       ],
       "flags": {},
-      "order": 125,
+      "order": 126,
       "mode": 0,
       "inputs": [
         {
@@ -9765,15 +9900,15 @@
       "id": 1711,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        3398.802978515625,
-        1594.271484375
+        3398.802949455515,
+        1594.2710124804003
       ],
       "size": [
-        397.353271484375,
-        565.994384765625
+        397.3125,
+        565.9375
       ],
       "flags": {},
-      "order": 129,
+      "order": 130,
       "mode": 4,
       "inputs": [
         {
@@ -9837,17 +9972,17 @@
       "id": 1470,
       "type": "FaceDetailer",
       "pos": [
-        2670.968017578125,
-        283.78863525390625
+        2670.967960516734,
+        283.78820364254307
       ],
       "size": [
-        316.810302734375,
-        1184
+        316.75,
+        1278.25
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 120,
+      "order": 121,
       "mode": 0,
       "inputs": [
         {
@@ -10279,8 +10414,8 @@
       "id": 1676,
       "type": "SeedVR2",
       "pos": [
-        2767.85400390625,
-        1706.326171875
+        2767.853512405787,
+        1706.326015260122
       ],
       "size": [
         313.5754699707031,
@@ -10382,12 +10517,12 @@
       "id": 1625,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        980.968017578125,
-        -2246.21142578125
+        980.9680118704679,
+        -2246.211562279459
       ],
       "size": [
-        431.418212890625,
-        247.47979736328125
+        431.375,
+        267.59375
       ],
       "flags": {},
       "order": 52,
@@ -10404,6 +10539,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -10418,7 +10554,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -10427,12 +10562,12 @@
       "id": 1646,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1000.968017578125,
-        -1446.2115478515625
+        1018.1564952146515,
+        -1372.0373340351093
       ],
       "size": [
-        431.418212890625,
-        247.47979736328125
+        431.375,
+        267.59375
       ],
       "flags": {},
       "order": 53,
@@ -10449,6 +10584,7 @@
         "matchColors": "red",
         "matchTitle": "",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -10463,7 +10599,6 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       }
@@ -10472,12 +10607,12 @@
       "id": 1291,
       "type": "LoadImage",
       "pos": [
-        998.5581665039062,
-        -3020.782958984375
+        998.558203282047,
+        -3020.7827626014378
       ],
       "size": [
-        430.3860168457031,
-        678.895263671875
+        430.375,
+        678.875
       ],
       "flags": {},
       "order": 54,
@@ -10541,7 +10676,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "f0ef79a611b19732106eb5e614a839ef6ec3565cf51a1e06c606c2949c15e27e.webp",
+        "3037_140336722_p11.webp",
         "image"
       ]
     },
@@ -10549,15 +10684,15 @@
       "id": 1705,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        3481.906982421875,
-        -3056.22412109375
+        3481.906939361247,
+        -3056.223916288055
       ],
       "size": [
-        433.5697937011719,
-        681.8812866210938
+        433.5625,
+        681.875
       ],
       "flags": {},
-      "order": 128,
+      "order": 129,
       "mode": 0,
       "inputs": [
         {
@@ -10616,15 +10751,15 @@
       "id": 1707,
       "type": "SaveImage",
       "pos": [
-        2507.546875,
-        -3032.920166015625
+        2507.546802728775,
+        -3032.919772866379
       ],
       "size": [
-        440.93707275390625,
-        699.0142822265625
+        440.875,
+        699
       ],
       "flags": {},
-      "order": 123,
+      "order": 124,
       "mode": 0,
       "inputs": [
         {
@@ -10678,12 +10813,12 @@
       "id": 1400,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        1010.968017578125,
-        -1556.2115478515625
+        1010.9678084199467,
+        -1556.2111316425294
       ],
       "size": [
-        368.9394836425781,
-        60.00897979736328
+        368.9375,
+        99.59375
       ],
       "flags": {},
       "order": 55,
@@ -10701,6 +10836,7 @@
         "matchColors": "",
         "matchTitle": "没福关闭3Pussy is not turned off",
         "showNav": true,
+        "showAllGraphs": true,
         "sort": "position",
         "customSortAlphabet": "",
         "toggleRestriction": "default",
@@ -10715,12 +10851,49 @@
         "secondTabWidth": 65,
         "widget_ue_connectable": {},
         "secondTabText": "Send Back",
-        "showAllGraphs": true,
         "enableTabs": false,
         "tabXOffset": 10
       },
       "color": "#322",
       "bgcolor": "#533"
+    },
+    {
+      "id": 1712,
+      "type": "VAEDecode",
+      "pos": [
+        1550.3574365123893,
+        -46.885709143628674
+      ],
+      "size": [
+        225,
+        71.59375
+      ],
+      "flags": {},
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -10913,7 +11086,7 @@
       1251,
       0,
       1292,
-      2,
+      3,
       "IMAGE"
     ],
     [
@@ -10921,7 +11094,7 @@
       1251,
       3,
       1292,
-      7,
+      14,
       "INT"
     ],
     [
@@ -10929,7 +11102,7 @@
       1251,
       4,
       1292,
-      8,
+      15,
       "INT"
     ],
     [
@@ -11009,7 +11182,7 @@
       1402,
       0,
       1292,
-      6,
+      13,
       "STRING"
     ],
     [
@@ -11265,7 +11438,7 @@
       1570,
       1,
       1583,
-      2,
+      3,
       "IMAGE"
     ],
     [
@@ -11417,7 +11590,7 @@
       1608,
       0,
       1598,
-      2,
+      3,
       "IMAGE"
     ],
     [
@@ -11433,7 +11606,7 @@
       1608,
       3,
       1598,
-      7,
+      14,
       "INT"
     ],
     [
@@ -11441,7 +11614,7 @@
       1608,
       4,
       1598,
-      8,
+      15,
       "INT"
     ],
     [
@@ -11449,7 +11622,7 @@
       1578,
       0,
       1583,
-      7,
+      14,
       "INT"
     ],
     [
@@ -11457,7 +11630,7 @@
       1578,
       0,
       1583,
-      8,
+      15,
       "INT"
     ],
     [
@@ -11529,7 +11702,7 @@
       1635,
       0,
       1583,
-      6,
+      13,
       "STRING"
     ],
     [
@@ -11545,7 +11718,7 @@
       1642,
       0,
       1598,
-      6,
+      13,
       "STRING"
     ],
     [
@@ -11569,7 +11742,7 @@
       1643,
       0,
       1598,
-      3,
+      4,
       "IMAGE"
     ],
     [
@@ -12459,13 +12632,13 @@
     ],
     "workflowRendererVersion": "LG",
     "VHS_latentpreviewrate": 0,
-    "frontendVersion": "1.23.0",
+    "frontendVersion": "1.42.11",
     "VHS_latentpreview": false,
     "ds": {
-      "scale": 0.7247295000000037,
+      "scale": 0.4090909090909127,
       "offset": [
-        -756.0373803743864,
-        1925.4915216405936
+        276.5314795032189,
+        934.9304589333875
       ]
     }
   },
