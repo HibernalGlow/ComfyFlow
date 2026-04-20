@@ -1,8 +1,8 @@
 {
   "id": "91f6bbe2-ed41-4fd6-bac7-71d5b5864ecb",
   "revision": 0,
-  "last_node_id": 516,
-  "last_link_id": 913,
+  "last_node_id": 517,
+  "last_link_id": 914,
   "nodes": [
     {
       "id": 380,
@@ -87,15 +87,15 @@
       "id": 389,
       "type": "easy cleanGpuUsed",
       "pos": [
-        771.12829093388,
-        -189.57983599396016
+        792.984829082409,
+        -205.3650642017153
       ],
       "size": [
-        157.38925170898438,
-        26
+        225,
+        71.59375
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 43,
       "mode": 0,
@@ -127,15 +127,15 @@
       "id": 402,
       "type": "SetNode",
       "pos": [
-        662.7346415084639,
-        -149.24805124423233
+        645.7352507483553,
+        -44.82290344714727
       ],
       "size": [
-        210,
-        60
+        225,
+        107.578125
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 46,
       "mode": 0,
@@ -168,8 +168,8 @@
       "id": 38,
       "type": "CLIPLoader",
       "pos": [
-        -264.28473363535363,
-        1629.6676332994098
+        -106.43276329063065,
+        1602.954225197669
       ],
       "size": [
         330,
@@ -256,15 +256,15 @@
       "id": 102,
       "type": "SetNode",
       "pos": [
-        -277.54927008070035,
-        1787.4584938851401
+        -295.21106516816906,
+        1667.2481625946339
       ],
       "size": [
         225,
-        107.859375
+        107.8125
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 20,
       "mode": 0,
@@ -305,8 +305,8 @@
       "id": 104,
       "type": "SetNode",
       "pos": [
-        -28.281105041503906,
-        1791.748046875
+        -52.56602789892851,
+        1780.8198130612332
       ],
       "size": [
         210,
@@ -354,8 +354,8 @@
       "id": 39,
       "type": "VAELoader",
       "pos": [
-        -261.34781607552236,
-        1380.4774000005118
+        -285.63284005202854,
+        1369.5492278013353
       ],
       "size": [
         330,
@@ -421,8 +421,8 @@
       "id": 294,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -166.81220562083342,
-        1047.7090201795754
+        -191.09713068348177,
+        1036.7807120527993
       ],
       "size": [
         317.5,
@@ -505,8 +505,8 @@
       "id": 106,
       "type": "GetNode",
       "pos": [
-        -332.7182312011719,
-        1097.0233154296875
+        -357.00315405859646,
+        1086.0950816159207
       ],
       "size": [
         210,
@@ -549,8 +549,8 @@
       "id": 306,
       "type": "Fast Bypasser (rgthree)",
       "pos": [
-        -151.03442156579445,
-        918.9238316465174
+        -175.31942284559184,
+        907.9955844934614
       ],
       "size": [
         250.8125,
@@ -591,8 +591,8 @@
       "id": 325,
       "type": "SamplerCustom",
       "pos": [
-        1001.2859568454481,
-        293.6295289785025
+        1001.2858408198035,
+        293.6295468419267
       ],
       "size": [
         225,
@@ -686,7 +686,7 @@
       },
       "widgets_values": [
         true,
-        755147496538859,
+        587919336522999,
         "randomize",
         1
       ]
@@ -695,8 +695,8 @@
       "id": 249,
       "type": "CLIPLoader",
       "pos": [
-        509.55198897067805,
-        441.30523848837373
+        509.5519960715237,
+        441.30522114873855
       ],
       "size": [
         270,
@@ -892,8 +892,8 @@
       "id": 250,
       "type": "VAELoader",
       "pos": [
-        514.8943866692547,
-        603.8704995865717
+        537.9650755377243,
+        701.0101986051162
       ],
       "size": [
         270,
@@ -971,8 +971,8 @@
       "id": 101,
       "type": "SetNode",
       "pos": [
-        -150.1708984375,
-        1790.28125
+        -174.45582129492462,
+        1779.3530161862332
       ],
       "size": [
         210,
@@ -1020,8 +1020,8 @@
       "id": 308,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        194.27317992855228,
-        929.3955364430625
+        169.98814037174336,
+        918.467262845603
       ],
       "size": [
         270,
@@ -1029,7 +1029,7 @@
       ],
       "flags": {},
       "order": 30,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "label": "model",
@@ -1078,12 +1078,12 @@
       "id": 476,
       "type": "CFGNorm",
       "pos": [
-        239.21923828125,
-        1259.7178955078125
+        307.6585477273993,
+        1405.5377254736645
       ],
       "size": [
         270,
-        58
+        103.59375
       ],
       "flags": {
         "collapsed": true
@@ -1128,8 +1128,8 @@
       "id": 466,
       "type": "GetNode",
       "pos": [
-        -325.235107421875,
-        1047.2005615234375
+        -349.5200302792996,
+        1036.2723277096707
       ],
       "size": [
         210,
@@ -1259,8 +1259,8 @@
       "id": 471,
       "type": "UNETLoader",
       "pos": [
-        503.43210762885053,
-        309.9315764417715
+        503.432053755977,
+        309.9315528700163
       ],
       "size": [
         270,
@@ -1448,11 +1448,11 @@
       "id": 3,
       "type": "KSampler",
       "pos": [
-        243.79326088728726,
-        1318.201139526453
+        244.2348277888243,
+        1492.169567042993
       ],
       "size": [
-        264.890625,
+        264.875,
         316.921875
       ],
       "flags": {
@@ -1571,7 +1571,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        368181218415643,
+        1098749398485815,
         "randomize",
         4,
         1,
@@ -1584,8 +1584,8 @@
       "id": 107,
       "type": "SetNode",
       "pos": [
-        -513.8781847072083,
-        1360.3524965192714
+        -562.4479967349199,
+        1365.9821646537487
       ],
       "size": [
         225,
@@ -1633,8 +1633,8 @@
       "id": 312,
       "type": "FlowMatchEulerDiscreteScheduler (Custom)",
       "pos": [
-        1230.8933769269445,
-        293.2096250385346
+        1230.8933292861889,
+        293.20963666983835
       ],
       "size": [
         344.625,
@@ -1830,8 +1830,8 @@
       "id": 105,
       "type": "GetNode",
       "pos": [
-        -333.4965515136719,
-        1209.42578125
+        -357.78147437109646,
+        1198.4975474362332
       ],
       "size": [
         210,
@@ -1874,8 +1874,8 @@
       "id": 425,
       "type": "GetNode",
       "pos": [
-        -326.8162841796875,
-        1158.999755859375
+        -351.1012070371121,
+        1148.0715220456082
       ],
       "size": [
         210,
@@ -1911,8 +1911,8 @@
       "id": 103,
       "type": "GetNode",
       "pos": [
-        -326.44390869140625,
-        1275.013671875
+        -350.72883154883084,
+        1264.0854380612332
       ],
       "size": [
         210,
@@ -1955,8 +1955,8 @@
       "id": 424,
       "type": "ImpactExecutionOrderController",
       "pos": [
-        -576.63134765625,
-        1242.3341064453125
+        -708.984103117511,
+        1270.2618047872022
       ],
       "size": [
         215.460546875,
@@ -2007,8 +2007,8 @@
       "id": 108,
       "type": "GetNode",
       "pos": [
-        -332.0292663574219,
-        1330.3348388671875
+        -356.31418921484646,
+        1319.4066050534207
       ],
       "size": [
         210,
@@ -2051,8 +2051,8 @@
       "id": 467,
       "type": "JoinStrings",
       "pos": [
-        -310.1824645996094,
-        994.5161743164062
+        -396.3939222155411,
+        843.9495877526333
       ],
       "size": [
         270,
@@ -2109,8 +2109,8 @@
       "id": 311,
       "type": "ConditioningZeroOut",
       "pos": [
-        17.616132736206055,
-        1321.1441650390625
+        -6.668790121218548,
+        1310.2159312252957
       ],
       "size": [
         204.134765625,
@@ -2149,12 +2149,12 @@
       "id": 512,
       "type": "QwenEditOutputExtractor_EditUtils",
       "pos": [
-        -165.35479736328125,
-        1206.8900146484375
+        -189.6397408864523,
+        1195.9617650609275
       ],
       "size": [
         337.8921875,
-        226
+        311.59375
       ],
       "flags": {
         "collapsed": true
@@ -2239,8 +2239,8 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": [
-        93.35147094726562,
-        1423.8919677734375
+        69.06654808984104,
+        1412.9637339596707
       ],
       "size": [
         210,
@@ -2355,15 +2355,15 @@
       "id": 511,
       "type": "QwenEditTextEncode_EditUtils",
       "pos": [
-        -155.70388793945312,
-        1167.1983642578125
+        -179.98885930981146,
+        1156.27015721389
       ],
       "size": [
-        310.84921875,
-        212
+        310.8125,
+        291.59375
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 33,
       "mode": 0,
@@ -2467,19 +2467,19 @@
       },
       "widgets_values": [
         "",
-        1900
+        1024
       ]
     },
     {
       "id": 513,
       "type": "CropWithPadInfo_EditUtils",
       "pos": [
-        -155.37100219726562,
-        1253.759033203125
+        -179.65596808850663,
+        1242.8307219252858
       ],
       "size": [
         282.2955078125,
-        46
+        95.59375
       ],
       "flags": {
         "collapsed": true
@@ -2525,8 +2525,8 @@
       "id": 417,
       "type": "SetNode",
       "pos": [
-        88.77957153320312,
-        1379.901611328125
+        64.49464867577854,
+        1368.9733775143582
       ],
       "size": [
         210,
@@ -2568,15 +2568,15 @@
       "id": 473,
       "type": "ModelSamplingAuraFlow",
       "pos": [
-        197.65304565429688,
-        1198.443115234375
+        243.9047889300441,
+        1254.960649577374
       ],
       "size": [
         270,
-        58
+        79.59375
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 41,
       "mode": 0,
@@ -2618,12 +2618,12 @@
       "id": 384,
       "type": "JjkText",
       "pos": [
-        -370.1630524176271,
-        -247.35846747791857
+        -346.11203913718373,
+        -82.3184735080205
       ],
       "size": [
         386.625,
-        196.328125
+        196.3125
       ],
       "flags": {
         "collapsed": false
@@ -2655,15 +2655,15 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "把这张图片当做写实摄影照片来分析，生成适合comfyui中qwen-image-edit2511模型的提示词 特别注意服装和丝袜（特别是踩脚袜也叫马镫袜stirrup socks）的描述 还有强调一下女性的年龄为小于12岁的幼女 只输出最终结果"
+        "把这张图片当做写实摄影照片来分析，生成适合comfyui中qwen-image-edit2511模型的提示词 特别注意服装和丝袜（特别是踩脚袜也叫马镫袜 英文是stirrup socks）的描述 还有强调一下女性是萝莉或12岁少女 只输出最终结果"
       ]
     },
     {
       "id": 298,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        182.19214227933276,
-        1073.7773652065498
+        310.43592253141003,
+        1062.3825564146478
       ],
       "size": [
         280.6875,
@@ -2746,8 +2746,8 @@
       "id": 392,
       "type": "easy showAnything",
       "pos": [
-        433.18742446912825,
-        -351.73956725729255
+        433.1872972425126,
+        -351.73954269854744
       ],
       "size": [
         312.1875,
@@ -2780,19 +2780,19 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "A high-resolution, photorealistic portrait of a young anime-style female character with long blonde hair, small horns, and pointed ears, wearing a white and gray tactical outfit with thigh-high stockings and foot socks. The outfit includes a cropped top with straps, a utility belt with gold buckles, and armored thigh guards. The foot socks are white with black trim, snugly fitting around her ankles and toes, with visible stitching and a slightly worn texture. The character is positioned in a dynamic, kneeling pose, with one hand gripping a sword and the other resting on her thigh. The background is a dark, rocky environment with scattered pink hearts and glowing golden starburst effects above her head. The lighting is soft and directional, emphasizing the texture of her skin, the fabric of her clothing, and the details of the foot socks. The overall mood is intense yet playful, with a focus on the intricate design of the clothing and the realistic rendering of the foot socks."
+        "two 14-year-old anime girls in a romantic, intimate pose, both with light green hair and elf ears, wearing revealing red and black lingerie-style outfits with lace detailing, long white stockings with red stitching and lace trim, one girl is playfully lifting the other’s foot to kiss it, the foot is wearing a white stirrup sock (马镫袜) with a red bow and lace edge, soft lighting, shallow depth of field, realistic skin texture, detailed fabric folds and stitching, close-up shot focusing on the interaction, soft blush on cheeks, romantic atmosphere, high detail, anime style, 8k resolution, studio lighting, no background distractions, focus on clothing and stirrup socks, cute and innocent expression,少女萝莉风格，服装细节清晰，丝袜（含马镫袜）材质与缝线纹理真实可辨，画面氛围温馨私密，符合Qwen-image-edit2511模型的写实摄影风格优化。"
       ]
     },
     {
       "id": 383,
       "type": "JjkText",
       "pos": [
-        -702.330348277835,
-        980.8155728132325
+        -726.6153274188648,
+        969.8872783297476
       ],
       "size": [
         299.625,
-        175.328125
+        175.3125
       ],
       "flags": {
         "collapsed": false
@@ -2832,8 +2832,8 @@
       "id": 277,
       "type": "VAEDecode",
       "pos": [
-        1225.4413513444147,
-        813.4735211014361
+        1225.44140291228,
+        813.4735236793197
       ],
       "size": [
         225,
@@ -2878,12 +2878,12 @@
       "id": 515,
       "type": "SaveImage",
       "pos": [
-        1605.721877267954,
-        340.1015227581978
+        1605.721857712569,
+        340.1015007878686
       ],
       "size": [
         270,
-        315.859375
+        315.84375
       ],
       "flags": {},
       "order": 52,
@@ -2908,7 +2908,10 @@
         {
           "label": "image_urls",
           "name": "image_urls",
-          "type": "STRING"
+          "type": "STRING",
+          "links": [
+            914
+          ]
         }
       ],
       "properties": {
@@ -2923,8 +2926,8 @@
       "id": 475,
       "type": "UnetLoaderGGUF",
       "pos": [
-        -327.62902527332415,
-        1503.5085818473895
+        -351.91405215534564,
+        1492.5803395789662
       ],
       "size": [
         270,
@@ -2965,11 +2968,11 @@
       "id": 78,
       "type": "LoadImage",
       "pos": [
-        -681.2460871639468,
-        1459.7154744047484
+        -705.5311795332357,
+        1448.7871026092807
       ],
       "size": [
-        332.703125,
+        332.6875,
         339.59375
       ],
       "flags": {},
@@ -3033,7 +3036,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "2783_142350067_p24.avif",
+        "3922_141384681_p7.avif",
         "image"
       ]
     },
@@ -3041,8 +3044,8 @@
       "id": 516,
       "type": "QwenGGUF",
       "pos": [
-        11.252631527367612,
-        -331.08129645826523
+        11.25261239307224,
+        -331.0813265608799
       ],
       "size": [
         400,
@@ -3103,12 +3106,50 @@
         "auto",
         99,
         1,
-        1905647378,
+        3106550153,
         "randomize",
         300,
-        "off",
+        "auto",
         ""
       ]
+    },
+    {
+      "id": 517,
+      "type": "easy cleanGpuUsed",
+      "pos": [
+        1996.910657296728,
+        354.52212651173096
+      ],
+      "size": [
+        225,
+        71.59375
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "anything",
+          "name": "anything",
+          "type": "*",
+          "link": 914
+        }
+      ],
+      "outputs": [
+        {
+          "label": "output",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy cleanGpuUsed",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -3551,6 +3592,14 @@
       516,
       1,
       "STRING"
+    ],
+    [
+      914,
+      515,
+      0,
+      517,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
@@ -3584,8 +3633,8 @@
       "id": 12,
       "title": "转真人",
       "bounding": [
-        -697.3331298828125,
-        830.4344482421875,
+        -721.6180527402371,
+        819.5062144284207,
         1232.101318359375,
         996.6995239257812
       ],
@@ -4728,10 +4777,10 @@
       }
     },
     "ds": {
-      "scale": 0.724729500000003,
+      "scale": 0.45000000000000273,
       "offset": [
-        798.1900056257155,
-        746.1712208854631
+        925.4468443353762,
+        544.6269690302361
       ]
     }
   },
