@@ -87,12 +87,12 @@
       "id": 389,
       "type": "easy cleanGpuUsed",
       "pos": [
-        792.9846946469372,
-        -205.36504947672256
+        792.9847972535574,
+        -205.36505583847168
       ],
       "size": [
         224.984375,
-        71.703125
+        71.65625
       ],
       "flags": {
         "collapsed": false
@@ -127,12 +127,12 @@
       "id": 402,
       "type": "SetNode",
       "pos": [
-        645.7351663382833,
-        -44.822916050845265
+        645.7351307795323,
+        -44.82292387118093
       ],
       "size": [
         224.984375,
-        107.671875
+        107.625
       ],
       "flags": {
         "collapsed": false
@@ -168,12 +168,12 @@
       "id": 38,
       "type": "CLIPLoader",
       "pos": [
-        -142.92413521300296,
-        1567.3750602169544
+        -142.92403063583288,
+        1567.3751709629805
       ],
       "size": [
-        329.984375,
-        151.640625
+        329.9375,
+        151.59375
       ],
       "flags": {},
       "order": 1,
@@ -257,12 +257,12 @@
       "id": 102,
       "type": "SetNode",
       "pos": [
-        -366.3690187117859,
-        1591.5286702130634
+        -366.36891865533573,
+        1591.528602061328
       ],
       "size": [
         224.984375,
-        107.796875
+        107.75
       ],
       "flags": {
         "collapsed": false
@@ -355,12 +355,12 @@
       "id": 39,
       "type": "VAELoader",
       "pos": [
-        -285.63284617319016,
-        1369.5492434884318
+        -369.059962675526,
+        1424.2702312138679
       ],
       "size": [
-        329.984375,
-        82.359375
+        329.9375,
+        82.3125
       ],
       "flags": {},
       "order": 2,
@@ -422,12 +422,12 @@
       "id": 294,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -191.09706757757533,
-        1036.7804152916935
+        -191.0969938721521,
+        1036.7804465571082
       ],
       "size": [
-        317.484375,
-        114.34375
+        317.4375,
+        114.296875
       ],
       "flags": {},
       "order": 23,
@@ -550,12 +550,12 @@
       "id": 306,
       "type": "Fast Bypasser (rgthree)",
       "pos": [
-        -175.3195077104382,
-        907.9955630404891
+        -175.31950519353336,
+        907.9955805271824
       ],
       "size": [
-        250.78125,
-        123.6875
+        250.765625,
+        123.515625
       ],
       "flags": {},
       "order": 35,
@@ -592,12 +592,12 @@
       "id": 325,
       "type": "SamplerCustom",
       "pos": [
-        1001.2859691103197,
-        293.6294677839496
+        1001.2858580024542,
+        293.629468559928
       ],
       "size": [
         224.984375,
-        231.640625
+        259.375
       ],
       "flags": {
         "collapsed": false
@@ -687,7 +687,7 @@
       },
       "widgets_values": [
         true,
-        200056854499707,
+        847834509831347,
         "randomize",
         1
       ]
@@ -696,12 +696,12 @@
       "id": 249,
       "type": "CLIPLoader",
       "pos": [
-        509.5519770961263,
-        441.3052820163212
+        509.5519049412476,
+        441.3053029479819
       ],
       "size": [
-        269.984375,
-        151.640625
+        269.9375,
+        151.59375
       ],
       "flags": {},
       "order": 4,
@@ -894,12 +894,12 @@
       "id": 250,
       "type": "VAELoader",
       "pos": [
-        537.9652396208251,
-        701.010047372446
+        537.9653369070063,
+        701.0100362411263
       ],
       "size": [
-        269.984375,
-        82.359375
+        269.9375,
+        82.3125
       ],
       "flags": {},
       "order": 6,
@@ -1023,16 +1023,16 @@
       "id": 308,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        169.98814983088232,
-        918.4671557430831
+        169.98813299552694,
+        918.4672095040842
       ],
       "size": [
-        269.984375,
-        114.34375
+        269.9375,
+        114.296875
       ],
       "flags": {},
       "order": 31,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "label": "model",
@@ -1262,12 +1262,12 @@
       "id": 471,
       "type": "UNETLoader",
       "pos": [
-        503.4320077997738,
-        309.93140315326787
+        503.43228700828877,
+        309.9313494746263
       ],
       "size": [
-        269.984375,
-        82.359375
+        269.9375,
+        116.71875
       ],
       "flags": {},
       "order": 10,
@@ -1451,12 +1451,12 @@
       "id": 3,
       "type": "KSampler",
       "pos": [
-        244.23469913069812,
-        1492.1697130993125
+        244.23492508913728,
+        1492.1696768278703
       ],
       "size": [
-        264.859375,
-        316.921875
+        264.8125,
+        316.875
       ],
       "flags": {
         "collapsed": false
@@ -1574,7 +1574,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        831927845117512,
+        869912285426622,
         "randomize",
         4,
         1,
@@ -1636,12 +1636,12 @@
       "id": 312,
       "type": "FlowMatchEulerDiscreteScheduler (Custom)",
       "pos": [
-        1230.8936133797172,
-        293.20956384398187
+        1230.8939083322741,
+        293.20958282950755
       ],
       "size": [
         344.625,
-        668.875
+        668.828125
       ],
       "flags": {
         "collapsed": false
@@ -2358,12 +2358,12 @@
       "id": 511,
       "type": "QwenEditTextEncode_EditUtils",
       "pos": [
-        -179.9887812340263,
-        1156.2698766668077
+        -179.9887324906574,
+        1156.269892084472
       ],
       "size": [
         310.84375,
-        291.625
+        291.578125
       ],
       "flags": {
         "collapsed": false
@@ -2470,7 +2470,7 @@
       },
       "widgets_values": [
         "",
-        1800
+        1024
       ]
     },
     {
@@ -2571,12 +2571,12 @@
       "id": 473,
       "type": "ModelSamplingAuraFlow",
       "pos": [
-        243.90469453932997,
-        1254.9605296454572
+        243.90453212593297,
+        1254.9604111254837
       ],
       "size": [
-        269.984375,
-        79.703125
+        269.9375,
+        79.65625
       ],
       "flags": {
         "collapsed": false
@@ -2621,12 +2621,12 @@
       "id": 384,
       "type": "JjkText",
       "pos": [
-        -346.1119603798875,
-        -82.31845471160034
+        -346.11198359091213,
+        -82.31844290949186
       ],
       "size": [
-        386.609375,
-        196.296875
+        386.5625,
+        196.25
       ],
       "flags": {
         "collapsed": false
@@ -2665,12 +2665,12 @@
       "id": 298,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        310.43559301269966,
-        1062.382225295137
+        268.10323123324224,
+        1079.7493804325115
       ],
       "size": [
-        280.671875,
-        114.34375
+        280.625,
+        114.296875
       ],
       "flags": {},
       "order": 36,
@@ -2749,12 +2749,12 @@
       "id": 392,
       "type": "easy showAnything",
       "pos": [
-        433.1869883581994,
-        -351.73954438137906
+        435.7189658674447,
+        -299.0770010682114
       ],
       "size": [
-        312.171875,
-        358.234375
+        312.125,
+        358.1875
       ],
       "flags": {},
       "order": 33,
@@ -2783,19 +2783,19 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "a 12-year-old girl with blonde hair, wearing a black cat-themed outfit with red trim, long black stirrup socks tied with red ribbons, cat ears and tail, lying on a white couch, with white flowers scattered around, a hand gently touching her head, realistic photography, soft lighting, detailed fabric texture, high-resolution, 8k, studio shot, natural skin tone, innocence and playful expression, no other people visible, focus on the outfit and stirrup socks, emphasizing the youthful and cute aesthetic, no harsh shadows, clean background, professional studio lighting, hyper-detailed, cinematic composition."
+        "A 12-year-old anime-style girl with white hair adorned with green leaves and cat-like ears, wearing a green and white traditional-inspired outfit with intricate floral patterns, paired with white stirrup socks (also known as riding socks) that have golden rings around the ankles. She is lying on her back on a wooden floor in a warmly lit room with a window in the background. Her expression is cheerful and innocent, with large green eyes and a wide smile. Her legs are raised and bent at the knees, with one foot slightly lifted and the other foot resting on a man's leg (partially visible), showing the stirrup socks in detail. The scene is intimate and playful, with soft lighting and a cozy atmosphere. The clothing and stirrup socks are meticulously detailed, emphasizing their texture and design. The girl’s youthful appearance is emphasized, with her small size and innocent demeanor. The background is softly blurred, focusing attention on the girl and her attire. The overall mood is warm, playful, and slightly suggestive, with a focus on the intricate details of the outfit and the stirrup socks."
       ]
     },
     {
       "id": 383,
       "type": "JjkText",
       "pos": [
-        -726.6153249919148,
-        969.8872291691043
+        -726.6152719541551,
+        969.887233869204
       ],
       "size": [
-        299.609375,
-        175.296875
+        299.5625,
+        175.25
       ],
       "flags": {
         "collapsed": false
@@ -2835,12 +2835,12 @@
       "id": 277,
       "type": "VAEDecode",
       "pos": [
-        1225.4411394213837,
-        813.4733478129299
+        1225.4408822427051,
+        813.4733186595673
       ],
       "size": [
         224.984375,
-        71.703125
+        71.65625
       ],
       "flags": {
         "collapsed": false
@@ -2881,12 +2881,12 @@
       "id": 515,
       "type": "SaveImage",
       "pos": [
-        1605.7221096348806,
-        340.1013779366124
+        1605.7220942814217,
+        340.101388838245
       ],
       "size": [
-        269.984375,
-        315.796875
+        269.9375,
+        315.75
       ],
       "flags": {},
       "order": 53,
@@ -2922,19 +2922,19 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "ComfyUI"
+        "zit"
       ]
     },
     {
       "id": 475,
       "type": "UnetLoaderGGUF",
       "pos": [
-        -715.0019433057348,
-        1892.159490130991
+        -715.001895795307,
+        1892.1595276461103
       ],
       "size": [
-        269.984375,
-        106.34375
+        269.9375,
+        106.296875
       ],
       "flags": {},
       "order": 18,
@@ -2969,12 +2969,12 @@
       "id": 78,
       "type": "LoadImage",
       "pos": [
-        -705.5312094669923,
-        1448.7868880447904
+        -705.5311297961075,
+        1448.78682189457
       ],
       "size": [
-        332.671875,
-        339.671875
+        332.625,
+        339.625
       ],
       "flags": {},
       "order": 19,
@@ -3037,7 +3037,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "キャストリス Castorice_143673427_p2.png",
+        "Aris天童爱丽丝_117563919.jpg",
         "image"
       ]
     },
@@ -3045,12 +3045,12 @@
       "id": 516,
       "type": "QwenGGUF",
       "pos": [
-        11.252578564239457,
-        -331.0813298227962
+        51.848381731357335,
+        -397.94505416440984
       ],
       "size": [
-        399.984375,
-        618.484375
+        399.9375,
+        716.4375
       ],
       "flags": {},
       "order": 27,
@@ -3107,7 +3107,7 @@
         "auto",
         99,
         1,
-        1783355891,
+        342320673,
         "randomize",
         300,
         "auto",
@@ -3118,12 +3118,12 @@
       "id": 517,
       "type": "easy cleanGpuUsed",
       "pos": [
-        1911.1561553476888,
-        370.9431317675351
+        1911.1563275586097,
+        370.9431002226118
       ],
       "size": [
         224.984375,
-        71.703125
+        71.65625
       ],
       "flags": {
         "collapsed": false
@@ -3156,12 +3156,12 @@
       "id": 518,
       "type": "UNETLoader",
       "pos": [
-        -361.24802192977467,
-        2036.2280065064533
+        -361.2480091605747,
+        2036.2280052017704
       ],
       "size": [
-        269.984375,
-        117
+        269.9375,
+        116.953125
       ],
       "flags": {},
       "order": 20,
@@ -4811,10 +4811,10 @@
       }
     },
     "ds": {
-      "scale": 0.8955034608568053,
+      "scale": 0.9850538069424879,
       "offset": [
-        1480.3290120795712,
-        -583.8827866553572
+        -1099.6155190092377,
+        -66.49805857688835
       ]
     }
   },
