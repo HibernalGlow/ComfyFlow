@@ -1,8 +1,8 @@
 {
   "id": "fde07196-c133-4f87-b383-6fd8b79b8312",
   "revision": 0,
-  "last_node_id": 346,
-  "last_link_id": 403,
+  "last_node_id": 351,
+  "last_link_id": 412,
   "nodes": [
     {
       "id": 252,
@@ -130,111 +130,79 @@
     },
     {
       "id": 254,
-      "type": "LoadImagesFromFolderKJ",
+      "type": "OIIO_LoadImage",
       "pos": [
         119.99978445764998,
         605.1633493328529
       ],
       "size": [
         360,
-        369.796875
+        130
       ],
       "flags": {},
       "order": 2,
       "mode": 0,
       "inputs": [
         {
-          "label": "folder",
-          "name": "folder",
+          "label": "filepath",
+          "name": "filepath",
           "type": "STRING",
           "widget": {
-            "name": "folder"
-          }
+            "name": "filepath"
+          },
+          "link": 404
         },
         {
-          "label": "width",
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          }
-        },
-        {
-          "label": "height",
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          }
-        },
-        {
-          "label": "keep_aspect_ratio",
-          "name": "keep_aspect_ratio",
+          "label": "precision",
+          "name": "precision",
           "type": "COMBO",
           "widget": {
-            "name": "keep_aspect_ratio"
+            "name": "precision"
           }
         },
         {
-          "label": "image_load_cap",
-          "name": "image_load_cap",
-          "shape": 7,
-          "type": "INT",
+          "label": "input_transform",
+          "name": "input_transform",
+          "type": "COMBO",
           "widget": {
-            "name": "image_load_cap"
-          }
-        },
-        {
-          "label": "start_index",
-          "name": "start_index",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "start_index"
-          }
-        },
-        {
-          "label": "include_subfolders",
-          "name": "include_subfolders",
-          "shape": 7,
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "include_subfolders"
+            "name": "input_transform"
           }
         }
       ],
       "outputs": [
         {
-          "label": "IMAGE",
+          "label": "image",
           "name": "image",
           "type": "IMAGE",
           "links": [
-            392,
-            395
+            408,
+            411
           ]
         },
         {
-          "label": "MASK",
+          "label": "mask",
           "name": "mask",
           "type": "MASK",
-          "links": []
+          "links": [
+            412
+          ]
         },
         {
-          "label": "count",
-          "name": "count",
+          "label": "xres",
+          "name": "xres",
           "type": "INT",
           "links": []
         },
         {
-          "label": "image_path",
-          "name": "image_path",
-          "type": "STRING",
+          "label": "yres",
+          "name": "yres",
+          "type": "INT",
           "links": []
         }
       ],
       "properties": {
-        "Node name for S&R": "LoadImagesFromFolderKJ",
-        "cnr_id": "comfyui-workflow-encrypt",
+        "Node name for S&R": "OIIO_LoadImage",
+        "cnr_id": "comfy_oiio",
         "ver": "unknown",
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -242,23 +210,15 @@
           "version": "7.5.2"
         },
         "widget_ue_connectable": {
-          "folder": true,
-          "width": true,
-          "height": true,
-          "keep_aspect_ratio": true,
-          "image_load_cap": true,
-          "start_index": true,
-          "include_subfolders": true
+          "filepath": true,
+          "precision": true,
+          "input_transform": true
         }
       },
       "widgets_values": [
         "D:\\Downloads\\test\\12",
-        -1,
-        -1,
-        "stretch",
-        0,
-        0,
-        false
+        "auto",
+        "auto"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159"
@@ -1339,7 +1299,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            402
+            401
           ]
         }
       ],
@@ -1443,7 +1403,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            400
+            399
           ]
         }
       ],
@@ -1556,7 +1516,7 @@
           "type": "STRING",
           "links": [
             398,
-            401
+            400
           ]
         }
       ],
@@ -1661,6 +1621,339 @@
         "",
         "/"
       ]
+    },
+    {
+      "id": 347,
+      "type": "StringConstant",
+      "pos": [
+        19.99978445764998,
+        519.1633493328529
+      ],
+      "size": [
+        320,
+        112
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          }
+        },
+        {
+          "label": "strip_newlines",
+          "name": "strip_newlines",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "strip_newlines"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            404,
+            397
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringConstant",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "string": true,
+          "strip_newlines": true
+        }
+      },
+      "widgets_values": [
+        "D:\\Downloads\\test\\12",
+        true
+      ]
+    },
+    {
+      "id": 349,
+      "type": "GetImageRangeFromBatch",
+      "pos": [
+        579.99978445765,
+        760.1633493328529
+      ],
+      "size": [
+        300,
+        160
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "start_index",
+          "name": "start_index",
+          "type": "INT",
+          "widget": {
+            "name": "start_index"
+          },
+          "link": 410
+        },
+        {
+          "label": "num_frames",
+          "name": "num_frames",
+          "type": "INT",
+          "widget": {
+            "name": "num_frames"
+          }
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 411
+        },
+        {
+          "label": "masks",
+          "name": "masks",
+          "type": "MASK",
+          "link": 412
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            392,
+            395
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetImageRangeFromBatch",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "unknown",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "start_index": true,
+          "num_frames": true
+        }
+      },
+      "widgets_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 350,
+      "type": "easy forLoopStart",
+      "pos": [
+        579.99978445765,
+        585.1633493328529
+      ],
+      "size": [
+        290,
+        126
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "total",
+          "name": "total",
+          "type": "INT",
+          "widget": {
+            "name": "total"
+          },
+          "link": 409
+        },
+        {
+          "label": "initial_value1",
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "widget": {
+            "name": "initial_value1"
+          }
+        },
+        {
+          "label": "initial_value2",
+          "name": "initial_value2",
+          "shape": 7,
+          "type": "*",
+          "widget": {
+            "name": "initial_value2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "flow",
+          "name": "flow",
+          "type": "FLOW_CONTROL",
+          "links": [
+            407
+          ]
+        },
+        {
+          "label": "index",
+          "name": "index",
+          "type": "INT",
+          "links": [
+            410
+          ]
+        },
+        {
+          "label": "value1",
+          "name": "value1",
+          "type": "*",
+          "links": []
+        },
+        {
+          "label": "value2",
+          "name": "value2",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopStart",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "unknown",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "total": true,
+          "initial_value1": true,
+          "initial_value2": true
+        }
+      },
+      "widgets_values": [
+        1,
+        null,
+        null
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 351,
+      "type": "easy imageCount",
+      "pos": [
+        579.99978445765,
+        480.1633493328529
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 408
+        }
+      ],
+      "outputs": [
+        {
+          "label": "count",
+          "name": "count",
+          "type": "INT",
+          "links": [
+            409
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy imageCount",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "unknown",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 348,
+      "type": "easy forLoopEnd",
+      "pos": [
+        2319.9983978645314,
+        379.16338536803664
+      ],
+      "size": [
+        260,
+        58
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "flow",
+          "name": "flow",
+          "type": "FLOW_CONTROL",
+          "link": 407
+        }
+      ],
+      "outputs": [
+        {
+          "label": "value1",
+          "name": "value1",
+          "type": "*",
+          "links": []
+        },
+        {
+          "label": "value2",
+          "name": "value2",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopEnd",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "unknown",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1778,7 +2071,7 @@
     ],
     [
       392,
-      254,
+      349,
       0,
       338,
       0,
@@ -1802,7 +2095,7 @@
     ],
     [
       395,
-      254,
+      349,
       0,
       341,
       0,
@@ -1818,8 +2111,8 @@
     ],
     [
       397,
-      254,
-      3,
+      347,
+      0,
       345,
       0,
       "STRING"
@@ -1863,6 +2156,62 @@
       340,
       1,
       "STRING"
+    ],
+    [
+      404,
+      347,
+      0,
+      254,
+      0,
+      "STRING"
+    ],
+    [
+      407,
+      350,
+      0,
+      348,
+      0,
+      "FLOW_CONTROL"
+    ],
+    [
+      408,
+      254,
+      0,
+      351,
+      0,
+      "IMAGE"
+    ],
+    [
+      409,
+      351,
+      0,
+      350,
+      0,
+      "INT"
+    ],
+    [
+      410,
+      350,
+      1,
+      349,
+      0,
+      "INT"
+    ],
+    [
+      411,
+      254,
+      0,
+      349,
+      2,
+      "IMAGE"
+    ],
+    [
+      412,
+      254,
+      1,
+      349,
+      3,
+      "MASK"
     ]
   ],
   "groups": [
