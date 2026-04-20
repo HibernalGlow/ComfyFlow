@@ -105,6 +105,48 @@ def find_node_id(workflow: dict, node_type: str) -> str:
     raise ValueError(f"Workflow does not contain node type: {node_type}")
 
 
+def collect_node_ids(workflow: dict, node_type: str) -> List[str]:
+    return [str(node["id"]) for node in workflow.get("nodes", []) if node.get("type") == node_type]
+
+
+def pick_best_saveimage_node_id(workflow: dict) -> str:
+    save_ids = collect_node_ids(workflow, "SaveImage")
+    if not save_ids:
+        raise ValueError("Workflow does not contain node type: SaveImage")
+    if len(save_ids) == 1:
+        return save_ids[0]
+
+    id_to_node = {str(n["id"]): n for n in workflow.get("nodes", [])}
+    link_map = collect_link_map(workflow)
+    preferred_upstream_types = {
+        "VAEDecode",
+        "KSampler",
+        "KSamplerAdvanced",
+        "ImageUpscaleWithModel",
+        "UltimateSDUpscale",
+    }
+
+    def score_save_node(save_id: str) -> Tuple[int, int]:
+        node = id_to_node.get(save_id, {})
+        image_link = None
+        for input_port in node.get("inputs", []) or []:
+            if input_port.get("name") == "images":
+                image_link = input_port.get("link")
+                break
+        if not isinstance(image_link, int) or image_link not in link_map:
+            return (0, int(save_id))
+
+        from_node_id = str(link_map[image_link][1])
+        from_type = id_to_node.get(from_node_id, {}).get("type", "")
+        if from_type in preferred_upstream_types:
+            return (3, int(save_id))
+        if from_type == "LoadImage":
+            return (1, int(save_id))
+        return (2, int(save_id))
+
+    return max(save_ids, key=score_save_node)
+
+
 def upload_image(server: str, image_path: Path) -> str:
     with image_path.open("rb") as f:
         files = {"image": (image_path.name, f, "application/octet-stream")}
@@ -239,7 +281,7 @@ def main() -> None:
     prompt_template = workflow_to_prompt(workflow)
 
     load_image_id = find_node_id(workflow, "LoadImage")
-    save_image_id = find_node_id(workflow, "SaveImage")
+    save_image_id = pick_best_saveimage_node_id(workflow)
 
     files = iter_images(input_dir, exts=(".png", ".jpg", ".jpeg", ".webp", ".avif", ".bmp", ".tif", ".tiff"))
     if not files:
