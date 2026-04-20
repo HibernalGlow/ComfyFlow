@@ -1,15 +1,15 @@
 {
   "id": "91f6bbe2-ed41-4fd6-bac7-71d5b5864ecb",
   "revision": 0,
-  "last_node_id": 515,
-  "last_link_id": 912,
+  "last_node_id": 517,
+  "last_link_id": 914,
   "nodes": [
     {
       "id": 380,
       "type": "GetNode",
       "pos": [
-        -100.7393798828125,
-        -260.48040771484375
+        -112.05258517795141,
+        -223.30864122178832
       ],
       "size": [
         210,
@@ -26,9 +26,7 @@
           "label": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
-          "links": [
-            601
-          ]
+          "links": []
         }
       ],
       "title": "Get_ref_img1",
@@ -57,7 +55,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 40,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -168,12 +166,12 @@
       "id": 38,
       "type": "CLIPLoader",
       "pos": [
-        -407.56578910947815,
-        890.522327224684
+        -407.56596634068467,
+        890.5223597328472
       ],
       "size": [
         330,
-        116.453125
+        116.921875
       ],
       "flags": {},
       "order": 1,
@@ -354,12 +352,12 @@
       "id": 39,
       "type": "VAELoader",
       "pos": [
-        -404.62877060904407,
-        641.3325214521149
+        -404.62886901786453,
+        641.3324768414313
       ],
       "size": [
         330,
-        81.796875
+        82.25
       ],
       "flags": {},
       "order": 2,
@@ -421,12 +419,12 @@
       "id": 294,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -310.0931192961102,
-        308.56431941218483
+        -310.0933433973415,
+        308.5643266749003
       ],
       "size": [
-        317.53125,
-        113.796875
+        317.515625,
+        114.25
       ],
       "flags": {},
       "order": 24,
@@ -549,12 +547,12 @@
       "id": 306,
       "type": "Fast Bypasser (rgthree)",
       "pos": [
-        -294.31523301138805,
-        179.77910551787073
+        -294.3156661841224,
+        179.77905939050186
       ],
       "size": [
         250.8125,
-        123.5625
+        123.59375
       ],
       "flags": {},
       "order": 36,
@@ -562,7 +560,7 @@
       "inputs": [
         {
           "dir": 3,
-          "label": "LoRA加载器(仅模型)",
+          "label": "Load LoRA",
           "name": "LoRA加载器（仅模型）",
           "type": "*",
           "link": 478
@@ -591,12 +589,12 @@
       "id": 325,
       "type": "SamplerCustom",
       "pos": [
-        951.3319702221172,
-        164.33665149768848
+        951.3316358966563,
+        164.3366553298091
       ],
       "size": [
         225,
-        231.140625
+        231.59375
       ],
       "flags": {
         "collapsed": false
@@ -686,7 +684,7 @@
       },
       "widgets_values": [
         true,
-        454260562591564,
+        634777285331009,
         "randomize",
         1
       ]
@@ -695,12 +693,12 @@
       "id": 249,
       "type": "CLIPLoader",
       "pos": [
-        459.59789361621506,
-        312.01233780411184
+        459.5977298990333,
+        312.01235834725026
       ],
       "size": [
         270,
-        116.453125
+        116.921875
       ],
       "flags": {},
       "order": 4,
@@ -892,12 +890,12 @@
       "id": 250,
       "type": "VAELoader",
       "pos": [
-        464.94049072993016,
-        474.57759116782694
+        464.9403568232701,
+        474.5775848472264
       ],
       "size": [
         270,
-        81.796875
+        82.25
       ],
       "flags": {},
       "order": 6,
@@ -981,7 +979,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1020,12 +1018,12 @@
       "id": 308,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        50.99193658496574,
-        190.25076146947669
+        50.99188937704639,
+        190.2507444417904
       ],
       "size": [
         270,
-        113.796875
+        114.25
       ],
       "flags": {},
       "order": 32,
@@ -1256,60 +1254,18 @@
       "widgets_values": []
     },
     {
-      "id": 475,
-      "type": "UnetLoaderGGUF",
-      "pos": [
-        -376.94495984515515,
-        748.8549552628785
-      ],
-      "size": [
-        270,
-        105.796875
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "unet_name",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "label": "MODEL",
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            808
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UnetLoaderGGUF",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "qwen-image-edit-2511-Q4_K_M.gguf"
-      ]
-    },
-    {
       "id": 471,
       "type": "UNETLoader",
       "pos": [
-        453.47812907628463,
-        180.63866701418152
+        453.47784883282793,
+        180.63868432640172
       ],
       "size": [
         270,
-        82
+        82.25
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1490,12 +1446,12 @@
       "id": 3,
       "type": "KSampler",
       "pos": [
-        100.51237658062541,
-        579.0561067928268
+        100.51221155865619,
+        579.0560988605112
       ],
       "size": [
         264.921875,
-        316.453125
+        316.921875
       ],
       "flags": {
         "collapsed": false
@@ -1613,7 +1569,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        975688170892666,
+        288859268631388,
         "randomize",
         4,
         1,
@@ -1636,7 +1592,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1675,17 +1631,17 @@
       "id": 312,
       "type": "FlowMatchEulerDiscreteScheduler (Custom)",
       "pos": [
-        1180.939364970381,
-        163.91673640437244
+        1180.9390324890308,
+        163.91669539263088
       ],
       "size": [
         344.625,
-        668.421875
+        668.890625
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1882,7 +1838,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1926,7 +1882,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1963,7 +1919,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2007,7 +1963,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -2059,7 +2015,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2103,7 +2059,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -2161,7 +2117,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 41,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -2201,7 +2157,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 42,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -2352,7 +2308,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -2407,7 +2363,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -2577,7 +2533,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 55,
+      "order": 56,
       "mode": 0,
       "inputs": [
         {
@@ -2610,17 +2566,17 @@
       "id": 378,
       "type": "llama_cpp_parameters",
       "pos": [
-        -101.86672084313994,
-        -272.47091579242476
+        -130.2516326904297,
+        -304.7982177734375
       ],
       "size": [
-        269.28125,
-        519.140625
+        269.29193115234375,
+        322
       ],
       "flags": {
-        "collapsed": false
+        "collapsed": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -2726,7 +2682,7 @@
           "name": "parameters",
           "type": "LLAMACPPARAMS",
           "links": [
-            600
+            914
           ]
         }
       ],
@@ -2747,88 +2703,6 @@
         0,
         0.1,
         5,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 376,
-      "type": "llama_cpp_model_loader",
-      "pos": [
-        -105.3436137801462,
-        -359.0025892297069
-      ],
-      "size": [
-        270,
-        295.125
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "model",
-          "name": "model",
-          "type": "COMBO",
-          "widget": {
-            "name": "model"
-          }
-        },
-        {
-          "label": "chat_handler",
-          "name": "chat_handler",
-          "type": "COMBO",
-          "widget": {
-            "name": "chat_handler"
-          }
-        },
-        {
-          "label": "n_ctx",
-          "name": "n_ctx",
-          "type": "INT",
-          "widget": {
-            "name": "n_ctx"
-          }
-        },
-        {
-          "label": "vram_limit",
-          "name": "vram_limit",
-          "type": "INT",
-          "widget": {
-            "name": "vram_limit"
-          }
-        },
-        {
-          "label": "image_max_tokens",
-          "name": "image_max_tokens",
-          "type": "INT",
-          "widget": {
-            "name": "image_max_tokens"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "label": "llama_model",
-          "name": "llamamodel",
-          "type": "LLAMACPPMODEL",
-          "links": [
-            911
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "llama_cpp_model_loader",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "Huihui-Qwen3-VL-4B-Instruct-abliterated.Q8_0.gguf",
-        "Huihui-Qwen3-VL-4B-Instruct-abliterated.mmproj-Q8_0.gguf",
-        "Qwen3-VL",
-        8192,
-        512,
         0,
         0
       ]
@@ -2887,17 +2761,17 @@
       "id": 384,
       "type": "JjkText",
       "pos": [
-        -91.25147247314453,
-        -156.59962463378906
+        -91.25152283892794,
+        -156.5995158505716
       ],
       "size": [
         400,
         200
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -2915,7 +2789,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            800
+            913
           ]
         }
       ],
@@ -2931,12 +2805,12 @@
       "id": 298,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        38.911302361875414,
-        334.63262453371254
+        38.91106928548743,
+        334.6326014335677
       ],
       "size": [
         280.703125,
-        113.796875
+        114.25
       ],
       "flags": {},
       "order": 37,
@@ -3015,15 +2889,15 @@
       "id": 392,
       "type": "easy showAnything",
       "pos": [
-        872.9897008776826,
-        -368.194327533169
+        413.3105307632461,
+        -352.42495653788495
       ],
       "size": [
         312.1875,
         358.25
       ],
       "flags": {},
-      "order": 34,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -3031,7 +2905,7 @@
           "name": "anything",
           "shape": 7,
           "type": "*",
-          "link": 615
+          "link": 912
         }
       ],
       "outputs": [
@@ -3049,24 +2923,24 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "A realistic photography-style image of a young anime girl with long blonde hair tied with large blue bows, wearing a light blue and white striped hoodie, kneeling on a bed in a bedroom setting. She has green eyes, a blush on her cheeks, and a gentle smile. The lighting is soft and natural, with sunlight coming from a window in the background. The scene is intimate and cozy, with a focus on the character's expression and the detailed rendering of her clothing and hair. The overall atmosphere is warm and inviting, with a clear emphasis on the character's youthful and innocent appearance. The image is highly detailed, with realistic textures and lighting, capturing the essence of a candid, relaxed moment in a domestic setting."
+        "A high-resolution, photorealistic illustration of a young anime-style elf girl with long, flowing lavender hair and pointed ears, kneeling on a white background. She wears a light gray, semi-transparent button-up shirt with the top half open, revealing a black lace bralette with pink cat ear details and matching black thigh-high stockings. Her head is adorned with a black crown-like accessory with pink flowers, and she has a playful, confident expression with a slight blush and a single tear of joy. Her right arm is raised in a flexing pose, showcasing her toned bicep, while her left hand rests on her hip. The image is rendered with soft, natural lighting and subtle shadows, emphasizing the textures of her clothing and skin, and the overall composition is centered and detailed, capturing a moment of playful confidence and charm. The style is highly detailed and realistic, with a focus on the character's expressive face and dynamic pose, creating a visually striking and emotionally engaging scene."
       ]
     },
     {
       "id": 383,
       "type": "JjkText",
       "pos": [
-        -790.9702758716303,
-        239.24229792780994
+        -790.9703634077246,
+        239.2422455521488
       ],
       "size": [
-        299.640625,
+        299.625,
         175.359375
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -3098,157 +2972,171 @@
       ]
     },
     {
-      "id": 377,
-      "type": "llama_cpp_instruct_adv",
+      "id": 295,
+      "type": "CompressImages",
       "pos": [
-        414.62357096608736,
-        -354.67610574078
+        1583.7528290444882,
+        669.3631230762937
       ],
       "size": [
-        309.46875,
-        471.125
+        287.09375,
+        131.578125
       ],
-      "flags": {},
-      "order": 29,
+      "flags": {
+        "collapsed": false
+      },
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
-          "name": "llamamodel",
-          "type": "LLAMACPPMODEL",
-          "link": 911
-        },
-        {
-          "label": "parameters",
-          "name": "parameters",
-          "type": "LLAMACPPARAMS",
-          "link": 600
-        },
-        {
-          "label": "images",
           "name": "images",
-          "shape": 7,
           "type": "IMAGE",
-          "link": 601
+          "link": 652
         },
         {
-          "label": "preset_prompt",
-          "name": "preset_prompt",
-          "type": "COMBO",
-          "widget": {
-            "name": "preset_prompt"
-          }
-        },
-        {
-          "label": "custom_prompt",
-          "name": "custom_prompt",
+          "label": "filename_prefix",
+          "name": "filename_prefix",
           "type": "STRING",
           "widget": {
-            "name": "custom_prompt"
-          },
-          "link": 800
-        },
-        {
-          "label": "system_prompt",
-          "name": "system_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "system_prompt"
+            "name": "filename_prefix"
           }
         },
         {
-          "label": "max_frames",
-          "name": "max_frames",
-          "type": "INT",
-          "widget": {
-            "name": "max_frames"
-          }
-        },
-        {
-          "label": "seed",
-          "name": "seed",
-          "type": "INT",
-          "widget": {
-            "name": "seed"
-          }
-        },
-        {
-          "label": "llama_model",
-          "name": "llama_model",
-          "type": "LLAMACPPMODEL",
+          "label": "images or video_path",
+          "name": "images or video_path",
+          "type": "*",
           "link": null
         },
         {
-          "label": "queue_handler",
-          "name": "queue_handler",
+          "label": "password",
+          "name": "password",
           "shape": 7,
-          "type": "*"
-        },
-        {
-          "label": "max_size",
-          "name": "max_size",
-          "type": "INT",
+          "type": "STRING",
           "widget": {
-            "name": "max_size"
-          }
-        },
-        {
-          "label": "save_states",
-          "name": "save_states",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "save_states"
+            "name": "password"
           }
         }
       ],
       "outputs": [
         {
-          "label": "output",
-          "name": "output",
-          "type": "STRING",
-          "links": [
-            615
-          ]
-        },
-        {
-          "label": "output_list",
-          "name": "output_list",
-          "shape": 6,
+          "label": "zip_filename",
+          "name": "temp_dir",
           "type": "STRING"
-        },
-        {
-          "label": "state_uid",
-          "name": "state_uid",
-          "type": "INT"
         }
       ],
       "properties": {
-        "Node name for S&R": "llama_cpp_instruct_adv",
+        "Node name for S&R": "CompressImages",
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "Normal - Describe",
-        "",
-        "只输出结果",
-        "one by one",
-        2,
-        1024,
-        303293007078047,
-        "randomize"
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 277,
+      "type": "VAEDecode",
+      "pos": [
+        1175.487228613804,
+        684.1806020210438
+      ],
+      "size": [
+        225,
+        71.59375
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "samples",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 514
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 785
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            652,
+            909
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 515,
+      "type": "SaveImage",
+      "pos": [
+        1605.7220490533139,
+        340.10155512437734
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 909
+        },
+        {
+          "label": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI"
       ]
     },
     {
       "id": 78,
       "type": "LoadImage",
       "pos": [
-        -777.1710317827929,
-        669.5719474840068
+        -777.1710973419714,
+        669.5717919261691
       ],
       "size": [
         332.734375,
-        339.140625
+        343.5625
       ],
       "flags": {},
-      "order": 21,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -3308,99 +3196,150 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "キャストリス Castorice_143673427_p1.png",
+        "1733213290078.jpg",
         "image"
       ]
     },
     {
-      "id": 277,
-      "type": "VAEDecode",
+      "id": 475,
+      "type": "UnetLoaderGGUF",
       "pos": [
-        1175.4874064200337,
-        684.1806456383126
-      ],
-      "size": [
-        225,
-        71.140625
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 52,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "samples",
-          "name": "samples",
-          "type": "LATENT",
-          "link": 514
-        },
-        {
-          "label": "vae",
-          "name": "vae",
-          "type": "VAE",
-          "link": 785
-        }
-      ],
-      "outputs": [
-        {
-          "label": "IMAGE",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            909
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 515,
-      "type": "SaveImage",
-      "pos": [
-        1605.7224595884356,
-        340.10151694907717
+        -795.0437891362872,
+        998.1803270565804
       ],
       "size": [
         270,
-        270
+        106.25
       ],
       "flags": {},
-      "order": 54,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
-          "label": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 909
-        },
-        {
-          "label": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
+          "label": "unet_name",
+          "name": "unet_name",
+          "type": "COMBO",
           "widget": {
-            "name": "filename_prefix"
+            "name": "unet_name"
           }
         }
       ],
       "outputs": [
         {
-          "label": "image_urls",
-          "name": "image_urls",
-          "type": "STRING"
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            808
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "SaveImage",
+        "Node name for S&R": "UnetLoaderGGUF",
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "ComfyUI"
+        "qwen-image-edit-2511-Q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": 516,
+      "type": "llama_cpp_model_loader",
+      "pos": [
+        -647.2824744448309,
+        -868.0158335687679
+      ],
+      "size": [
+        277,
+        295.578125
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "llamamodel",
+          "type": "LLAMACPPMODEL",
+          "links": [
+            910
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "llama_cpp_model_loader"
+      },
+      "widgets_values": [
+        "Huihui-Qwen3-VL-4B-Instruct-abliterated.Q8_0.gguf",
+        "Huihui-Qwen3-VL-4B-Instruct-abliterated.mmproj-Q8_0.gguf",
+        "Qwen3-VL",
+        false,
+        8192,
+        -1,
+        true
+      ]
+    },
+    {
+      "id": 517,
+      "type": "llama_cpp_instruct_adv",
+      "pos": [
+        -294.15130927753285,
+        -1063.5714569411641
+      ],
+      "size": [
+        400,
+        423.578125
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "llamamodel",
+          "type": "LLAMACPPMODEL",
+          "link": 910
+        },
+        {
+          "name": "parameters",
+          "type": "LLAMACPPARAMS",
+          "link": 914
+        },
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "custom_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_prompt"
+          },
+          "link": 913
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            912
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "llama_cpp_instruct_adv"
+      },
+      "widgets_values": [
+        "Normal - Describe",
+        "",
+        "只输出结果",
+        "one by one",
+        24,
+        256,
+        0,
+        "randomize"
       ]
     }
   ],
@@ -3462,30 +3401,6 @@
       "LATENT"
     ],
     [
-      600,
-      378,
-      0,
-      377,
-      1,
-      "LLAMACPPARAMS"
-    ],
-    [
-      601,
-      380,
-      0,
-      377,
-      2,
-      "IMAGE"
-    ],
-    [
-      615,
-      377,
-      0,
-      392,
-      0,
-      "*"
-    ],
-    [
       639,
       389,
       0,
@@ -3500,6 +3415,14 @@
       294,
       0,
       "MODEL"
+    ],
+    [
+      652,
+      277,
+      0,
+      295,
+      0,
+      "IMAGE"
     ],
     [
       667,
@@ -3660,14 +3583,6 @@
       3,
       2,
       "CONDITIONING"
-    ],
-    [
-      800,
-      384,
-      0,
-      377,
-      4,
-      "STRING"
     ],
     [
       805,
@@ -3854,12 +3769,36 @@
       "IMAGE"
     ],
     [
-      911,
-      376,
+      910,
+      516,
       0,
-      377,
+      517,
       0,
       "LLAMACPPMODEL"
+    ],
+    [
+      912,
+      517,
+      0,
+      392,
+      0,
+      "STRING"
+    ],
+    [
+      913,
+      384,
+      0,
+      517,
+      3,
+      "STRING"
+    ],
+    [
+      914,
+      378,
+      0,
+      517,
+      1,
+      "LLAMACPPARAMS"
     ]
   ],
   "groups": [
@@ -5037,10 +4976,10 @@
       }
     },
     "ds": {
-      "scale": 0.8769226950000029,
+      "scale": 0.4950000000000003,
       "offset": [
-        119.57100995800539,
-        544.6343062429072
+        1282.8380423307208,
+        1604.581582611934
       ]
     }
   },
