@@ -52,14 +52,18 @@ except ModuleNotFoundError:
 # ===========================================================================
 # 每条: (flat_key, toml_section, toml_key, 中文标签, 类型, 默认值, 是否必填)
 _SCHEMA = [
-    ("server",            "comfyui", "server",            "服务器地址",   str,   "http://127.0.0.1:8000", False),
-    ("workflow",          "paths",   "workflow",           "工作流文件",   str,   "",                      True),
-    ("input_dir",         "paths",   "input_dir",          "输入目录",     str,   "",                      True),
-    ("output_dir",        "paths",   "output_dir",         "输出目录",     str,   "",                      True),
-    ("sleep",             "options", "sleep",              "任务间隔(秒)", float, 0.0,                     False),
-    ("skip_existing",     "options", "skip_existing",      "跳过已存在",   bool,  True,                    False),
-    ("continue_on_error", "options", "continue_on_error",  "出错时继续",   bool,  True,                    False),
-    ("timeout",           "options", "timeout",            "超时秒数/张",  int,   3600,                    False),
+    ("server",            "comfyui", "server",            "服务器地址",     str,   "http://127.0.0.1:8000", False),
+    ("workflow",          "paths",   "workflow",           "工作流文件",     str,   "",                      True),
+    ("input_dir",         "paths",   "input_dir",          "输入目录",       str,   "",                      True),
+    ("output_dir",        "paths",   "output_dir",         "输出目录",       str,   "",                      True),
+    ("sleep",             "options", "sleep",              "任务间隔(秒)",   float, 0.0,                     False),
+    ("skip_existing",     "options", "skip_existing",      "跳过已存在",     bool,  True,                    False),
+    ("continue_on_error", "options", "continue_on_error",  "出错时继续",     bool,  True,                    False),
+    ("timeout",           "options", "timeout",            "超时秒数/张",    int,   3600,                    False),
+    ("upload_timeout",    "options", "upload_timeout",     "上传超时(秒)",   int,   120,                     False),
+    ("upload_retries",    "options", "upload_retries",     "上传重试次数",   int,   2,                       False),
+    ("poll_interval",     "options", "poll_interval",      "轮询间隔(秒)",   float, 0.8,                     False),
+    ("limit",             "options", "limit",              "仅处理前N张",    int,   0,                       False),
 ]
 
 SCHEMA_KEYS   = [s[0] for s in _SCHEMA]
@@ -483,22 +487,42 @@ def _norm_server(s: str) -> str:
     return s if s.startswith(("http://", "https://")) else "http://" + s
 
 
-def upload_image(server: str, path: Path) -> str:
-    with path.open("rb") as f:
-        r = requests.post(
-            f"{server}/upload/image",
-            files={"image": (path.name, f, "application/octet-stream")},
-            data={"type": "input", "overwrite": "true"},
-            timeout=120,
-        )
-    r.raise_for_status()
-    p   = r.json()
-    sub = p.get("subfolder", "")
-    nm  = p.get("name", path.name)
-    return f"{sub}/{nm}" if sub else nm
+def upload_image(server: str, path: Path, timeout: int = 120, retries: int = 2) -> str:
+    last_exc: Optional[Exception] = None
+
+    for attempt in range(1, retries + 2):
+        started = time.time()
+        size_mb = path.stat().st_size / (1024 * 1024)
+        print(f"      [upload {attempt}/{retries + 1}] start  {path.name}  {size_mb:.2f} MB")
+        try:
+            with path.open("rb") as f:
+                r = requests.post(
+                    f"{server}/upload/image",
+                    files={"image": (path.name, f, "application/octet-stream")},
+                    data={"type": "input", "overwrite": "true"},
+                    timeout=timeout,
+                )
+            r.raise_for_status()
+            p = r.json()
+            sub = p.get("subfolder", "")
+            nm = p.get("name", path.name)
+            uploaded = f"{sub}/{nm}" if sub else nm
+            elapsed = time.time() - started
+            print(f"      [upload {attempt}/{retries + 1}] done   {uploaded}  {elapsed:.1f}s")
+            return uploaded
+        except Exception as exc:
+            elapsed = time.time() - started
+            last_exc = exc
+            print(f"      [upload {attempt}/{retries + 1}] fail   {exc}  {elapsed:.1f}s")
+            if attempt <= retries:
+                time.sleep(min(2.0, float(attempt)))
+    assert last_exc is not None
+    raise last_exc
 
 
 def queue_prompt(server: str, prompt: dict, client_id: str) -> str:
+    started = time.time()
+    print("      [queue] submit prompt")
     r = requests.post(f"{server}/prompt",
                       json={"prompt": prompt, "client_id": client_id},
                       timeout=120)
@@ -511,18 +535,28 @@ def queue_prompt(server: str, prompt: dict, client_id: str) -> str:
     data = r.json()
     if "prompt_id" not in data:
         raise RuntimeError(f"Unexpected /prompt response: {data}")
+    elapsed = time.time() - started
+    print(f"      [queue] prompt_id={data['prompt_id']}  {elapsed:.1f}s")
     return data["prompt_id"]
 
 
 def wait_history(server: str, prompt_id: str,
                  poll: float = 0.8, timeout: int = 3600) -> dict:
     deadline = time.time() + timeout
+    started = time.time()
+    next_log = started + max(5.0, poll)
     while time.time() < deadline:
         r = requests.get(f"{server}/history/{prompt_id}", timeout=60)
         r.raise_for_status()
         data = r.json()
         if prompt_id in data:
+            elapsed = time.time() - started
+            print(f"      [done] history ready  {elapsed:.1f}s")
             return data[prompt_id]
+        now = time.time()
+        if now >= next_log:
+            print(f"      [wait] prompt_id={prompt_id}  elapsed={now - started:.1f}s")
+            next_log = now + max(5.0, poll)
         time.sleep(poll)
     raise TimeoutError(f"等待 prompt {prompt_id} 超时")
 
@@ -597,6 +631,9 @@ def run_batch(cfg: Dict[str, Any]) -> None:
     if not images:
         sys.exit(f"[ERROR] 输入目录中未找到图片: {input_dir}")
 
+    if int(cfg["limit"]) > 0:
+        images = images[:int(cfg["limit"])]
+
     total     = len(images)
     nw        = len(str(total))           # 数字宽度，用于对齐进度
     client_id = str(uuid.uuid4())
@@ -612,6 +649,8 @@ def run_batch(cfg: Dict[str, Any]) -> None:
     print(f"  跳过已存在={cfg['skip_existing']}  "
           f"出错继续={cfg['continue_on_error']}  "
           f"间隔={cfg['sleep']}s  超时={cfg['timeout']}s")
+    print(f"  上传超时={cfg['upload_timeout']}s  上传重试={cfg['upload_retries']}  "
+          f"轮询间隔={cfg['poll_interval']}s  limit={cfg['limit']}")
     print("=" * _MW)
 
     for idx, img_path in enumerate(images, 1):
@@ -631,8 +670,14 @@ def run_batch(cfg: Dict[str, Any]) -> None:
 
         try:
             # 1. 上传源图
-            uploaded = upload_image(server, img_path)
-            print(f"{indent}↑ uploaded  {uploaded}")
+            print(f"{indent}↑ uploading  {img_path.name}")
+            uploaded = upload_image(
+                server,
+                img_path,
+                timeout=int(cfg["upload_timeout"]),
+                retries=int(cfg["upload_retries"]),
+            )
+            print(f"{indent}↑ uploaded   {uploaded}")
 
             # 2. 构造 prompt（深拷贝模板）
             prompt = json.loads(json.dumps(prompt_tmpl))
@@ -640,8 +685,13 @@ def run_batch(cfg: Dict[str, Any]) -> None:
             prompt[save_node_id]["inputs"]["filename_prefix"] = img_path.stem
 
             # 3. 提交并等待
-            pid     = queue_prompt(server, prompt, client_id)
-            history = wait_history(server, pid, timeout=int(cfg["timeout"]))
+            pid = queue_prompt(server, prompt, client_id)
+            history = wait_history(
+                server,
+                pid,
+                poll=float(cfg["poll_interval"]),
+                timeout=int(cfg["timeout"]),
+            )
 
             # 4. 检查执行错误
             err = _exec_error(history)
@@ -711,6 +761,14 @@ def _build_parser() -> argparse.ArgumentParser:
     p.add_argument("--output-dir",        default="",   dest="output_dir",         help="输出目录")
     p.add_argument("--sleep",             default=None, type=float,                help="任务间隔秒数")
     p.add_argument("--timeout",           default=None, type=int,                  help="单张超时秒数")
+    p.add_argument("--upload-timeout",    default=None, type=int,  dest="upload_timeout",
+                   help="单张图片上传超时秒数")
+    p.add_argument("--upload-retries",    default=None, type=int,  dest="upload_retries",
+                   help="上传失败后的重试次数")
+    p.add_argument("--poll-interval",     default=None, type=float, dest="poll_interval",
+                   help="轮询历史结果的间隔秒数")
+    p.add_argument("--limit",             default=None, type=int,
+                   help="仅处理前 N 张图片，0 表示不限制")
     p.add_argument("--skip-existing",     action="store_true", dest="skip_existing",
                    help="跳过输出目录中已存在同名文件的图片")
     p.add_argument("--continue-on-error", action="store_true", dest="continue_on_error",
@@ -750,6 +808,10 @@ def main() -> None:
         ("output_dir",        "output_dir"),
         ("sleep",             "sleep"),
         ("timeout",           "timeout"),
+        ("upload_timeout",    "upload_timeout"),
+        ("upload_retries",    "upload_retries"),
+        ("poll_interval",     "poll_interval"),
+        ("limit",             "limit"),
         ("skip_existing",     "skip_existing"),
         ("continue_on_error", "continue_on_error"),
     ]

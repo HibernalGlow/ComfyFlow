@@ -14,3 +14,7 @@ sleep             = 0.0
 skip_existing     = true
 continue_on_error = true
 timeout           = 3600
+upload_timeout    = 120
+upload_retries    = 2
+poll_interval     = 0.8
+limit             = 0
