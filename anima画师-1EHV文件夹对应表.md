@@ -1,6 +1,51 @@
 # anima画师 → 1EHV 文件夹对应表
 
-匹配结果: **225 / 265** | 生成日期: 2026-05-19
+匹配结果: **225 / 265** | 未匹配记录: **40 / 265** | 生成日期: 2026-05-19
+
+## 未匹配画师（无名文件夹，记录别名备用）
+
+| # | anima画师 | 日文/中文别名 | 社团/备注 |
+|---|-----------|--------------|----------|
+| 1 | @ask_(askzy) | ASK / ASKZY (中国) | 前米哈游画师 |
+| 2 | @beijuu | 哔悠biu (中国) | Pixiv: 108846778 |
+| 3 | @chen_bin | 陈镔 / 鬼針草 (中国) | Pixiv: 6049901 |
+| 4 | @chigusa_minori | 千種みのり | 个人画师，无固定社团 |
+| 5 | @chomoran | チョモラン | 社团: 夢のチョモラン王国 |
+| 6 | @creamyghost | — | FurAffinity画师 |
+| 7 | @fishine | 魚生 (台湾) | Pixiv: 480469 |
+| 8 | @goe | — | Pixiv: 124157 |
+| 9 | @goeleu | GOELEU (中国) | Pixiv: 59093039 |
+| 10 | @gweda | gwegwe | Pixiv: 17282018 |
+| 11 | @haishima_xv | 灰島XV | 社团: 零式ハンマー |
+| 12 | @hiroki_(yyqw7151) | ヒロき | Pixiv: 27631291 |
+| 13 | @hrgm | HGM | Pixiv: 5560287 |
+| 14 | @inchore | インチョー | 个人画师 |
+| 15 | @ixy | いくしー (Ixy) | Pixiv: 4935 |
+| 16 | @kaamin_(mariarose753) | kaamin | Pixiv: mariarose753 |
+| 17 | @kani_biimu | かにビーム / ぺこ | 社团: Luminocity (ルミノシティ) |
+| 18 | @kotoribako | コトリバコ | 社团: コトリボックス (Kotoribox) |
+| 19 | @minaba_hideo | 皆葉英夫 | Square Enix原画师，无同人社团 |
+| 20 | @mizuongaku | 水音楽 | Twitter: @ruutu_000 |
+| 21 | @n_(m_ohkamotoh) | — | — |
+| 22 | @naga-agan | — | FurAffinity画师 |
+| 23 | @neko_blow | NekoBlow | Twitter: @neko_blow |
+| 24 | @niliu_chahui | 逆流茶会 (中国) | 画师团体: meionjytsela, obaoba |
+| 25 | @possummachine | ポッシ | Pixiv: 79535659 |
+| 26 | @pretty_mundane | — | 西方画师 |
+| 27 | @razy_(skuroko) | — | — |
+| 28 | @ren_(renjiyu) | — | — |
+| 29 | @rong_hui | 草棉谷RONG (台湾) | — |
+| 30 | @sanuki_(kyoudashya) | さぬき | Fantia/Fanbox活动 |
+| 31 | @sheya | 希亚 (中国) | Pixiv: 11764388 |
+| 32 | @silver_(chenwen) | silver銀 (台湾) | — |
+| 33 | @smilesmile1312 | 笑笑餃子 (中国/台湾) | — |
+| 34 | @takeuchi_takashi | 武内崇 | TYPE-MOON / Takebouki |
+| 35 | @thomasz | — | 西方画师 |
+| 36 | @tianliang_duohe_fangdongye | 天亮多喝防凍液 (中国) | — |
+| 37 | @umyonge_(lkakeu) | うみょんげ | Pixiv: 2761932 |
+| 38 | @wenu_(kirikirimai) | きりきり舞 / 斬々舞 | 商业漫画家 |
+| 39 | @youyume-kun | 妖夢くん | Pixiv: 68480688 |
+| 40 | @yuki_maccha_(yukimattya10) | ゆきま / まっちゃ | — |
 
 | # | anima画师 | 1EHV文件夹 |
 |---|-----------|-----------|
@@ -229,3 +274,48 @@
 | 223 | @okuma707 | [タフネス大根 (奥馬)] |
 | 224 | @uno_ryoku | [ぐりいん野はうす (温野りょく)] |
 | 225 | @ikuchan_kaoru | [郁村 (郁)] |
+
+## 未匹配画师（无名文件夹，记录别名备用）
+
+| # | anima画师 | 日文/中文别名 | 社团/备注 |
+|---|-----------|--------------|----------|
+| 1 | @ask_(askzy) | ASK / ASKZY (中国) | 前米哈游画师 |
+| 2 | @beijuu | 哔悠biu (中国) | Pixiv: 108846778 |
+| 3 | @chen_bin | 陈镔 / 鬼針草 (中国) | Pixiv: 6049901 |
+| 4 | @chigusa_minori | 千種みのり | 个人画师，无固定社团 |
+| 5 | @chomoran | チョモラン | 社团: 夢のチョモラン王国 |
+| 6 | @creamyghost | — | FurAffinity画师 |
+| 7 | @fishine | 魚生 (台湾) | Pixiv: 480469 |
+| 8 | @goe | — | Pixiv: 124157 |
+| 9 | @goeleu | GOELEU (中国) | Pixiv: 59093039 |
+| 10 | @gweda | gwegwe | Pixiv: 17282018 |
+| 11 | @haishima_xv | 灰島XV | 社团: 零式ハンマー |
+| 12 | @hiroki_(yyqw7151) | ヒロき | Pixiv: 27631291 |
+| 13 | @hrgm | HGM | Pixiv: 5560287 |
+| 14 | @inchore | インチョー | 个人画师 |
+| 15 | @ixy | いくしー (Ixy) | Pixiv: 4935 |
+| 16 | @kaamin_(mariarose753) | kaamin | — |
+| 17 | @kani_biimu | かにビーム / ぺこ | 社团: Luminocity (ルミノシティ) |
+| 18 | @kotoribako | コトリバコ | 社团: コトリボックス (Kotoribox) |
+| 19 | @minaba_hideo | 皆葉英夫 | Square Enix原画师，无同人社团 |
+| 20 | @mizuongaku | 水音楽 | Twitter: @ruutu_000 |
+| 21 | @n_(m_ohkamotoh) | — | — |
+| 22 | @naga-agan | — | FurAffinity画师 |
+| 23 | @neko_blow | NekoBlow | Twitter: @neko_blow |
+| 24 | @niliu_chahui | 逆流茶会 (中国) | 画师团体: meionjytsela, obaoba |
+| 25 | @possummachine | ポッシ | Pixiv: 79535659 |
+| 26 | @pretty_mundane | — | 西方画师 |
+| 27 | @razy_(skuroko) | — | — |
+| 28 | @ren_(renjiyu) | — | — |
+| 29 | @rong_hui | 草棉谷RONG (台湾) | — |
+| 30 | @sanuki_(kyoudashya) | さぬき | Fantia/Fanbox活动 |
+| 31 | @sheya | 希亚 (中国) | Pixiv: 11764388 |
+| 32 | @silver_(chenwen) | silver銀 (台湾) | — |
+| 33 | @smilesmile1312 | 笑笑餃子 (中国/台湾) | — |
+| 34 | @takeuchi_takashi | 武内崇 | TYPE-MOON / Takebouki |
+| 35 | @thomasz | — | 西方画师 |
+| 36 | @tianliang_duohe_fangdongye | 天亮多喝防凍液 (中国) | — |
+| 37 | @umyonge_(lkakeu) | うみょんげ | Pixiv: 2761932 |
+| 38 | @wenu_(kirikirimai) | きりきり舞 / 斬々舞 | 商业漫画家 |
+| 39 | @youyume-kun | 妖夢くん | Pixiv: 68480688 |
+| 40 | @yuki_maccha_(yukimattya10) | ゆきま / まっちゃ | — |
