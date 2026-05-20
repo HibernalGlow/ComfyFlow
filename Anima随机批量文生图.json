@@ -1,0 +1,3253 @@
+{
+  "id": "97b30717-8c4f-40a5-a8b2-aa9a333d1d6f",
+  "revision": 0,
+  "last_node_id": 90,
+  "last_link_id": 122,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "SaveImage",
+      "pos": [
+        2221.1856775956853,
+        2199.3718991948704
+      ],
+      "size": [
+        517.5,
+        573.4375
+      ],
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "label": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 89
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "VAELoader",
+      "pos": [
+        306.00966743607944,
+        390.15636529541024
+      ],
+      "size": [
+        268.640625,
+        82.734375
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "vae_name",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "CLIPLoader",
+      "pos": [
+        389.68377992523676,
+        738.4011959012392
+      ],
+      "size": [
+        268.640625,
+        145.359375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "clip_name",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          }
+        },
+        {
+          "label": "type",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          }
+        },
+        {
+          "label": "device",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            2,
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.11.0",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "EmptyLatentImage",
+      "pos": [
+        677.0395339888137,
+        1033.8996920776372
+      ],
+      "size": [
+        268.640625,
+        144.03125
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "label": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "label": "batch_size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            122
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        856,
+        1280,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1252.3939157106797,
+        1243.9658942322187
+      ],
+      "size": [
+        582.984375,
+        258.609375
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2
+        },
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "label": "CONDITIONING",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "low quality, worst quality, bad anatomy, deformed anatomy, mutated anatomy, extra limbs, extra feet, third foot, multiple feet, fused feet, feet merged, overlapping feet, second foot visible, more than one foot, extra toes, missing toes, fused toes, deformed toes, twisted feet, bad foot structure, (stirrup covering sole:1.5), (stirrup wrapping foot:1.5), closed toed stirrup, stirrup covering toes, stirrup covering heel, foot fully enclosed, shoe, socks on soles, sole covered, (stirrup strap passing between toes:1.5), (strap wrapping around toes:1.5), (strap on toes:1.4), (toes clamping penis:1.5), (toes gripping shaft:1.5), (toes touching penis:1.5), toes entangled with strap, penis between toes, foot merged with another foot, (two feet occupying same space:1.5)"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        613.4393619062944,
+        511.6467719970702
+      ],
+      "size": [
+        268.640625,
+        80.09375
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 114
+        },
+        {
+          "label": "shift",
+          "name": "shift",
+          "type": "FLOAT",
+          "widget": {
+            "name": "shift"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 9,
+      "type": "VAEDecode",
+      "pos": [
+        1549.8362665571735,
+        506.72631158447274
+      ],
+      "size": [
+        224.96875,
+        72.109375
+      ],
+      "flags": {},
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "samples",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 4
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 10,
+      "type": "KSampler",
+      "pos": [
+        1236.3886906392045,
+        676.8326707720946
+      ],
+      "size": [
+        295.75,
+        473.1875
+      ],
+      "flags": {},
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 6
+        },
+        {
+          "label": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 7
+        },
+        {
+          "label": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 8
+        },
+        {
+          "label": "latent_image",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 122
+        },
+        {
+          "label": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 67
+        },
+        {
+          "label": "steps",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          }
+        },
+        {
+          "label": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          }
+        },
+        {
+          "label": "sampler_name",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          }
+        },
+        {
+          "label": "scheduler",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          }
+        },
+        {
+          "label": "denoise",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        865163675322693,
+        "randomize",
+        30,
+        4,
+        "er_sde",
+        "sgm_uniform",
+        1
+      ]
+    },
+    {
+      "id": 11,
+      "type": "UNETLoader",
+      "pos": [
+        -716.5566679186535,
+        751.4747970676679
+      ],
+      "size": [
+        306.21875,
+        110.71875
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "unet_name",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          }
+        },
+        {
+          "label": "weight_dtype",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            54,
+            113
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.11.0",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "anima-base-v1.0.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "CLIPTextEncode",
+      "pos": [
+        358.38676863199885,
+        -12.072864779404426
+      ],
+      "size": [
+        542.640625,
+        292.0625
+      ],
+      "flags": {},
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 10
+        },
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "label": "CONDITIONING",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "widget_ue_connectable": {
+          "text": true
+        }
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 14,
+      "type": "MarkdownNote",
+      "pos": [
+        318.8680055783692,
+        925.9754924978635
+      ],
+      "size": [
+        296.515625,
+        289.421875
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Frame Rate Note",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "# 建议参数\n\n# 1536x1536\n# 1536x1024\n# 1024x1536"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 18,
+      "type": "JjkText",
+      "pos": [
+        -847.6880342658525,
+        22.06356141417274
+      ],
+      "size": [
+        401.34375,
+        161.203125
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            28,
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JjkText",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "@cromachina,"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 19,
+      "type": "JoinStringMulti",
+      "pos": [
+        1034.0607333506514,
+        -511.9517619402892
+      ],
+      "size": [
+        268.984375,
+        339.984375
+      ],
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "字符串_1",
+          "name": "string_1",
+          "type": "STRING",
+          "link": 60
+        },
+        {
+          "label": "字符串_2",
+          "name": "string_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 31
+        },
+        {
+          "label": "输入数量",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        },
+        {
+          "label": "分隔符",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        },
+        {
+          "label": "输出为列表",
+          "name": "return_list",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "return_list"
+          },
+          "link": null
+        },
+        {
+          "name": "string_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": 28
+        },
+        {
+          "name": "string_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_5",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_6",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_7",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            16,
+            61
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JoinStringMulti",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "fb9d5764d21d23a3f52186aeccbb259efac96f9c",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "delimiter": true,
+          "inputcount": true,
+          "return_list": true
+        }
+      },
+      "widgets_values": [
+        7,
+        "",
+        false,
+        null
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 20,
+      "type": "JjkText",
+      "pos": [
+        -229.36802030044993,
+        -1004.4125581830986
+      ],
+      "size": [
+        474.90625,
+        490.453125
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 68
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            49
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JjkText",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "masterpiece, best quality, ultra detailed, 8k, 1girl, laffey ii, azur lane, rabbit ear headband, long fluffy white hair, twin tails, red eyes, petite body, delicate cute face, light smile, seductive half-closed eyes, gentle blush,  white off-shoulder top with blue trim and sailor collar, bare shoulders, detached white sleeves,  wearing toeless open-heel stirrup stockings with a gentle white-to-light-blue gradient, the gradient transitions smoothly from white at the top to pale blue near the arch, the thin elastic stirrup band is the same gradient color and lies flat across the arch, it does not act as a separate strap or sling, heels and toes are completely bare, the bare soles are fully visible with no fabric covering them,  her right foot is presented in the foreground, the soft bare arch gently pressing against the thick shaft of an erect penis, the penis lies naturally along the length of the sole from heel to toe, precum is dripping onto the arch and toes, the stirrup band is visible across the middle of the arch but the penis does not pass under, through, or inside the band in any way, it simply rests directly against the bare skin,  her right toes are gently curled around the tip of the penis but without any gripping or clamping, the left foot is relaxed and rested softly on the right ankle, blurry and out of focus,  dynamic camera angle, medium shot, upper body and face clearly visible in the same frame, the composition varies to show both the intimate footjob and the character's aroused expression,  soft lighting, depth of field, @happoubi jin"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 26,
+      "type": "easy showAnything",
+      "pos": [
+        1490.7304748168908,
+        -612.9032232273379
+      ],
+      "size": [
+        770.65625,
+        357.390625
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "1girl, solo, ryuugi kisaki, blue archive, black hair, long hair, blunt bangs, grey eyes, white halo, butterfly hair ornament, nun, nun hood, veil, black dress, habits, cleavage cutout, underboob, open front, bare back, high slit, hip vent, white stirrup pantyhose, stirrup legwear, front seam, back seam, pantyhose seam, body seam, bare heels, exposed instep, barefoot, soles, sitting, clasped hands, praying, blushing, sharp eyes, heavy-lidded eyes, expressionless, cowboy shot, from front, side view, dramatic tension, dark atmosphere, cathedral, church pews, stained glass, the character is wearing an erotic modified black nun habit and white stirrup pantyhose featuring a distinct center seam running down both the front and back of her legs, with the fabric looping under the arch of the foot to clearly expose her bare heels and toes as she sits on a church pew with clasped hands.deepthroat oral, lying on back, legs spread, ahegao, rolled eyes, open mouth, heavy blush, cum on face, heart symbols, onomatopoeia, sweat, fluids, dynamic action lines, bedroom, night scene\n\n@kitou sakeru"
+        ]
+      ]
+    },
+    {
+      "id": 28,
+      "type": "JjkText",
+      "pos": [
+        -181.99575986001082,
+        -273.8753238967412
+      ],
+      "size": [
+        401.328125,
+        161.203125
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JjkText",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "\n\n"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 33,
+      "type": "ReplaceText",
+      "pos": [
+        911.8918567339902,
+        93.28363557824312
+      ],
+      "size": [
+        268.515625,
+        179.984375
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "texts",
+          "type": "STRING",
+          "widget": {
+            "name": "texts"
+          },
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "texts",
+          "type": "STRING",
+          "links": [
+            36
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReplaceText"
+      },
+      "widgets_values": [
+        "",
+        "\\",
+        ""
+      ]
+    },
+    {
+      "id": 34,
+      "type": "easy showAnything",
+      "pos": [
+        1681.6088323199276,
+        241.13773051842827
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 36
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": [
+            73
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "@kitou sakeru"
+        ]
+      ]
+    },
+    {
+      "id": 36,
+      "type": "ReplaceText",
+      "pos": [
+        1135.4500559146081,
+        -16.827152541806186
+      ],
+      "size": [
+        268.546875,
+        179.984375
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "texts",
+          "type": "STRING",
+          "links": [
+            39
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReplaceText"
+      },
+      "widgets_values": [
+        "",
+        "\\",
+        ""
+      ]
+    },
+    {
+      "id": 37,
+      "type": "easy showAnything",
+      "pos": [
+        992.6871174109808,
+        424.09555372816885
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 40,
+      "type": "ReplaceText",
+      "pos": [
+        1284.8637581279197,
+        614.8328455670345
+      ],
+      "size": [
+        268.609375,
+        179.984375
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "texts",
+          "type": "STRING",
+          "links": [
+            42
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReplaceText"
+      },
+      "widgets_values": [
+        "",
+        "\\",
+        ""
+      ]
+    },
+    {
+      "id": 41,
+      "type": "easy showAnything",
+      "pos": [
+        1538.965643381826,
+        651.3458556073173
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 44,
+      "type": "easy promptReplace",
+      "pos": [
+        574.2895495237724,
+        -958.0491407534387
+      ],
+      "size": [
+        269.390625,
+        287.859375
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            59
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy promptReplace"
+      },
+      "widgets_values": [
+        ", @happoubi jin",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 45,
+      "type": "AnimaAdapterLoader",
+      "pos": [
+        -230.13868871964803,
+        728.7982090613197
+      ],
+      "size": [
+        268.640625,
+        170.671875
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 54
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaAdapterLoader"
+      },
+      "widgets_values": [
+        "anima-turbo-lora-v0.1.safetensors",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 46,
+      "type": "AnimaPromptFormatter",
+      "pos": [
+        976.3787838865652,
+        -1098.7243259341026
+      ],
+      "size": [
+        399.40625,
+        199.40625
+      ],
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 59
+        }
+      ],
+      "outputs": [
+        {
+          "name": "formatted_text",
+          "type": "STRING",
+          "links": [
+            60
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaPromptFormatter"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 47,
+      "type": "AnimaPromptFormatter",
+      "pos": [
+        576.7534858893996,
+        1360.5844670152387
+      ],
+      "size": [
+        399.390625,
+        199.390625
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "formatted_text",
+          "type": "STRING",
+          "links": [
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaPromptFormatter"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 48,
+      "type": "JjkText",
+      "pos": [
+        -645.2275435067679,
+        -492.8921913050501
+      ],
+      "size": [
+        474.90625,
+        490.453125
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JjkText",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "lowres, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, text, error, extra digit, fewer digits, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, out of focus, ugly, disfigured, disproportionate, bad proportions, gross proportions, missing arms, missing legs, extra arms, extra legs, extra limbs, fused limbs, missing limbs, long neck, username, artist name, logo, monochrome, grayscale, sepia, multiple heads, bad ears, extra ears, bad eyes, cross-eyed, bad teeth, skin spots, age spots, acne, dirty, dust, body hair, facial hair, beard, mustache, censored, bar censor, mosaic, pubic hair, overexposed, underexposed, low contrast, duplicate, mirrored, abstract, chaotic, messy"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 49,
+      "type": "AnimaLayerReplayPatcher",
+      "pos": [
+        -107.59235307362064,
+        1088.6890860670337
+      ],
+      "size": [
+        304.40625,
+        419.8125
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaLayerReplayPatcher"
+      },
+      "widgets_values": [
+        true,
+        "3,4,5",
+        0.5,
+        1,
+        false,
+        0.2,
+        16,
+        0.5,
+        6,
+        2,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "type": "PresetText|pysssss",
+      "pos": [
+        -1489.7243065876828,
+        -1235.685153694949
+      ],
+      "size": [
+        224.96875,
+        134.703125
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "stirrup4-",
+        null
+      ]
+    },
+    {
+      "id": 51,
+      "type": "PresetText|pysssss",
+      "pos": [
+        -237.5165714481177,
+        -1432.8891966045614
+      ],
+      "size": [
+        224.96875,
+        134.703125
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "stirrup4+",
+        null
+      ]
+    },
+    {
+      "id": 52,
+      "type": "EmptyLatentImage",
+      "pos": [
+        796.1430389032839,
+        1217.215717400877
+      ],
+      "size": [
+        268.625,
+        144.03125
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "label": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "label": "batch_size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        768,
+        1152,
+        1
+      ]
+    },
+    {
+      "id": 53,
+      "type": "BatchLoadTexts",
+      "pos": [
+        -2706.551233578957,
+        334.0490202634437
+      ],
+      "size": [
+        633.578125,
+        1007.765625
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "link": 117
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            64,
+            72
+          ]
+        },
+        {
+          "name": "all_texts",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "current_index",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "seed_out",
+          "type": "INT",
+          "links": [
+            116
+          ]
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchLoadTexts"
+      },
+      "widgets_values": [
+        "direct",
+        "@kitou sakeru",
+        "lines_per_file",
+        982,
+        "single",
+        0,
+        1,
+        false,
+        true,
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 54,
+      "type": "EmptyLatentImage",
+      "pos": [
+        717.601713127831,
+        779.1770199722356
+      ],
+      "size": [
+        315.671875,
+        217.84375
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "label": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "label": "batch_size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        512,
+        736,
+        1
+      ]
+    },
+    {
+      "id": 56,
+      "type": "Seed (rgthree)",
+      "pos": [
+        925.099780462544,
+        1586.9255273857475
+      ],
+      "size": [
+        313.953125,
+        188.015625
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "SEED",
+          "shape": 3,
+          "type": "INT",
+          "links": [
+            67
+          ]
+        }
+      ],
+      "properties": {
+        "randomMax": 1125899906842624,
+        "randomMin": 0
+      },
+      "widgets_values": [
+        108213174093358,
+        null,
+        null,
+        "okay"
+      ]
+    },
+    {
+      "id": 59,
+      "type": "JjkText",
+      "pos": [
+        -1936.9100438111832,
+        -234.39171520910867
+      ],
+      "size": [
+        399.3125,
+        199.3125
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JjkText"
+      },
+      "widgets_values": [
+        "@akazawa red\n@beijuu\n@blue borscht\n@blvefo9\n@chen bin\n@chomoran\n@ekakibito\n@blade_(galaxist)\n@flasso,\n@gusha s.\n@iapoc\n@hiiragi yuuichi\n@hitotose rin\n@henreader\n@jikatarou\n@jima,\n@kanzarin\n@simao\n@smilesmile1312\n@sorimura youji\n@shuffle (songdatiankong)\n@suruga kreuz\n@takunomi\n@tanabe kyou\n@tianliang duohe fangdongye\n@yukiguni yuu\n@shiokonbu\n@shikisokuzeku76\n@sage joh\n@uno ryoku\n@mignon\n@mikozin\n@mountain han\n@muteki soda\n@naga-agan,\n@nakajima\n@mizuongaku\n@ogre (illustogre)\n@oni-noboru\n@oosawara sadao\n@parsley-f\n@robo mikan\n@rella\n@rong hui"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "JoinStringMulti",
+      "pos": [
+        -709.9530525028183,
+        -1076.5558267060978
+      ],
+      "size": [
+        268.96875,
+        339.984375
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "字符串_1",
+          "name": "string_1",
+          "type": "STRING",
+          "link": 69
+        },
+        {
+          "label": "字符串_2",
+          "name": "string_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 70
+        },
+        {
+          "label": "输入数量",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        },
+        {
+          "label": "分隔符",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        },
+        {
+          "label": "输出为列表",
+          "name": "return_list",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "return_list"
+          },
+          "link": null
+        },
+        {
+          "name": "string_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_5",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_6",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_7",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            68
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JoinStringMulti",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "fb9d5764d21d23a3f52186aeccbb259efac96f9c",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "delimiter": true,
+          "inputcount": true,
+          "return_list": true
+        }
+      },
+      "widgets_values": [
+        7,
+        "",
+        false,
+        null
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 63,
+      "type": "BatchLoadTexts",
+      "pos": [
+        -1651.7116506547852,
+        1119.3689231627122
+      ],
+      "size": [
+        589.171875,
+        936.546875
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "link": 118
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            70
+          ]
+        },
+        {
+          "name": "all_texts",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "current_index",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "seed_out",
+          "type": "INT",
+          "links": [
+            106
+          ]
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [
+            112
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchLoadTexts"
+      },
+      "widgets_values": [
+        "files",
+        "deepthroat_ahegao_oral.txt\ndoggystyle_bent_over.txt\ndoggystyle_oral (2).txt\ndoggystyle (2).txt\ndoor_peeking_surprise_above.txt\nlifted_legs_spread_vaginal.txt\nmissionary.txt\nmouse.txt\noral_fellatio.txt\noral_missionary.txt\npaizuri_cum_aftermath_sitting.txt\npaizuri_lifted.txt\nprone_bone (1).txt",
+        "one_per_file",
+        0,
+        "single",
+        6,
+        3,
+        true,
+        false,
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 64,
+      "type": "BatchLoadTexts",
+      "pos": [
+        -2620.3371687489494,
+        1515.9077775082646
+      ],
+      "size": [
+        589.15625,
+        936.53125
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "link": 119
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            69
+          ]
+        },
+        {
+          "name": "all_texts",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "current_index",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "seed_out",
+          "type": "INT",
+          "links": [
+            120
+          ]
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [
+            111
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchLoadTexts"
+      },
+      "widgets_values": [
+        "files",
+        "asagi mutsuki (2).txt\niochi marie (idol).txt\niochi marie (2).txt\nlaffeyii (1).txt\nle malin (2).txt\nmiyoshi takane.txt\nryuugi kisaki maid.txt\nryuugi kisaki neko.txt\nryuugi kisaki nun.txt\nryuugi kisaki nurse.txt\nryuugi kisaki (1).txt\nsunohara shun (small) (2).txt\ntendou arisu (maid).txt\ntoki (bunny girl).txt\ntsukiyuki miyako water (2).txt\nuzawa reisa (magical girl).txt\nwaraku chise (2).txt\nyurizono seia water (2).txt\nyurizono seia (2).txt",
+        "lines_per_file",
+        0,
+        "single",
+        9,
+        3,
+        true,
+        false,
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 65,
+      "type": "easy showAnything",
+      "pos": [
+        -794.552730352726,
+        463.37931368953707
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 72
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "@kitou sakeru"
+        ]
+      ]
+    },
+    {
+      "id": 66,
+      "type": "JoinStringMulti",
+      "pos": [
+        694.6990661633095,
+        1906.382205369719
+      ],
+      "size": [
+        268.96875,
+        339.984375
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "字符串_1",
+          "name": "string_1",
+          "type": "STRING",
+          "link": 73
+        },
+        {
+          "label": "字符串_2",
+          "name": "string_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 74
+        },
+        {
+          "label": "输入数量",
+          "name": "inputcount",
+          "type": "INT",
+          "widget": {
+            "name": "inputcount"
+          },
+          "link": null
+        },
+        {
+          "label": "分隔符",
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        },
+        {
+          "label": "输出为列表",
+          "name": "return_list",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "return_list"
+          },
+          "link": null
+        },
+        {
+          "name": "string_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": 101
+        },
+        {
+          "name": "string_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": 79
+        },
+        {
+          "name": "string_5",
+          "shape": 7,
+          "type": "STRING",
+          "link": 86
+        },
+        {
+          "name": "string_6",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "string_7",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            96
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JoinStringMulti",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "fb9d5764d21d23a3f52186aeccbb259efac96f9c",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "widget_ue_connectable": {
+          "delimiter": true,
+          "inputcount": true,
+          "return_list": true
+        }
+      },
+      "widgets_values": [
+        7,
+        "",
+        false,
+        null
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 67,
+      "type": "JjkText",
+      "pos": [
+        369.9445007877623,
+        1642.964789905169
+      ],
+      "size": [
+        401.328125,
+        161.1875
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            74,
+            79
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JjkText",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "·"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 70,
+      "type": "Text String Truncate",
+      "pos": [
+        -559.3018216603646,
+        2587.0365525193474
+      ],
+      "size": [
+        269.109375,
+        245.3125
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 112
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 111
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "TEXT",
+          "type": "STRING",
+          "links": [
+            85
+          ]
+        },
+        {
+          "name": "TEXT_B",
+          "type": "STRING",
+          "links": [
+            99
+          ]
+        },
+        {
+          "name": "TEXT_C",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "TEXT_D",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text String Truncate"
+      },
+      "widgets_values": [
+        "words",
+        "end",
+        5
+      ]
+    },
+    {
+      "id": 72,
+      "type": "easy showAnything",
+      "pos": [
+        -174.6851221828675,
+        1763.9371579539636
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 99
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": [
+            100
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "ryuugi kisaki nun"
+        ]
+      ]
+    },
+    {
+      "id": 73,
+      "type": "easy showAnything",
+      "pos": [
+        103.02944408719031,
+        2332.891460744566
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": [
+            86
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "deepthroat_ahegao_oral"
+        ]
+      ]
+    },
+    {
+      "id": 74,
+      "type": "easy showAnything",
+      "pos": [
+        1314.967868296434,
+        2322.0520660538336
+      ],
+      "size": [
+        295.359375,
+        446.71875
+      ],
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 97
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": [
+            89
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "@kitou sakeru·ryuugi kisaki nun·deepthroat_ahegao_oral"
+        ]
+      ]
+    },
+    {
+      "id": 77,
+      "type": "Replace String v3 [Eclipse]",
+      "pos": [
+        1018.3065573230275,
+        2391.8308811624
+      ],
+      "size": [
+        269.0625,
+        241.65625
+      ],
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 96
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            97
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Replace String v3 [Eclipse]"
+      },
+      "widgets_values": [
+        [],
+        "",
+        "[\\\\/:*?\"<>|]",
+        "_",
+        25,
+        "none"
+      ],
+      "color": "#007d52",
+      "bgcolor": "#3a3a3a",
+      "shape": "default"
+    },
+    {
+      "id": 78,
+      "type": "Replace String v3 [Eclipse]",
+      "pos": [
+        150.25757559312456,
+        1926.445451634373
+      ],
+      "size": [
+        269.03125,
+        241.65625
+      ],
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 100
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            101
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Replace String v3 [Eclipse]"
+      },
+      "widgets_values": [
+        [],
+        "",
+        "1girl,\\s*solo,\\s*",
+        "",
+        25,
+        "none"
+      ],
+      "color": "#007d52",
+      "bgcolor": "#3a3a3a",
+      "shape": "default"
+    },
+    {
+      "id": 79,
+      "type": "EmptyLatentImage",
+      "pos": [
+        792.7454658462707,
+        1178.3027078655173
+      ],
+      "size": [
+        315.65625,
+        217.828125
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "label": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "label": "batch_size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        512,
+        512,
+        1
+      ]
+    },
+    {
+      "id": 80,
+      "type": "easy showAnything",
+      "pos": [
+        -678.1735982938649,
+        1372.4600358978105
+      ],
+      "size": [
+        295.359375,
+        446.703125
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 106
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "381136296824517"
+        ]
+      ]
+    },
+    {
+      "id": 85,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -315.55286097751684,
+        527.9157757000501
+      ],
+      "size": [
+        269.640625,
+        114.71875
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 113
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            114
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "anima-turbo-lora-v0.1.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 86,
+      "type": "easy showAnything",
+      "pos": [
+        -1955.7997459445176,
+        790.8021416002103
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 116
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "825254397511490"
+        ]
+      ]
+    },
+    {
+      "id": 87,
+      "type": "Seed (rgthree)",
+      "pos": [
+        -3218.6741572672786,
+        1408.664744427836
+      ],
+      "size": [
+        313.9375,
+        188.015625
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "SEED",
+          "shape": 3,
+          "type": "INT",
+          "links": [
+            117
+          ]
+        }
+      ],
+      "properties": {
+        "randomMax": 1125899906842624,
+        "randomMin": 0
+      },
+      "widgets_values": [
+        825254397511490,
+        null,
+        null,
+        "okay"
+      ]
+    },
+    {
+      "id": 88,
+      "type": "Seed (rgthree)",
+      "pos": [
+        -2153.8724042322497,
+        1547.9317970741895
+      ],
+      "size": [
+        313.921875,
+        188.015625
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "SEED",
+          "shape": 3,
+          "type": "INT",
+          "links": [
+            118
+          ]
+        }
+      ],
+      "properties": {
+        "randomMax": 1125899906842624,
+        "randomMin": 0
+      },
+      "widgets_values": [
+        381136296824517,
+        null,
+        null,
+        "okay"
+      ]
+    },
+    {
+      "id": 89,
+      "type": "Seed (rgthree)",
+      "pos": [
+        -2267.6242495844363,
+        2767.9519184703963
+      ],
+      "size": [
+        313.921875,
+        188.015625
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "SEED",
+          "shape": 3,
+          "type": "INT",
+          "links": [
+            119
+          ]
+        }
+      ],
+      "properties": {
+        "randomMax": 1125899906842624,
+        "randomMin": 0
+      },
+      "widgets_values": [
+        746665422074578,
+        null,
+        null,
+        "okay"
+      ]
+    },
+    {
+      "id": 90,
+      "type": "easy showAnything",
+      "pos": [
+        -890.1004026600233,
+        2511.6975187668713
+      ],
+      "size": [
+        224.96875,
+        140.078125
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 120
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        [
+          "746665422074578"
+        ]
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      9,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      5,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      4,
+      10,
+      0,
+      9,
+      0,
+      "LATENT"
+    ],
+    [
+      5,
+      4,
+      0,
+      9,
+      1,
+      "VAE"
+    ],
+    [
+      6,
+      8,
+      0,
+      10,
+      0,
+      "MODEL"
+    ],
+    [
+      7,
+      12,
+      0,
+      10,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      8,
+      7,
+      0,
+      10,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      10,
+      5,
+      0,
+      12,
+      0,
+      "CLIP"
+    ],
+    [
+      16,
+      19,
+      0,
+      12,
+      1,
+      "STRING"
+    ],
+    [
+      28,
+      18,
+      0,
+      19,
+      5,
+      "STRING"
+    ],
+    [
+      31,
+      28,
+      0,
+      19,
+      1,
+      "STRING"
+    ],
+    [
+      34,
+      18,
+      0,
+      33,
+      0,
+      "STRING"
+    ],
+    [
+      36,
+      33,
+      0,
+      34,
+      0,
+      "STRING"
+    ],
+    [
+      39,
+      36,
+      0,
+      37,
+      0,
+      "STRING"
+    ],
+    [
+      42,
+      40,
+      0,
+      41,
+      0,
+      "STRING"
+    ],
+    [
+      49,
+      20,
+      0,
+      44,
+      0,
+      "STRING"
+    ],
+    [
+      52,
+      48,
+      0,
+      47,
+      0,
+      "STRING"
+    ],
+    [
+      53,
+      47,
+      0,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      54,
+      11,
+      0,
+      45,
+      0,
+      "MODEL"
+    ],
+    [
+      59,
+      44,
+      0,
+      46,
+      0,
+      "STRING"
+    ],
+    [
+      60,
+      46,
+      0,
+      19,
+      0,
+      "STRING"
+    ],
+    [
+      61,
+      19,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      64,
+      53,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      67,
+      56,
+      0,
+      10,
+      4,
+      "INT"
+    ],
+    [
+      68,
+      62,
+      0,
+      20,
+      0,
+      "STRING"
+    ],
+    [
+      69,
+      64,
+      0,
+      62,
+      0,
+      "STRING"
+    ],
+    [
+      70,
+      63,
+      0,
+      62,
+      1,
+      "STRING"
+    ],
+    [
+      72,
+      53,
+      0,
+      65,
+      0,
+      "STRING"
+    ],
+    [
+      73,
+      34,
+      0,
+      66,
+      0,
+      "STRING"
+    ],
+    [
+      74,
+      67,
+      0,
+      66,
+      1,
+      "STRING"
+    ],
+    [
+      79,
+      67,
+      0,
+      66,
+      6,
+      "STRING"
+    ],
+    [
+      85,
+      70,
+      0,
+      73,
+      0,
+      "STRING"
+    ],
+    [
+      86,
+      73,
+      0,
+      66,
+      7,
+      "STRING"
+    ],
+    [
+      89,
+      74,
+      0,
+      3,
+      1,
+      "STRING"
+    ],
+    [
+      96,
+      66,
+      0,
+      77,
+      0,
+      "STRING"
+    ],
+    [
+      97,
+      77,
+      0,
+      74,
+      0,
+      "STRING"
+    ],
+    [
+      99,
+      70,
+      1,
+      72,
+      0,
+      "STRING"
+    ],
+    [
+      100,
+      72,
+      0,
+      78,
+      0,
+      "STRING"
+    ],
+    [
+      101,
+      78,
+      0,
+      66,
+      5,
+      "STRING"
+    ],
+    [
+      106,
+      63,
+      3,
+      80,
+      0,
+      "INT"
+    ],
+    [
+      111,
+      64,
+      4,
+      70,
+      1,
+      "STRING"
+    ],
+    [
+      112,
+      63,
+      4,
+      70,
+      0,
+      "STRING"
+    ],
+    [
+      113,
+      11,
+      0,
+      85,
+      0,
+      "MODEL"
+    ],
+    [
+      114,
+      85,
+      0,
+      8,
+      0,
+      "MODEL"
+    ],
+    [
+      116,
+      53,
+      3,
+      86,
+      0,
+      "INT"
+    ],
+    [
+      117,
+      87,
+      0,
+      53,
+      0,
+      "INT"
+    ],
+    [
+      118,
+      88,
+      0,
+      63,
+      0,
+      "INT"
+    ],
+    [
+      119,
+      89,
+      0,
+      64,
+      0,
+      "INT"
+    ],
+    [
+      120,
+      64,
+      3,
+      90,
+      0,
+      "INT"
+    ],
+    [
+      122,
+      6,
+      0,
+      10,
+      3,
+      "LATENT"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Anima",
+      "bounding": [
+        252.47438911576702,
+        261.60242547607425,
+        2118.565185546875,
+        940.307861328125
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "画师串（如果没有更好的就不要动）",
+      "bounding": [
+        -52.61530414444405,
+        -154.6370282233595,
+        495.210205078125,
+        171.60000610351562
+      ],
+      "color": "#8AA",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "links_added_by_ue": [],
+    "ue_links": [],
+    "0246.VERSION": [
+      0,
+      0,
+      4
+    ],
+    "ds": {
+      "scale": 1.0603734602525594,
+      "offset": [
+        3890.156146706523,
+        -266.41599750282705
+      ]
+    },
+    "frontendVersion": "1.43.18",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
