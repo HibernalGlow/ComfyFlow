@@ -1,8 +1,8 @@
 {
   "id": "97b30717-8c4f-40a5-a8b2-aa9a333d1d6f",
   "revision": 0,
-  "last_node_id": 92,
-  "last_link_id": 128,
+  "last_node_id": 97,
+  "last_link_id": 135,
   "nodes": [
     {
       "id": 3,
@@ -12,11 +12,11 @@
         2199.3718991948704
       ],
       "size": [
-        517.421875,
-        573.328125
+        517.34375,
+        573.25
       ],
       "flags": {},
-      "order": 54,
+      "order": 55,
       "mode": 0,
       "inputs": [
         {
@@ -58,8 +58,8 @@
         390.15636529541024
       ],
       "size": [
-        268.53125,
-        82.765625
+        268.453125,
+        82.6875
       ],
       "flags": {},
       "order": 0,
@@ -102,8 +102,8 @@
         738.4011959012392
       ],
       "size": [
-        268.53125,
-        145.390625
+        268.453125,
+        145.3125
       ],
       "flags": {},
       "order": 2,
@@ -166,8 +166,8 @@
         1033.8996920776372
       ],
       "size": [
-        268.53125,
-        144.0625
+        268.453125,
+        143.984375
       ],
       "flags": {},
       "order": 3,
@@ -203,9 +203,7 @@
           "label": "LATENT",
           "name": "LATENT",
           "type": "LATENT",
-          "links": [
-            124
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -224,12 +222,12 @@
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
-        1252.3939157106797,
-        1243.9658942322187
+        1201.2733102419297,
+        1212.3197082513161
       ],
       "size": [
-        582.875,
-        258.515625
+        582.796875,
+        258.4375
       ],
       "flags": {},
       "order": 30,
@@ -280,18 +278,18 @@
         511.6467719970702
       ],
       "size": [
-        268.53125,
-        80.125
+        268.453125,
+        80.046875
       ],
       "flags": {},
-      "order": 29,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
           "label": "model",
           "name": "model",
           "type": "MODEL",
-          "link": 114
+          "link": 133
         },
         {
           "label": "shift",
@@ -331,10 +329,10 @@
       ],
       "size": [
         224.96875,
-        72.140625
+        72.0625
       ],
       "flags": {},
-      "order": 53,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -377,11 +375,11 @@
         767.444415132866
       ],
       "size": [
-        295.640625,
-        473.078125
+        295.5625,
+        473
       ],
       "flags": {},
-      "order": 52,
+      "order": 53,
       "mode": 0,
       "inputs": [
         {
@@ -406,7 +404,7 @@
           "label": "latent_image",
           "name": "latent_image",
           "type": "LATENT",
-          "link": 124
+          "link": 135
         },
         {
           "label": "seed",
@@ -476,10 +474,10 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        168775564206852,
+        649569748485688,
         "randomize",
-        36,
-        4.5,
+        30,
+        5,
         "er_sde",
         "beta57",
         1
@@ -493,8 +491,8 @@
         751.4747970676679
       ],
       "size": [
-        306.140625,
-        110.75
+        306.0625,
+        110.671875
       ],
       "flags": {},
       "order": 1,
@@ -523,9 +521,7 @@
           "label": "MODEL",
           "name": "MODEL",
           "type": "MODEL",
-          "links": [
-            113
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -547,11 +543,11 @@
         -12.072864779404426
       ],
       "size": [
-        542.59375,
-        291.953125
+        542.515625,
+        291.875
       ],
       "flags": {},
-      "order": 49,
+      "order": 50,
       "mode": 0,
       "inputs": [
         {
@@ -597,12 +593,12 @@
       "id": 14,
       "type": "MarkdownNote",
       "pos": [
-        318.8680055783692,
-        925.9754924978635
+        158.9208084672676,
+        1070.5432494749703
       ],
       "size": [
-        296.4375,
-        289.3125
+        296.359375,
+        289.234375
       ],
       "flags": {
         "collapsed": false
@@ -634,8 +630,8 @@
         15.550332227477668
       ],
       "size": [
-        401.234375,
-        161.09375
+        401.15625,
+        161.015625
       ],
       "flags": {},
       "order": 31,
@@ -680,11 +676,11 @@
         -511.9517619402892
       ],
       "size": [
-        268.875,
-        340.015625
+        268.84375,
+        339.9375
       ],
       "flags": {},
-      "order": 47,
+      "order": 48,
       "mode": 0,
       "inputs": [
         {
@@ -801,11 +797,11 @@
         -1004.4125581830986
       ],
       "size": [
-        474.796875,
-        490.34375
+        474.71875,
+        490.265625
       ],
       "flags": {},
-      "order": 39,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -846,11 +842,11 @@
         -612.9032232273379
       ],
       "size": [
-        770.5625,
-        357.28125
+        770.484375,
+        357.203125
       ],
       "flags": {},
-      "order": 50,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
@@ -871,7 +867,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "1girl, solo, ryuugi kisaki, blue archive, black hair, long hair, blunt bangs, grey eyes, white halo, butterfly hair ornament, nun, nun hood, veil, black dress, habits, cleavage cutout, underboob, open front, bare back, high slit, hip vent, white stirrup pantyhose, stirrup legwear, front seam, back seam, pantyhose seam, body seam, bare heels, exposed instep, barefoot, soles, sitting, clasped hands, praying, blushing, sharp eyes, heavy-lidded eyes, expressionless, cowboy shot, from front, side view, dramatic tension, dark atmosphere, cathedral, church pews, stained glass, the character is wearing an erotic modified black nun habit and white stirrup pantyhose featuring a distinct center seam running down both the front and back of her legs, with the fabric looping under the arch of the foot to clearly expose her bare heels and toes as she sits on a church pew with clasped hands.penis, oral fellatio, vaginal, surprised ahegao, wide sparkling eyes, open mouth, heavy blush, heart symbols, speech bubble with question mark, onomatopoeia, sweat, fluids, dynamic action lines, bedroom, night scene\n\nmasterpiece, best quality, score_7, safe, (full color, vivid colors, colorful:1.3) and rich coloring and high saturation, 1girl and loli and petite and flat chest and slender and young girl and cute face, detailed eyes, expressive eyes, dynamic lighting, finely detailed, cinematic lighting\n\n@smilesmile1312,"
+        "1girl, solo, waraku chise, blue archive, light blue hair, very long hair, twintails, red eyes, red horns, blue halo, hair flower, striped bikini, see-through shirt, white cover-up, sailor collar, white thighhigh stirrup_legwear, white sandals, shoulder bag, standing, holding beach ball, slight smile, direct eye contact, facing viewer, full body, from front, beach, sand, ocean, summer, bokeh, lens flaremissionary, fellatio, oral, penis in mouth, vaginal, lying on back, legs spread, ahegao, wide eyes, open mouth, heavy blush, from above, close-up, face focus, bedroom, on bed, motion lines, sweat, drooling, saliva trail\n\nmasterpiece, best quality, score_7, safe, (full color, vivid colors, colorful:1.3) and rich coloring and high saturation, 1girl and loli and petite and flat chest and slender and young girl and cute face, detailed eyes, expressive eyes, dynamic lighting, finely detailed, cinematic lighting\n\n@shuffle \\(songdatiankong\\)"
       ]
     },
     {
@@ -882,8 +878,8 @@
         -273.8753238967412
       ],
       "size": [
-        401.21875,
-        161.09375
+        401.140625,
+        161.015625
       ],
       "flags": {},
       "order": 5,
@@ -928,11 +924,11 @@
         93.28363557824312
       ],
       "size": [
-        268.421875,
-        180.015625
+        268.34375,
+        179.9375
       ],
       "flags": {},
-      "order": 38,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -971,10 +967,10 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
-      "order": 42,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -997,7 +993,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "@smilesmile1312,"
+        "@shuffle (songdatiankong)"
       ]
     },
     {
@@ -1008,8 +1004,8 @@
         -16.827152541806186
       ],
       "size": [
-        268.46875,
-        180.015625
+        268.390625,
+        179.9375
       ],
       "flags": {},
       "order": 6,
@@ -1042,7 +1038,7 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
       "order": 23,
@@ -1077,8 +1073,8 @@
         614.8328455670345
       ],
       "size": [
-        268.5,
-        180.015625
+        268.421875,
+        179.9375
       ],
       "flags": {},
       "order": 7,
@@ -1111,7 +1107,7 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
       "order": 24,
@@ -1146,11 +1142,11 @@
         -958.0491407534387
       ],
       "size": [
-        269.28125,
-        287.890625
+        269.203125,
+        287.8125
       ],
       "flags": {},
-      "order": 43,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1190,11 +1186,11 @@
         -1098.7243259341026
       ],
       "size": [
-        399.296875,
-        199.3125
+        399.21875,
+        199.234375
       ],
       "flags": {},
-      "order": 45,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -1230,8 +1226,8 @@
         1360.5844670152387
       ],
       "size": [
-        399.28125,
-        199.28125
+        399.203125,
+        199.203125
       ],
       "flags": {},
       "order": 25,
@@ -1270,8 +1266,8 @@
         -451.6959418511856
       ],
       "size": [
-        474.796875,
-        490.34375
+        474.71875,
+        490.265625
       ],
       "flags": {},
       "order": 8,
@@ -1302,7 +1298,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "worst quality, low quality, normal quality, lowres, jpeg artifacts, text, watermark, signature, logo, (monochrome, grayscale, black and white, b&w, sepia, single color, line art, sketch, desaturated:1.4), zombie, interlocked fingers, Aissist, nsfw, (large breasts, huge breasts, cleavage, heavy breasts:1.3), (mature female, milf, older woman, heavy makeup, lipstick:1.3), curvy, voluptuous, bad anatomy, bad hands, missing fingers, extra fingers, fused fingers, poorly drawn hands, poorly drawn face, mutation, deformed, ugly, disfigured, bad proportions, missing limbs, extra limbs, long neck, cross-eyed, bad eyes, blurry, out of focus, skin spots, acne, body hair, messy"
+        "low quality, worst quality, monochrome, greyscale, black and white, lineart, sketch, bad anatomy, deformed anatomy, extra limbs, cloned feet, fused feet, mutated feet, bad foot structure, twisted feet, extra toes, missing toes, fused toes, deformed toes, shoe, boot, sandals, socks, foot fully enclosed, sole covered, (stirrup covering sole:1.4), (stirrup covering toes:1.4), (stirrup covering heel:1.4), closed-toe stirrup, strap passing between toes, strap wrapping around toes, (footjob:1.4), (toes touching penis:1.4), penis between toes, foot merged with penis"
       ],
       "color": "#322",
       "bgcolor": "#533"
@@ -1315,8 +1311,8 @@
         1088.6890860670337
       ],
       "size": [
-        304.328125,
-        419.84375
+        304.25,
+        419.765625
       ],
       "flags": {},
       "order": 9,
@@ -1361,7 +1357,7 @@
       ],
       "size": [
         224.96875,
-        134.734375
+        134.65625
       ],
       "flags": {},
       "order": 10,
@@ -1389,7 +1385,7 @@
       ],
       "size": [
         224.96875,
-        134.734375
+        134.65625
       ],
       "flags": {},
       "order": 11,
@@ -1416,8 +1412,8 @@
         1217.215717400877
       ],
       "size": [
-        268.515625,
-        144.0625
+        268.4375,
+        143.984375
       ],
       "flags": {},
       "order": 12,
@@ -1479,8 +1475,8 @@
         60.37827508537566
       ],
       "size": [
-        633.46875,
-        1007.65625
+        633.390625,
+        1007.578125
       ],
       "flags": {},
       "order": 26,
@@ -1530,81 +1526,18 @@
       },
       "widgets_values": [
         "direct",
-        "@smilesmile1312,",
+        "@shuffle \\(songdatiankong\\)\n",
         "lines_per_file",
-        890,
+        71,
         "single",
         0,
-        5,
-        true,
+        3,
+        false,
         true,
         ""
       ],
       "color": "#332922",
       "bgcolor": "#593930"
-    },
-    {
-      "id": 54,
-      "type": "EmptyLatentImage",
-      "pos": [
-        717.601713127831,
-        779.1770199722356
-      ],
-      "size": [
-        315.578125,
-        217.734375
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "width",
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": null
-        },
-        {
-          "label": "height",
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": null
-        },
-        {
-          "label": "batch_size",
-          "name": "batch_size",
-          "type": "INT",
-          "widget": {
-            "name": "batch_size"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "label": "LATENT",
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage",
-        "cnr_id": "comfy-core",
-        "ver": "0.3.40",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        512,
-        736,
-        1
-      ]
     },
     {
       "id": 56,
@@ -1614,11 +1547,11 @@
         1586.9255273857475
       ],
       "size": [
-        313.875,
-        188.046875
+        313.796875,
+        187.96875
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1651,11 +1584,11 @@
         -234.39171520910867
       ],
       "size": [
-        399.234375,
-        199.234375
+        399.15625,
+        199.15625
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1680,8 +1613,8 @@
         -1076.5558267060978
       ],
       "size": [
-        268.859375,
-        340.015625
+        268.84375,
+        339.9375
       ],
       "flags": {},
       "order": 35,
@@ -1800,8 +1733,8 @@
         1119.3689231627122
       ],
       "size": [
-        589.078125,
-        936.46875
+        589,
+        936.390625
       ],
       "flags": {},
       "order": 27,
@@ -1852,7 +1785,7 @@
       },
       "widgets_values": [
         "files",
-        "deepthroat_ahegao_oral (2).txt\ndoggystyle_bent_over.txt\ndoggystyle_oral (4).txt\ndoggystyle (4).txt\nlifted_legs_spread_vaginal (2).txt\nmissionary (2).txt\noral_fellatio (2).txt\noral_missionary (2).txt\npaizuri_cum_aftermath_sitting (2).txt\npaizuri_lifted (2).txt\nprone_bone (3).txt",
+        "deepthroat_ahegao_oral (3).txt\ndoggystyle_bent_over (1).txt\ndoggystyle_oral (5).txt\ndoggystyle (5).txt\nlifted_legs_spread_vaginal (3).txt\nmissionary (3).txt\noral_fellatio (3).txt\noral_missionary (3).txt\npaizuri_cum_aftermath_sitting (3).txt\npaizuri_lifted (3).txt\nprone_bone (4).txt",
         "one_per_file",
         0,
         "single",
@@ -1873,8 +1806,8 @@
         2337.8826425456036
       ],
       "size": [
-        589.0625,
-        936.453125
+        588.984375,
+        936.375
       ],
       "flags": {},
       "order": 28,
@@ -1925,7 +1858,7 @@
       },
       "widgets_values": [
         "files",
-        "ryuugi kisaki (2).txt\nuzawa reisa (magical girl).txt\nryuugi kisaki nun.txt\nryuugi kisaki nurse.txt\nryuugi kisaki neko.txt\nryuugi kisaki maid.txt\niochi marie (2).txt\nyurizono seia water (2).txt\nyurizono seia (2).txt\ntsukiyuki miyako water (2).txt\niochi marie (idol).txt\nwaraku chise (2).txt\nle malin (2).txt\nsunohara shun (small) (2).txt\nasagi mutsuki (2).txt\ntoki (bunny girl).txt",
+        "asagi mutsuki (3).txt\niochi marie (idol) (1).txt\niochi marie (3).txt\nle malin (3).txt\nryuugi kisaki maid (1).txt\nryuugi kisaki neko (1).txt\nryuugi kisaki nun (1).txt\nryuugi kisaki nurse (1).txt\nryuugi kisaki (3).txt\nsunohara shun (small) (3).txt\ntoki (bunny girl) (1).txt\ntsukiyuki miyako water (3).txt\nuzawa reisa (magical girl) (1).txt\nwaraku chise (3).txt\nyurizono seia water (3).txt\nyurizono seia (3).txt",
         "lines_per_file",
         0,
         "single",
@@ -1947,7 +1880,7 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
       "order": 32,
@@ -1971,7 +1904,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "@smilesmile1312,"
+        "@shuffle \\(songdatiankong\\)"
       ]
     },
     {
@@ -1982,11 +1915,11 @@
         1906.382205369719
       ],
       "size": [
-        268.859375,
-        340.015625
+        268.84375,
+        339.9375
       ],
       "flags": {},
-      "order": 46,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -2102,11 +2035,11 @@
         1642.964789905169
       ],
       "size": [
-        401.21875,
-        161.078125
+        401.140625,
+        161
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -2148,8 +2081,8 @@
         2587.0365525193474
       ],
       "size": [
-        269.03125,
-        245.34375
+        268.953125,
+        245.265625
       ],
       "flags": {},
       "order": 37,
@@ -2223,10 +2156,10 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
-      "order": 41,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -2249,7 +2182,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "ryuugi kisaki nun"
+        "waraku chise (3)"
       ]
     },
     {
@@ -2261,10 +2194,10 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
-      "order": 40,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -2287,7 +2220,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "oral_fellatio (2)"
+        "oral_missionary (3)"
       ]
     },
     {
@@ -2299,10 +2232,10 @@
       ],
       "size": [
         295.359375,
-        446.625
+        446.546875
       ],
       "flags": {},
-      "order": 51,
+      "order": 52,
       "mode": 0,
       "inputs": [
         {
@@ -2325,7 +2258,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "@smilesmile1312,·ryuugi kisaki nun·oral_fellatio (2)"
+        "@shuffle (songdatiankong)·waraku chise (3)·oral_missionary (3)"
       ]
     },
     {
@@ -2336,11 +2269,11 @@
         2391.8308811624
       ],
       "size": [
-        268.875,
-        242.625
+        268.84375,
+        159
       ],
       "flags": {},
-      "order": 48,
+      "order": 49,
       "mode": 0,
       "inputs": [
         {
@@ -2384,11 +2317,11 @@
         1926.445451634373
       ],
       "size": [
-        268.84375,
-        242.625
+        268.6875,
+        241.65625
       ],
       "flags": {},
-      "order": 44,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -2425,69 +2358,6 @@
       "shape": "default"
     },
     {
-      "id": 79,
-      "type": "EmptyLatentImage",
-      "pos": [
-        792.7454658462707,
-        1178.3027078655173
-      ],
-      "size": [
-        315.546875,
-        217.71875
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "width",
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": null
-        },
-        {
-          "label": "height",
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": null
-        },
-        {
-          "label": "batch_size",
-          "name": "batch_size",
-          "type": "INT",
-          "widget": {
-            "name": "batch_size"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "label": "LATENT",
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage",
-        "cnr_id": "comfy-core",
-        "ver": "0.3.40",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        512,
-        512,
-        1
-      ]
-    },
-    {
       "id": 80,
       "type": "easy showAnything",
       "pos": [
@@ -2496,7 +2366,7 @@
       ],
       "size": [
         295.359375,
-        446.609375
+        446.53125
       ],
       "flags": {},
       "order": 34,
@@ -2520,37 +2390,35 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "644349081142163"
+        "900505438600513"
       ]
     },
     {
       "id": 85,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -315.55286097751684,
-        527.9157757000501
+        -342.158992746233,
+        465.61838565169023
       ],
       "size": [
-        269.5625,
-        114.75
+        269.484375,
+        114.671875
       ],
       "flags": {},
-      "order": 22,
-      "mode": 0,
+      "order": 16,
+      "mode": 4,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 113
+          "link": null
         }
       ],
       "outputs": [
         {
           "name": "MODEL",
           "type": "MODEL",
-          "links": [
-            114
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -2570,7 +2438,7 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
       "order": 33,
@@ -2594,22 +2462,22 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "372010833463927"
+        "356549844263843"
       ]
     },
     {
       "id": 87,
       "type": "Seed (rgthree)",
       "pos": [
-        -3141.5353410492467,
-        802.1422332618863
+        -3329.6551149883935,
+        1296.1942836599778
       ],
       "size": [
-        313.859375,
-        188.046875
+        313.78125,
+        187.96875
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2642,11 +2510,11 @@
         1547.9317970741895
       ],
       "size": [
-        313.84375,
-        188.046875
+        313.765625,
+        187.96875
       ],
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2679,11 +2547,11 @@
         2767.9519184703963
       ],
       "size": [
-        313.84375,
-        188.046875
+        313.765625,
+        187.96875
       ],
       "flags": {},
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2717,7 +2585,7 @@
       ],
       "size": [
         224.96875,
-        140.109375
+        140.03125
       ],
       "flags": {},
       "order": 36,
@@ -2741,7 +2609,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "304667868957814"
+        "689416339752198"
       ]
     },
     {
@@ -2752,11 +2620,11 @@
         -667.1686336665914
       ],
       "size": [
-        447.09375,
-        496.828125
+        447.015625,
+        496.75
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -2788,6 +2656,135 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 94,
+      "type": "AnimaTeaCache",
+      "pos": [
+        -178.0313958439565,
+        746.976298437454
+      ],
+      "size": [
+        224.96875,
+        298.21875
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 131
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            133
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaTeaCache"
+      },
+      "widgets_values": [
+        0.15,
+        true,
+        0.4,
+        1.8,
+        0,
+        1,
+        "cuda"
+      ],
+      "color": "#0f0f0eff",
+      "bgcolor": "#0f0f0eff",
+      "boxcolor": "rgba(212, 175, 55, 0.6)"
+    },
+    {
+      "id": 95,
+      "type": "AnimaLatentImage",
+      "pos": [
+        783.5530619222322,
+        772.4361013695805
+      ],
+      "size": [
+        224.96875,
+        241.75
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            135
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaLatentImage"
+      },
+      "widgets_values": [
+        "720×1280 (9:16 HD)",
+        720,
+        1280,
+        1
+      ],
+      "color": "#0f0f0eff",
+      "bgcolor": "#0f0f0eff",
+      "boxcolor": "rgba(212, 175, 55, 0.6)"
+    },
+    {
+      "id": 96,
+      "type": "AnimaBoosterLoader",
+      "pos": [
+        -574.3695189806206,
+        857.9450726801693
+      ],
+      "size": [
+        228.015625,
+        168.4375
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            131
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaBoosterLoader"
+      },
+      "widgets_values": [
+        "anima-base-v1.0.safetensors",
+        "auto",
+        false
+      ],
+      "color": "#0f0f0eff",
+      "bgcolor": "#0f0f0eff",
+      "boxcolor": "rgba(212, 175, 55, 0.6)"
     }
   ],
   "links": [
@@ -3112,22 +3109,6 @@
       "STRING"
     ],
     [
-      113,
-      11,
-      0,
-      85,
-      0,
-      "MODEL"
-    ],
-    [
-      114,
-      85,
-      0,
-      8,
-      0,
-      "MODEL"
-    ],
-    [
       116,
       53,
       3,
@@ -3168,14 +3149,6 @@
       "INT"
     ],
     [
-      124,
-      6,
-      0,
-      10,
-      3,
-      "LATENT"
-    ],
-    [
       126,
       18,
       0,
@@ -3198,6 +3171,30 @@
       19,
       5,
       "STRING"
+    ],
+    [
+      131,
+      96,
+      0,
+      94,
+      0,
+      "MODEL"
+    ],
+    [
+      133,
+      94,
+      0,
+      8,
+      0,
+      "MODEL"
+    ],
+    [
+      135,
+      95,
+      0,
+      10,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
@@ -3236,10 +3233,10 @@
       4
     ],
     "ds": {
-      "scale": 0.45,
+      "scale": 0.8140274938683998,
       "offset": [
-        3314.1639811571067,
-        2225.0061962592845
+        789.9739438684855,
+        -378.6297216337657
       ]
     },
     "frontendVersion": "1.43.18",
