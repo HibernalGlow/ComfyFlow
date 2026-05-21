@@ -17,4 +17,5 @@ skin visible through gloves, seams, arm seams, finger seams,
 pantyhose-style seams, glossy fabric, shiny gloves
 颜色 = stirrup legwear 同色（黑/白/紫）
 删 standing, clenches fists等等（§9 动作标签）
+删全部角度标签（direct eye contact, facing viewer — 现在提示词系统自由指定）
 其余保留原作设定
